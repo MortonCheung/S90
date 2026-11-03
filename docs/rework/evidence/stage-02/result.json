@@ -1,0 +1,26 @@
+[
+  {
+    "mode": "slow",
+    "state": "loading",
+    "percent": "22",
+    "bars": 1,
+    "duplicate": 0
+  },
+  {
+    "mode": "error",
+    "state": "error",
+    "percent": "0",
+    "bars": 1,
+    "duplicate": 0
+  },
+  {
+    "retry": true
+  },
+  {
+    "mode": "normal",
+    "state": "preparing",
+    "percent": "100",
+    "bars": 1,
+    "duplicate": 0
+  }
+]

@@ -1,5 +1,6 @@
 import { useEffect, useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
+import { getLoadingVisual } from './loading-state.js';
 import { STROKE_PLAN } from './stroke-plan.js';
 import { useLineart } from './useLineart.js';
 import { viewHeightFor } from '../story/story.js';
@@ -15,6 +16,9 @@ export default function Opening({
   ready,
   loading,
   progress,
+  total,
+  assetStatus,
+  firstFrameReady,
   drawn,
   error,
   onDrawn,
@@ -122,12 +126,7 @@ export default function Opening({
     return () => timeline.kill();
   }, [ready, drawn, markup, onOpened]);
 
-  const percent = Math.round((progress || 0) * 100);
-  let status = '正在准备展厅';
-  if (error) status = '车模载入失败';
-  else if (!drawn) status = '线稿绘制中';
-  else if (!ready) status = percent > 0 ? `车模载入 ${percent}%` : '车模载入中';
-  else status = '就绪';
+  const visual = getLoadingVisual({ status: assetStatus, progress, total, firstFrameReady });
 
   return (
     <div className="opening" ref={stageRef} data-ready={ready && drawn}>
@@ -146,7 +145,13 @@ export default function Opening({
         />
       </div>
 
-      <div className="opening__line" ref={lineRef} />
+      <div className="opening__line" ref={lineRef} data-state={visual.state}
+        role="progressbar" aria-label={visual.label} aria-valuemin={0} aria-valuemax={100}
+        aria-valuenow={visual.fraction === null ? undefined : Math.round(visual.fraction * 100)}>
+        <div className="opening__line-track" />
+        <div className="opening__line-fill" style={{ transform: `scaleX(${visual.fraction ?? 0})` }} />
+        <span className="opening__line-label">{visual.label}</span>
+      </div>
 
       <div className="opening__frame" ref={frameRef} aria-hidden="true">
         <span className="opening__frame-corner opening__frame-corner--tl" />
@@ -156,16 +161,6 @@ export default function Opening({
         <span className="opening__frame-label opening__frame-label--tl">S90 / SIDE ELEVATION</span>
         <span className="opening__frame-label opening__frame-label--tr">SCALE 1:1</span>
         <span className="opening__frame-label opening__frame-label--bl">DIGITAL ATELIER · 2026</span>
-      </div>
-
-      <div className="opening__status" data-hidden={ready && drawn}>
-        <span className="opening__status-key">{status}</span>
-        <span className="opening__status-bar" aria-hidden="true">
-          <span style={{ transform: `scaleX(${ready ? 1 : Math.max(0.04, progress || 0.04)})` }} />
-        </span>
-        <span className="opening__status-meta">
-          {error ? 'LOAD FAILED' : loading && !ready ? 'REAL-TIME 3D ASSET' : 'READY'}
-        </span>
       </div>
 
       {error ? (

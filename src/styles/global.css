@@ -861,21 +861,15 @@ a {
   overflow: visible;
 }
 
-.opening__line {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: calc(50% - 0.5px);
-  height: 1px;
-  z-index: 56;
-  background: linear-gradient(
-    90deg,
-    rgba(17, 19, 22, 0) 0%,
-    rgba(17, 19, 22, 0.42) 14%,
-    rgba(17, 19, 22, 0.42) 86%,
-    rgba(17, 19, 22, 0) 100%
-  );
-}
+.opening__line { position:absolute; left:0; right:0; top:50%; height:1px; z-index:56; }
+.opening__line-track { position:absolute; inset:0; background:rgba(17,19,22,.12); }
+.opening__line-fill { position:absolute; inset:0; background:rgba(17,19,22,.55); transform-origin:left center; }
+.opening__line-label { position:absolute; left:32px; top:12px; font-size:11px; color:var(--ink-2); }
+.opening__line[data-state='indeterminate'] .opening__line-fill { transform:none!important; width:12%; animation:load-cursor 1.8s ease-in-out infinite alternate; }
+.opening__line[data-state='preparing'] .opening__line-label { animation:prepare-pulse 1.2s ease-in-out infinite alternate; }
+@keyframes load-cursor { to { transform:translateX(730%); } }
+@keyframes prepare-pulse { to { opacity:.5; } }
+@media(prefers-reduced-motion:reduce) { .opening__line * { animation:none!important; } }
 
 .opening__frame {
   position: absolute;

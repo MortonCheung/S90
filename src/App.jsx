@@ -216,6 +216,8 @@ export default function App() {
           ready={asset.status === 'ready'}
           loading={asset.status === 'loading'}
           progress={asset.progress}
+          total={asset.total}
+          assetStatus={asset.status}
           drawn={drawn}
           error={asset.error}
           onDrawn={onDrawn}

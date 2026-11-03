@@ -1,0 +1,13 @@
+
+> s90-digital-experience@0.1.0 build
+> vite build
+
+vite v6.0.7 building for production...
+transforming...
+✓ 651 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.90 kB │ gzip:   0.70 kB
+dist/assets/index-DekJXv3C.css     19.40 kB │ gzip:   4.82 kB
+dist/assets/index-DbCbuoaY.js   1,159.52 kB │ gzip: 335.00 kB
+✓ built in 2.31s
