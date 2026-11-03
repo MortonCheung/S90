@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>S90 lineart trace</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        background: #222;
+        overflow: hidden;
+      }
+      canvas {
+        display: block;
+      }
+      #log {
+        position: fixed;
+        left: 12px;
+        top: 12px;
+        color: #8f8;
+        font: 12px/1.5 ui-monospace, monospace;
+        white-space: pre;
+        pointer-events: none;
+      }
+    </style>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "/node_modules/three/build/three.module.js",
+          "three/addons/": "/node_modules/three/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="log"></div>
+    <script type="module" src="./trace.js"></script>
+  </body>
+</html>
