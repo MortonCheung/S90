@@ -1,0 +1,2 @@
+import fs from 'node:fs';import{execSync}from'node:child_process';
+const [id,title,status,...notes]=process.argv.slice(2);const sha=execSync('git rev-parse HEAD').toString().trim();fs.mkdirSync('docs/rework/reports',{recursive:true});fs.writeFileSync(`docs/rework/reports/STAGE-${id}.md`,`# STAGE-${id} · ${title}\n\n- 基准 SHA：${sha}\n- 分支：refactor/s90-visual-storytelling-v3\n- 当前阶段提交：见 git log --grep 及 COMMITS.txt（报告随本阶段提交）。\n- 结果：${status}\n- 浏览器：本机 macOS Chrome，Metal GPU，桌面1600×900；移动端为390×844模拟，Safari与真机UNVERIFIED。\n\n${notes.join('\n\n')}\n`);
