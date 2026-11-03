@@ -1,0 +1,63 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:4961px;height:3508px;background:#EDE9E1;color:#111316;
+    font-family:"Helvetica Neue","PingFang SC","Hiragino Sans GB",sans-serif;-webkit-font-smoothing:antialiased}
+  .board{position:relative;width:4961px;height:3508px;padding:140px 190px 120px;display:flex;flex-direction:column;justify-content:space-between}
+  .top{display:flex;justify-content:space-between;align-items:baseline;font-size:30px;letter-spacing:.22em;color:#57534c}
+  .top b{font-weight:500;color:#111316;letter-spacing:.18em}
+  .rule{height:1px;background:rgba(17,19,22,.18);margin-top:30px}
+  .kicker{margin-top:54px;font-size:27px;letter-spacing:.3em;color:#8B6A47}
+  h1{font-family:"Songti SC","STSong","Noto Serif CJK SC",serif;font-weight:500;letter-spacing:.02em;line-height:1.08}
+  .muted{color:#5f5b54}
+  .foot{position:absolute;left:190px;right:190px;bottom:82px;display:flex;justify-content:space-between;align-items:flex-end;
+    font-size:25px;letter-spacing:.06em;color:#6b665e;border-top:1px solid rgba(17,19,22,.16);padding-top:24px}
+  img{display:block}
+  .cap{font-size:25px;letter-spacing:.1em;color:#6b665e;margin-top:16px}
+  .board::after{content:"";position:absolute;inset:0;background-image:url(grain.png);background-size:512px 512px;opacity:.85;mix-blend-mode:soft-light;pointer-events:none;z-index:99}
+
+
+  h1{font-size:114px;margin-top:14px}
+  .sub{font-size:31px;color:#3a3d42;margin-top:16px}
+  .main{display:grid;grid-template-columns:3900px 1fr;gap:80px;margin-top:36px}
+  .shot{position:relative;border:1px solid rgba(17,19,22,.1)}
+  .shot img{width:100%}
+  .anno{position:absolute;font-size:23px;letter-spacing:.04em;background:#EDE9E1;border:1px solid rgba(17,19,22,.38);padding:11px 16px;white-space:nowrap}
+  .mob{display:flex;flex-direction:column;gap:40px}
+  .mob figure{width:300px}
+  .mob img{width:300px;border:1px solid rgba(17,19,22,.14)}
+  .mob figcaption{font-size:20px;line-height:1.55;color:#57534c;margin-top:12px;letter-spacing:.04em}
+  .side-note{margin-top:36px;font-size:23px;line-height:1.85;color:#3a3d42;border-top:1px solid rgba(17,19,22,.16);padding-top:22px}
+  .side-note b{display:block;font-size:21px;letter-spacing:.2em;color:#8B6A47;margin-bottom:10px;font-weight:500}
+  .spec{margin-top:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:50px;border-top:1px solid rgba(17,19,22,.18);padding-top:30px}
+  .spec b{display:block;font-size:42px;font-family:"Songti SC",serif;font-weight:500;margin-bottom:8px}
+  .spec span{font-size:23px;line-height:1.65;color:#57534c;letter-spacing:.03em}
+</style></head><body><div class="board">
+  <div class="top"><span><b>2026 华灿奖</b>　数字媒体设计 / 交互界面</span><span>VOLVO S90　—　DIGITAL ATELIER</span></div>
+  <div class="rule"></div>
+  <div class="kicker">EXPLORE　/　03</div>
+  <h1>自由探索与设备适配</h1>
+  <div class="sub">叙事结束后，同一台相机连续拉远，交给自由视角；车漆与热点都不触发重新加载。</div>
+  <div class="main">
+    <div class="shot">
+      <img src="../source_board_files/plate_explore_xl.png" alt="自由探索桌面端">
+      <div class="anno" style="left:8%;top:46%">① 5 个部件热点随相机投影，背面自动隐藏</div>
+      <div class="anno" style="left:36%;top:79%">② 4 种车漆只改材质颜色，不重建模型</div>
+      <div class="anno" style="right:6%;top:18%">③ 拖拽旋转 · 滚轮缩放 · ESC 返回</div>
+    </div>
+    <div>
+      <div class="mob">
+        <figure><img src="../source_board_files/m_hero.png"><figcaption>开场<br>线稿与资源并行</figcaption></figure>
+        <figure><img src="../source_board_files/m_detail.png"><figcaption>详情<br>底部抽屉，车不裁切</figcaption></figure>
+        <figure><img src="../source_board_files/m_explore.png"><figcaption>探索<br>工具栏与热点</figcaption></figure>
+      </div>
+      <div class="side-note"><b>ADAPTATION</b>桌面以 1600×900 为基准；窄屏（≤860px）详情改为底部抽屉，镜头在竖屏时自动后拉 32%，车体不被裁切。</div>
+    </div>
+  </div>
+  <div class="spec">
+    <div><b>1 / 1 / 1</b><span>Canvas / 模型 / 主相机<br>单场景贯穿全流程</span></div>
+    <div><b>14.54 MB</b><span>模型交付体积<br>源文件 386.35 MB，Meshopt + WebP 2048</span></div>
+    <div><b>52 fps</b><span>桌面 1600×900<br>Chromium headless / Metal；移动端未标称帧率</span></div>
+    <div><b>390×844</b><span>移动端实测视口<br>无横向溢出，详情转底部抽屉</span></div>
+  </div>
+  <div class="foot"><span>非官方概念设计　·　车模 Volvo S90 Recharge (Free) by lazercar　·　CC BY 4.0　·　Sketchfab</span><span>03 / 03</span></div>
+</div></body></html>

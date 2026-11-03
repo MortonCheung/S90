@@ -1,0 +1,85 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:4961px;height:3508px;background:#EDE9E1;color:#111316;
+    font-family:"Helvetica Neue","PingFang SC","Hiragino Sans GB",sans-serif;-webkit-font-smoothing:antialiased}
+  .board{position:relative;width:4961px;height:3508px;padding:140px 190px 120px;display:flex;flex-direction:column;justify-content:space-between}
+  .top{display:flex;justify-content:space-between;align-items:baseline;font-size:30px;letter-spacing:.22em;color:#57534c}
+  .top b{font-weight:500;color:#111316;letter-spacing:.18em}
+  .rule{height:1px;background:rgba(17,19,22,.18);margin-top:30px}
+  .kicker{margin-top:54px;font-size:27px;letter-spacing:.3em;color:#8B6A47}
+  h1{font-family:"Songti SC","STSong","Noto Serif CJK SC",serif;font-weight:500;letter-spacing:.02em;line-height:1.08}
+  .muted{color:#5f5b54}
+  .foot{position:absolute;left:190px;right:190px;bottom:82px;display:flex;justify-content:space-between;align-items:flex-end;
+    font-size:25px;letter-spacing:.06em;color:#6b665e;border-top:1px solid rgba(17,19,22,.16);padding-top:24px}
+  img{display:block}
+  .cap{font-size:25px;letter-spacing:.1em;color:#6b665e;margin-top:16px}
+  .board::after{content:"";position:absolute;inset:0;background-image:url(grain.png);background-size:512px 512px;opacity:.85;mix-blend-mode:soft-light;pointer-events:none;z-index:99}
+
+
+  h1{font-size:128px;margin-top:14px}
+  .sub{font-size:32px;color:#3a3d42;margin-top:18px}
+  .row{display:grid;grid-template-columns:repeat(5,1fr);gap:32px;margin-top:52px}
+  .row figure{border:1px solid rgba(17,19,22,.1);background:#F2EEE6}
+  .row img{width:100%;height:1010px;object-fit:cover;object-position:center top}
+  .row figcaption{font-size:23px;letter-spacing:.12em;color:#57534c;padding:16px 4px 18px}
+  .axis{margin-top:20px;position:relative;height:330px}
+  .axis .line{position:absolute;left:0;right:0;top:120px;height:2px;background:#111316}
+  .axis .band{position:absolute;top:112px;height:18px;background:rgba(139,106,71,.35)}
+  .axis .tick{position:absolute;top:104px;width:2px;height:34px;background:#111316}
+  .axis .lab{position:absolute;top:150px;font-size:20px;letter-spacing:.1em;color:#57534c;transform:translateX(-50%)}
+  .axis .ch{position:absolute;top:30px;font-size:22px;letter-spacing:.06em;color:#111316;transform:translateX(-50%);white-space:nowrap}
+  .axis .note{position:absolute;top:214px;font-size:20px;letter-spacing:.14em;color:#8B6A47;transform:translateX(-50%);white-space:nowrap}
+  .flow{display:flex;margin-top:10px}
+  .node{flex:1;border-top:2px solid #111316;padding:20px 20px 16px;position:relative}
+  .node b{display:block;font-size:22px;letter-spacing:.18em;color:#8B6A47;margin-bottom:10px;font-weight:500}
+  .node span{font-size:26px;letter-spacing:.02em}
+  .node:after{content:"→";position:absolute;right:-14px;top:16px;font-size:28px;color:#8B6A47}
+  .node:last-child:after{display:none}
+  .notes{display:grid;grid-template-columns:repeat(3,1fr);gap:64px;margin-top:34px;font-size:25px;line-height:1.8;color:#3a3d42}
+  .notes b{display:block;font-size:22px;letter-spacing:.2em;color:#8B6A47;margin-bottom:10px;font-weight:500}
+</style></head><body><div class="board">
+  <div class="top"><span><b>2026 华灿奖</b>　数字媒体设计 / 交互界面</span><span>VOLVO S90　—　DIGITAL ATELIER</span></div>
+  <div class="rule"></div>
+  <div class="kicker">NARRATIVE　/　02</div>
+  <h1>一条时间轴，六个章节</h1>
+  <div class="sub">滚动进度 t ∈ [0,1] 是唯一状态源；正向与反向都只是 t 的增减，没有第二个时间轴。</div>
+  <div class="row">
+    <figure><img src="../source_board_files/crop_light.png"><figcaption>02　灯组 / LIGHT</figcaption></figure>
+    <figure><img src="../source_board_files/crop_wheel.png"><figcaption>03　轮毂 / WHEEL</figcaption></figure>
+    <figure><img src="../source_board_files/crop_profile.png"><figcaption>04　侧面 / PROFILE</figcaption></figure>
+    <figure><img src="../source_board_files/crop_cabin.png"><figcaption>05　座舱 / CABIN</figcaption></figure>
+    <figure><img src="../source_board_files/crop_rear.png"><figcaption>06　车尾 / REAR</figcaption></figure>
+  </div>
+  <div class="axis">
+    <div class="line"></div>
+    <div class="tick" style="left:0%"></div><div class="lab" style="left:0%">0.00</div>
+    <div class="tick" style="left:15%"></div><div class="lab" style="left:15%">0.15</div>
+    <div class="tick" style="left:28%"></div><div class="lab" style="left:28%">0.28</div>
+    <div class="tick" style="left:41%"></div><div class="lab" style="left:41%">0.41</div>
+    <div class="tick" style="left:54%"></div><div class="lab" style="left:54%">0.54</div>
+    <div class="tick" style="left:67%"></div><div class="lab" style="left:67%">0.67</div>
+    <div class="tick" style="left:84%"></div><div class="lab" style="left:84%">0.84</div>
+    <div class="tick" style="left:100%"></div><div class="lab" style="left:100%">1.00</div>
+    <div class="ch" style="left:7.5%">01 整车</div><div class="ch" style="left:21.5%">02 灯组</div><div class="ch" style="left:34.5%">03 轮毂</div>
+    <div class="ch" style="left:47.5%">04 侧面</div><div class="ch" style="left:60.5%">05 座舱</div><div class="ch" style="left:75.5%">06 车尾</div><div class="ch" style="left:92%">EXPLORE</div>
+    <div class="band" style="left:16.8%;width:7.8%"></div><div class="band" style="left:29.8%;width:7.8%"></div>
+    <div class="band" style="left:42.8%;width:7.8%"></div><div class="band" style="left:55.8%;width:7.8%"></div><div class="band" style="left:68%;width:7.8%"></div>
+    <div class="note" style="left:20.7%">详情开</div><div class="note" style="left:33.7%">详情开</div><div class="note" style="left:46.7%">详情开</div>
+    <div class="note" style="left:59.7%">详情开</div><div class="note" style="left:71.9%">详情开</div>
+  </div>
+  <div class="flow">
+    <div class="node"><b>01</b><span>线稿生长</span></div>
+    <div class="node"><b>02</b><span>车模就绪</span></div>
+    <div class="node"><b>03</b><span>中央揭幕</span></div>
+    <div class="node"><b>04</b><span>滚动环绕</span></div>
+    <div class="node"><b>05</b><span>双栏详情</span></div>
+    <div class="node"><b>06</b><span>收起续行</span></div>
+    <div class="node"><b>07</b><span>自由探索</span></div>
+  </div>
+  <div class="notes">
+    <div><b>可逆</b>详情由 t 的五个区间触发；离开区间即收起，反向滚动不重置相机。</div>
+    <div><b>不裁车</b>详情展开时相机不转向，只做投影平移；车身完整留在左栏，右栏留给文字。</div>
+    <div><b>不硬切</b>结尾以 0.85s 位姿混合交给 Orbit；无页面切换、无二次加载、无第二个 Canvas。</div>
+  </div>
+  <div class="foot"><span>非官方概念设计　·　车模 CC BY 4.0 / lazercar</span><span>02 / 03</span></div>
+</div></body></html>
