@@ -1,0 +1,16 @@
+:root {
+  --paper: #ede9e1;
+  --paper-hi: #f6f3ec;
+  --paper-lo: #ddd7ca;
+  --ink: #111316;
+  --ink-2: #2b2e33;
+  --muted: #77726a;
+  --line: rgba(17, 19, 22, 0.14);
+  --line-strong: rgba(17, 19, 22, 0.32);
+  --bronze: #8b6a47;
+  --serif: 'Songti SC', 'STSong', 'Noto Serif SC', 'Source Han Serif SC', serif;
+  --sans: 'Helvetica Neue', 'PingFang SC', 'Hiragino Sans GB', 'Noto Sans SC', system-ui,
+    sans-serif;
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --head-h: 88px;
+}
