@@ -29,6 +29,7 @@ export default function App() {
   const [asset, retry] = useCarAsset();
   const [paint, setPaint] = useState(PAINTS[0].hex);
   const [cabin, setCabin] = useState(CABIN_THEMES[0].id);
+  const [contextLost, setContextLost] = useState(false);
   const [drawn, setDrawn] = useState(false);
   const [opened, setOpened] = useState(false);
   const [ui, setUi] = useState({
@@ -166,6 +167,7 @@ export default function App() {
           hotspots={HOTSPOTS}
           projected={projected}
           onFirstFrame={onFirstFrame}
+          onContextLost={() => setContextLost(true)}
         />
         <div className="stage__vignette" />
       </div>
@@ -185,6 +187,17 @@ export default function App() {
         onChapter={goChapter}
         barRef={barRef}
       />
+
+      {contextLost ? (
+        <div className="context-lost" role="alert">
+          <p className="context-lost__kicker">RENDERER LOST</p>
+          <h2>三维渲染已中断</h2>
+          <p>显卡上下文丢失，叙事已暂停。重新载入可恢复；线稿与文字内容不受影响。</p>
+          <button type="button" className="btn btn--dark" onClick={() => window.location.reload()}>
+            重新载入
+          </button>
+        </div>
+      ) : null}
 
       <DetailPanel detail={detail} open={Boolean(detail)} cabin={cabin} onCabin={setCabin} />
 

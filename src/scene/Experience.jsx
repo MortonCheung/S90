@@ -47,6 +47,7 @@ export default function Experience({
   hotspots,
   projected,
   onFirstFrame,
+  onContextLost,
 }) {
   return (
     <Canvas
@@ -58,6 +59,14 @@ export default function Experience({
         gl.setClearColor(0x000000, 0);
         gl.toneMapping = THREE.ACESFilmicToneMapping;
         if (import.meta.env.DEV) window.__scene = scene;
+        gl.domElement.addEventListener(
+          'webglcontextlost',
+          (event) => {
+            event.preventDefault();
+            onContextLost?.();
+          },
+          false,
+        );
       }}
     >
       <Studio ready={asset.status === 'ready'} />
