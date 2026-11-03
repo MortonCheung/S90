@@ -46,9 +46,13 @@ async function openPage(width, height) {
   await page.mouse.click(paint.x, paint.y);
   await page.waitForTimeout(1200);
   const paintActive = await page.evaluate(() => document.querySelector('.paint[data-active="true"]')?.getAttribute('aria-label'));
-  const hotspot = await page.evaluate(() => { const el = document.querySelector('.hotspot[data-visible="true"]'); if (!el) return null; const r = el.getBoundingClientRect(); return { x: r.x + r.width / 2, y: r.y + r.height / 2 }; });
-  if (hotspot) { await page.mouse.click(hotspot.x, hotspot.y); await page.waitForTimeout(1400); }
   await page.screenshot({ path: 'docs/reports/final-explore.png' });
+  const hotspot = await page.evaluate(() => { const el = document.querySelector('.hotspot[data-visible="true"]'); if (!el) return null; const r = el.getBoundingClientRect(); return { x: r.x + r.width / 2, y: r.y + r.height / 2 }; });
+  if (hotspot) {
+    await page.mouse.click(hotspot.x, hotspot.y);
+    await page.waitForTimeout(1600);
+    await page.screenshot({ path: 'docs/reports/final-hotspot-focus.png' });
+  }
   await page.keyboard.press('Escape');
   await page.waitForTimeout(1500);
   const afterEsc = await page.evaluate(() => document.querySelector('.explore')?.getAttribute('data-active'));

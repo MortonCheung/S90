@@ -7,6 +7,7 @@ import { clamp } from '../lib/math.js';
 import { sampleCamera } from '../story/story.js';
 
 const _pos = new THREE.Vector3();
+const _body = new THREE.Vector3(0, 0.72, 0);
 const _tgt = new THREE.Vector3();
 const _offset = new THREE.Vector3();
 const _look = new THREE.Vector3();
@@ -118,11 +119,13 @@ export function CameraSystem({ stateRef, explore, api }) {
       },
       focus(hotspotPos) {
         if (!explore) return;
-        _look.set(...hotspotPos);
+        // Keep some context around the part: aim slightly towards the body
+        // centre and stand back far enough that the car is not sliced.
+        _look.set(...hotspotPos).lerp(_body, 0.3);
         _offset.copy(camera.position).sub(_look);
         if (_offset.lengthSq() < 1e-4) _offset.set(-1, 0.4, 0.4);
-        _offset.setLength(3.4);
-        _offset.y = Math.max(_offset.y, 0.9);
+        _offset.setLength(6.0);
+        _offset.y = Math.max(_offset.y, 1.05);
         _pos.copy(_look).add(_offset);
         moveTo(_pos.clone(), _look.clone(), 1.1);
       },
