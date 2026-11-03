@@ -1,0 +1,15 @@
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+const { chromium } = require('/Users/morton_cheung/Desktop/比赛/iTeach/node_modules/playwright');
+const browser = await chromium.launch({ headless: true, args: ['--use-angle=metal','--ignore-gpu-blocklist','--enable-gpu'] });
+const page = await browser.newPage({ viewport: { width: 3900, height: 2194 }, deviceScaleFactor: 1 });
+await page.goto('http://127.0.0.1:5177/', { waitUntil: 'networkidle' });
+await page.waitForFunction(() => !document.querySelector('.opening'), null, { timeout: 60000 });
+await page.waitForTimeout(600);
+await page.evaluate(() => { for (const s of ['.site-head','.rail','.chapter-card','.scroll-hint','.credit']) document.querySelectorAll(s).forEach((el) => { el.style.visibility = 'hidden'; }); });
+const max = await page.evaluate(() => document.documentElement.scrollHeight - window.innerHeight);
+await page.evaluate((y) => window.scrollTo(0, y), Math.round(max * 0.97));
+await page.waitForTimeout(2000);
+await page.screenshot({ path: 'deliverables/source_board_files/plate_explore_xl.png' });
+await browser.close();
+console.log('xl explore done');
