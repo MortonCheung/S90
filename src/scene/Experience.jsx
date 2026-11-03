@@ -58,7 +58,7 @@ export default function Experience({
       onCreated={({ gl, scene }) => {
         gl.setClearColor(0x000000, 0);
         gl.toneMapping = THREE.ACESFilmicToneMapping;
-        if (import.meta.env.DEV) window.__scene = scene;
+        if (import.meta.env.DEV) { window.__scene = scene; window.__S90Renderer = gl; }
         gl.domElement.addEventListener(
           'webglcontextlost',
           (event) => {

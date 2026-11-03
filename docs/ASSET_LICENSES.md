@@ -32,3 +32,6 @@ React 18.3.1（MIT）、three 0.170.0（MIT）、@react-three/fiber 8.17.10（MI
 
 ## 6. 未使用/未授权的素材
 未使用 BMW 旧项目模型或代码；未使用参考站摄影素材；未使用任何未授权音效或视频。
+
+## v3 保真整改（2026-11-04）
+新增 `public/assets/model/candidates/s90-quality-v3.glb`（73,364,248 B）。保留全部3,273,670三角面、原Float32顶点法线与切线；POSITION15bit/UV16bit，Meshopt编码；贴图2048，WebP普通q85、法线q95。原始GLB、旧14.54MB产物均保留。作者lazercar及CC BY 4.0来源不变，详见 `docs/rework/reports/MODEL_QUALITY_AUDIT.md`。
