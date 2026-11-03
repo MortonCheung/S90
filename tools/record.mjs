@@ -12,10 +12,26 @@ await page.waitForTimeout(6500);
 await page.waitForFunction(() => !document.querySelector('.opening'), null, { timeout: 45000 }).catch(() => {});
 await page.waitForTimeout(1200);
 const max = await page.evaluate(() => document.documentElement.scrollHeight - window.innerHeight);
-for (const t of [0.12, 0.2, 0.33, 0.46, 0.59, 0.715, 0.86, 0.97]) {
+const go = async (t, wait = 1900) => {
   await page.evaluate((y) => window.scrollTo({ top: y, behavior: 'smooth' }), Math.round(max * t));
-  await page.waitForTimeout(1900);
+  await page.waitForTimeout(wait);
+};
+for (const t of [0.12, 0.2, 0.33, 0.46]) await go(t);
+await go(0.59, 2200);
+// concept cabin colourway, inside the cabin detail panel
+const cabin = await page.evaluate(() => {
+  const el = document.querySelectorAll('.cabin-option')[1];
+  if (!el) return null;
+  const r = el.getBoundingClientRect();
+  return { x: r.x + r.width / 2, y: r.y + r.height / 2 };
+});
+if (cabin) {
+  await page.mouse.click(cabin.x, cabin.y);
+  await page.waitForTimeout(1500);
 }
+await page.screenshot({ path: 'docs/reports/demo-cabin.png' });
+for (const t of [0.715, 0.86]) await go(t);
+await go(0.97, 2000);
 const pt = await page.evaluate(() => { const el = document.querySelectorAll('.paint')[1]; const r = el.getBoundingClientRect(); return { x: r.x + r.width / 2, y: r.y + r.height / 2 }; });
 await page.mouse.click(pt.x, pt.y);
 await page.waitForTimeout(1600);
@@ -30,4 +46,4 @@ await page.mouse.click(back.x, back.y);
 await page.waitForTimeout(2400);
 await context.close();
 await browser.close();
-console.log('recorded');
+console.log('recorded with cabin');

@@ -175,13 +175,6 @@ export function CameraSystem({ stateRef, explore, api }) {
       camera.projectionMatrix.elements[8] += (isNarrow ? 0.12 : 0.38) * detailFactor;
       camera.projectionMatrix.elements[9] += (isNarrow ? -0.24 : 0) * detailFactor;
       camera.projectionMatrixInverse.copy(camera.projectionMatrix).invert();
-      window.__cam = {
-        pos: camera.position.toArray().map((v) => +v.toFixed(2)),
-        fov: camera.fov,
-        shift: camera.projectionMatrix.elements[8],
-        detail: detailFactor,
-        smooth: stateRef.current.smooth,
-      };
     }
   });
 

@@ -1,17 +1,28 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { CABIN_THEMES } from '../story/cabin.js';
 
 export default function DetailPanel({ detail, open, cabin, onCabin }) {
+  const panelRef = useRef(null);
   const [last, setLast] = useState(null);
 
   useEffect(() => {
     if (detail) setLast(detail);
   }, [detail]);
 
+  // When the panel closes while focus is inside it, hand focus back to the
+  // document so keyboard users are not stranded on a hidden control.
+  useEffect(() => {
+    if (open) return;
+    const panel = panelRef.current;
+    if (panel && panel.contains(document.activeElement)) {
+      document.activeElement.blur();
+    }
+  }, [open]);
+
   const data = detail || last;
 
   return (
-    <aside className="detail" data-open={open} aria-hidden={!open} aria-live="polite">
+    <aside className="detail" ref={panelRef} data-open={open} aria-hidden={!open} aria-live="polite">
       {data ? (
         <div className="detail__inner" key={data.id}>
           <div className="detail__meta">

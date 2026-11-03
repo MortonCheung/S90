@@ -24,6 +24,7 @@
 | 18 展板材料 | `STAGE-18.md` | PASS |
 | 19 车门开合（选做） | `STAGE-19.md` | NOT SUPPORTED（模型未分侧） |
 | 20 内饰配色（选做） | `STAGE-20.md` | PASS（概念配色，2 套） |
+| 终检 | `FINAL_QA.md` | 桌面/移动仿真/展板 PASS；真机 UNVERIFIED |
 
 ## 关键截图
 | 文件 | 内容 |

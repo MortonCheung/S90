@@ -59,7 +59,7 @@ const B2 = `<!doctype html><html><head><meta charset="utf-8"><style>${CSS}
   .node span{font-size:27px;letter-spacing:.02em}
   .node:after{content:"→";position:absolute;right:-16px;top:18px;font-size:28px;color:#8B6A47}
   .node:last-child:after{display:none}
-  .notes{display:grid;grid-template-columns:repeat(3,1fr);gap:64px;margin-top:38px;margin-bottom:16px;font-size:25px;line-height:1.8;color:#3a3d42}
+  .notes{display:grid;grid-template-columns:repeat(4,1fr);gap:46px;margin-top:38px;margin-bottom:16px;font-size:23px;line-height:1.8;color:#3a3d42}
   .notes b{display:block;font-size:22px;letter-spacing:.2em;color:#8B6A47;margin-bottom:10px;font-weight:500}
 `;
 const B3 = `<!doctype html><html><head><meta charset="utf-8"><style>${CSS}
@@ -196,6 +196,7 @@ const b2 = `<!doctype html><html><head><meta charset="utf-8"><style>${CSS}
     <div><b>可逆</b>详情由 t 的五个区间触发；离开区间即收起，反向滚动不重置相机。</div>
     <div><b>不裁车</b>详情展开时相机不转向，只做投影平移；车身完整留在左栏，右栏留给文字。</div>
     <div><b>不硬切</b>结尾以 0.85s 位姿混合交给 Orbit；无页面切换、无二次加载、无第二个 Canvas。</div>
+    <div><b>概念内饰</b>座舱详情提供石墨、暖棕两套皮革色；只改材质颜色，不重载模型，标注为概念方案。</div>
   </div>
   <div class="foot"><span>非官方概念设计　·　车模 CC BY 4.0 / lazercar</span><span>02 / 03</span></div>
 </div></body></html>`;

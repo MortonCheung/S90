@@ -9,13 +9,13 @@
 | 尺寸 | A3，300dpi 或以上 | 4961 × 3508 px（A3 横版 @300dpi） |
 | 数量 | 最多 3 张 | 3 张，方向一致（横版） |
 | 格式/色彩 | JPG / RGB | JPG / RGB |
-| 单张大小 | 5–6 MB | 5.17 / 5.76 / 5.11 MB |
+| 单张大小 | 5–6 MB | 5.984 / 5.803 / 5.897 MB |
 | 身份信息 | 不得出现姓名/学校 | 未出现（仅赛事名与作品名） |
 | 内容 | 高保真图、交互流程、设计说明、PC/移动适配 | 三张分别覆盖：概念主视觉与揭幕、叙事与流程、探索与适配 |
 
 ## 产物
 - `deliverables/s90_board_01.jpg`（概念 / 主视觉 / 线稿与同位）
-- `deliverables/s90_board_02.jpg`（六章分镜 + t 轴 + 交互流程）
+- `deliverables/s90_board_02.jpg`（六章分镜 + t 轴 + 交互流程 + 概念内饰注记）
 - `deliverables/s90_board_03.jpg`（自由探索 + 移动端 + 规格）
 - `deliverables/s90_design_statement.pdf`（设计说明）
 - `deliverables/s90_interaction_flow.pdf` / `.png`（交互流程）

@@ -8,10 +8,8 @@
       300
     ],
     "mode": "RGB",
-    "quality": 96,
-    "bytes": 5172526,
-    "MB": 5.173,
-    "in_range": true
+    "quality": 97,
+    "MB": 5.984
   },
   {
     "file": "deliverables/s90_board_02.jpg",
@@ -23,9 +21,7 @@
     ],
     "mode": "RGB",
     "quality": 97,
-    "bytes": 5761508,
-    "MB": 5.762,
-    "in_range": true
+    "MB": 5.803
   },
   {
     "file": "deliverables/s90_board_03.jpg",
@@ -36,9 +32,7 @@
       300
     ],
     "mode": "RGB",
-    "quality": 96,
-    "bytes": 5104512,
-    "MB": 5.105,
-    "in_range": true
+    "quality": 97,
+    "MB": 5.897
   }
 ]
