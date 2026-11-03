@@ -38,6 +38,7 @@
 | `hotspot-focus.png` | 热点聚焦 |
 | `paint-crystal.png` | 车漆切换 |
 | `cabin-graphite.png` / `cabin-cognac.png` | 内饰概念配色前后 |
+| `mobile-cabin2.png` | 移动端座舱详情与配色控件 |
 | `back-to-story.png` | 返回主线 |
 | `mobile-opening.png` / `mobile-detail4.png` / `mobile-explore3.png` | 移动端三态 |
 | `error-retry.png` | 模型失败 + 重试 |

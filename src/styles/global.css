@@ -1394,3 +1394,22 @@ a {
   line-height: 1.8;
   color: var(--muted);
 }
+
+@media (max-width: 860px) {
+  .detail__cabin {
+    margin-top: 16px;
+    padding-top: 12px;
+  }
+
+  .detail__cabin-note {
+    display: none;
+  }
+
+  .detail__cabin-options {
+    margin-top: 8px;
+  }
+
+  .detail__specs {
+    margin-top: 14px;
+  }
+}
