@@ -1,5 +1,6 @@
 import { useEffect, useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
+import { STROKE_PLAN } from './stroke-plan.js';
 import { useLineart } from './useLineart.js';
 import { viewHeightFor } from '../story/story.js';
 
@@ -9,16 +10,6 @@ import { viewHeightFor } from '../story/story.js';
  */
 const ART_METRES_HIGH = 3.362;
 const ART_ASPECT = 2400 / 1350;
-
-const LAYER_ORDER = {
-  silhouette: 0,
-  body: 1,
-  glass: 2,
-  wheel: 3,
-  light: 4,
-  trim: 5,
-  detail: 6,
-};
 
 export default function Opening({
   ready,
@@ -30,7 +21,7 @@ export default function Opening({
   onOpened,
   onRetry,
 }) {
-  const { markup, error: artError } = useLineart('/assets/lineart/s90-side.svg');
+  const { markup, error: artError } = useLineart('/assets/lineart/s90-draw.svg');
   const stageRef = useRef(null);
   const topRef = useRef(null);
   const bottomRef = useRef(null);
@@ -64,35 +55,19 @@ export default function Opening({
     const roots = Array.from(stageRef.current.querySelectorAll('svg.s90-lineart'));
     if (!roots.length) return undefined;
 
-    const source = roots[0].querySelectorAll('path');
-    const plan = Array.from(source).map((path, index) => {
-      const group = path.closest('[data-layer]');
-      const layer = group?.getAttribute('data-layer') || 'detail';
-      let length = 0;
-      try {
-        length = path.getTotalLength();
-      } catch {
-        length = 0;
-      }
-      return {
-        index,
-        length,
-        order: LAYER_ORDER[layer] ?? 9,
-      };
-    });
-    plan.sort((a, b) => a.order - b.order || b.length - a.length);
-
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     roots.forEach((root) => {
       root.querySelectorAll('path').forEach((path) => {
         path.style.vectorEffect = 'non-scaling-stroke';
+        path.style.visibility = 'hidden';
       });
     });
 
     if (reduce) {
       roots.forEach((root) =>
         root.querySelectorAll('path').forEach((path) => {
+          path.style.visibility = 'visible';
           path.style.strokeDasharray = 'none';
           path.style.strokeDashoffset = '0';
         }),
@@ -110,24 +85,14 @@ export default function Opening({
       },
     });
 
-    plan.forEach((item, order) => {
-      const delay = order * 0.0032;
+    STROKE_PLAN.forEach((item, index) => {
       roots.forEach((root) => {
-        const path = root.querySelectorAll('path')[item.index];
+        const path = root.querySelectorAll('path')[index];
         if (!path) return;
-        gsap.set(path, {
-          strokeDasharray: item.length,
-          strokeDashoffset: item.length,
-        });
-        timeline.to(
-          path,
-          {
-            strokeDashoffset: 0,
-            duration: 0.32 + Math.min(0.62, item.length / 2200),
-            ease: 'power1.inOut',
-          },
-          delay,
-        );
+        const length = path.getTotalLength();
+        gsap.set(path, { strokeDasharray: length, strokeDashoffset: length + 1, visibility: 'hidden' });
+        timeline.set(path, { visibility: 'visible' }, item.start);
+        timeline.to(path, { strokeDashoffset: 0, duration: item.duration, ease: 'none' }, item.start);
       });
     });
 

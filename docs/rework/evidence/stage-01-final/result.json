@@ -1,0 +1,88 @@
+{
+  "name": "stage-01-final",
+  "errors": [],
+  "requests": 1,
+  "samples": [
+    {
+      "t": 1165,
+      "ready": "false",
+      "strokes": [
+        "139px",
+        "104px",
+        "169px",
+        "192px"
+      ]
+    },
+    {
+      "t": 2802.10000000149,
+      "ready": "false",
+      "strokes": [
+        "0px",
+        "104px",
+        "169px",
+        "192px"
+      ]
+    },
+    {
+      "t": 3158.1999999955297,
+      "ready": "false",
+      "strokes": [
+        "0px",
+        "78px",
+        "169px",
+        "192px"
+      ]
+    },
+    {
+      "t": 3700.5,
+      "ready": "false",
+      "strokes": [
+        "0px",
+        "0px",
+        "0px",
+        "192px"
+      ]
+    },
+    {
+      "t": 4697.5,
+      "ready": "false",
+      "strokes": [
+        "0px",
+        "0px",
+        "0px",
+        "0px"
+      ]
+    },
+    {
+      "t": 5897.69999999553,
+      "ready": "false",
+      "strokes": [
+        "0px",
+        "0px",
+        "0px",
+        "0px"
+      ]
+    },
+    {
+      "t": 7204.29999999702,
+      "ready": "false",
+      "strokes": [
+        "0px",
+        "0px",
+        "0px",
+        "0px"
+      ]
+    },
+    {
+      "t": 8603.79999999702,
+      "ready": "true",
+      "strokes": [
+        "0px",
+        "0px",
+        "0px",
+        "0px"
+      ]
+    }
+  ],
+  "states": []
+}
