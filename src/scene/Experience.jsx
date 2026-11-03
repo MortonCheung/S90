@@ -40,6 +40,7 @@ function HotspotProjector({ items, outRef }) {
 export default function Experience({
   asset,
   paint,
+  cabin,
   stateRef,
   explore,
   api,
@@ -53,14 +54,15 @@ export default function Experience({
       dpr={[1, 1.8]}
       gl={{ antialias: true, alpha: true, powerPreference: 'high-performance' }}
       camera={{ fov: 31, near: 0.05, far: 400, position: [-16, 1.5, 6] }}
-      onCreated={({ gl }) => {
+      onCreated={({ gl, scene }) => {
         gl.setClearColor(0x000000, 0);
         gl.toneMapping = THREE.ACESFilmicToneMapping;
+        if (import.meta.env.DEV) window.__scene = scene;
       }}
     >
       <Studio ready={asset.status === 'ready'} />
       {asset.gltf ? (
-        <CarModel gltf={asset.gltf} paint={paint} onFirstFrame={onFirstFrame} />
+        <CarModel gltf={asset.gltf} paint={paint} cabin={cabin} onFirstFrame={onFirstFrame} />
       ) : null}
       <CameraSystem stateRef={stateRef} explore={explore} api={api} />
       <HotspotProjector items={hotspots} outRef={projected} />

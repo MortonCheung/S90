@@ -22,6 +22,8 @@
 | 16 性能兼容 | `STAGE-16.md` | 桌面/移动仿真 PASS；真机 UNVERIFIED |
 | 17 失败恢复 | `STAGE-17.md` | 失败/重试、WebGL 不可用回退 PASS；运行中上下文丢失 BLOCKED |
 | 18 展板材料 | `STAGE-18.md` | PASS |
+| 19 车门开合（选做） | `STAGE-19.md` | NOT SUPPORTED（模型未分侧） |
+| 20 内饰配色（选做） | `STAGE-20.md` | PASS（概念配色，2 套） |
 
 ## 关键截图
 | 文件 | 内容 |
@@ -35,6 +37,7 @@
 | `explore-5.png` | 自由探索（含 5 个热点、工具栏） |
 | `hotspot-focus.png` | 热点聚焦 |
 | `paint-crystal.png` | 车漆切换 |
+| `cabin-graphite.png` / `cabin-cognac.png` | 内饰概念配色前后 |
 | `back-to-story.png` | 返回主线 |
 | `mobile-opening.png` / `mobile-detail4.png` / `mobile-explore3.png` | 移动端三态 |
 | `error-retry.png` | 模型失败 + 重试 |

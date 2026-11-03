@@ -16,6 +16,7 @@ import {
 } from './story/story.js';
 import { clamp, damp } from './lib/math.js';
 import { PAINTS } from './story/paints.js';
+import { CABIN_THEMES } from './story/cabin.js';
 
 const HOTSPOTS = DETAILS.map((d) => ({
   id: d.id,
@@ -27,6 +28,7 @@ const HOTSPOTS = DETAILS.map((d) => ({
 export default function App() {
   const [asset, retry] = useCarAsset();
   const [paint, setPaint] = useState(PAINTS[0].hex);
+  const [cabin, setCabin] = useState(CABIN_THEMES[0].id);
   const [drawn, setDrawn] = useState(false);
   const [opened, setOpened] = useState(false);
   const [ui, setUi] = useState({
@@ -157,6 +159,7 @@ export default function App() {
         <Experience
           asset={asset}
           paint={paint}
+          cabin={cabin}
           stateRef={stateRef}
           explore={ui.explore}
           api={api}
@@ -183,7 +186,7 @@ export default function App() {
         barRef={barRef}
       />
 
-      <DetailPanel detail={detail} open={Boolean(detail)} />
+      <DetailPanel detail={detail} open={Boolean(detail)} cabin={cabin} onCabin={setCabin} />
 
       <ExploreLayer
         active={ui.explore}
