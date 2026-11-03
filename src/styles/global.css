@@ -1472,3 +1472,6 @@ a {
   background: radial-gradient(62% 66% at 34% 44%, rgba(237, 233, 225, 0.94), rgba(237, 233, 225, 0));
   pointer-events: none;
 }
+
+.sheet__edge { position:absolute; left:0; right:0; top:50%; height:1px; background:rgba(17,19,22,.25); opacity:0; }
+.opening[data-revealing='true'] .sheet__edge { opacity:1; }

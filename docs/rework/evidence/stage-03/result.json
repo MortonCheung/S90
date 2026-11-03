@@ -1,0 +1,88 @@
+{
+  "name": "stage-03",
+  "errors": [],
+  "requests": 1,
+  "samples": [
+    {
+      "t": 1368.3999999985099,
+      "ready": "false",
+      "strokes": [
+        "0px",
+        "104px",
+        "169px",
+        "192px"
+      ]
+    },
+    {
+      "t": 3082.60000000149,
+      "ready": "false",
+      "strokes": [
+        "0px",
+        "104px",
+        "169px",
+        "192px"
+      ]
+    },
+    {
+      "t": 4088.5,
+      "ready": "false",
+      "strokes": [
+        "0px",
+        "0px",
+        "0px",
+        "0px"
+      ]
+    },
+    {
+      "t": 4659.29999999702,
+      "ready": "false",
+      "strokes": [
+        "0px",
+        "0px",
+        "0px",
+        "0px"
+      ]
+    },
+    {
+      "t": 5209.79999999702,
+      "ready": "false",
+      "strokes": [
+        "0px",
+        "0px",
+        "0px",
+        "0px"
+      ]
+    },
+    {
+      "t": 5910.79999999702,
+      "ready": "false",
+      "strokes": [
+        "0px",
+        "0px",
+        "0px",
+        "0px"
+      ]
+    },
+    {
+      "t": 7237.10000000149,
+      "ready": "false",
+      "strokes": [
+        "0px",
+        "0px",
+        "0px",
+        "0px"
+      ]
+    },
+    {
+      "t": 8614,
+      "ready": "true",
+      "strokes": [
+        "0px",
+        "0px",
+        "0px",
+        "0px"
+      ]
+    }
+  ],
+  "states": []
+}

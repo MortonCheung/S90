@@ -30,6 +30,7 @@ export default function App() {
   const [paint, setPaint] = useState(PAINTS[0].hex);
   const [cabin, setCabin] = useState(CABIN_THEMES[0].id);
   const [contextLost, setContextLost] = useState(false);
+  const [firstFrameId, setFirstFrameId] = useState(null);
   const [drawn, setDrawn] = useState(false);
   const [opened, setOpened] = useState(false);
   const [ui, setUi] = useState({
@@ -54,7 +55,8 @@ export default function App() {
   const openedRef = useRef(false);
   openedRef.current = opened;
 
-  const onFirstFrame = useCallback(() => {}, []);
+  const onFirstFrame = useCallback((id) => setFirstFrameId(id), []);
+  const firstFrameReady = Boolean(asset.gltf && firstFrameId === asset.gltf.scene.uuid);
 
   // Keep the scroll track and the --vh unit in sync with the real viewport.
   useEffect(() => {
@@ -213,9 +215,10 @@ export default function App() {
 
       {!opened ? (
         <Opening
-          ready={asset.status === 'ready'}
+          ready={asset.status === 'ready' && firstFrameReady}
           loading={asset.status === 'loading'}
           progress={asset.progress}
+          firstFrameReady={firstFrameReady}
           total={asset.total}
           assetStatus={asset.status}
           drawn={drawn}

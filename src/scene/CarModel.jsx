@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef } from 'react';
 import { CABIN_MATERIALS, CABIN_THEMES } from '../story/cabin.js';
 import * as THREE from 'three';
 import gsap from 'gsap';
-import { useThree } from '@react-three/fiber';
+import { useThree, addAfterEffect } from '@react-three/fiber';
 
 /**
  * Mounts the single car instance.  The same object graph is reused for the
@@ -11,6 +11,7 @@ import { useThree } from '@react-three/fiber';
 export function CarModel({ gltf, paint, cabin, onFirstFrame }) {
   const gl = useThree((s) => s.gl);
   const camera = useThree((s) => s.camera);
+  const scene = useThree((s) => s.scene);
   const reported = useRef(false);
   const paintMaterial = useRef(null);
 
@@ -81,23 +82,23 @@ export function CarModel({ gltf, paint, cabin, onFirstFrame }) {
 
   useEffect(() => {
     if (!gltf || reported.current) return undefined;
-    let raf2 = 0;
-    const raf1 = requestAnimationFrame(() => {
-      try {
-        gl.compile(gltf.scene, camera);
-      } catch (error) {
-        console.warn('shader precompile skipped', error);
-      }
-      raf2 = requestAnimationFrame(() => {
-        reported.current = true;
-        onFirstFrame?.();
-      });
+    let alive = true;
+    let compiled = false;
+    const first = gl.info.render.frame;
+    // Compile the complete scene with its studio environment while masked.
+    Promise.resolve(gl.compileAsync(scene, camera)).then(() => { compiled = true; }).catch((e) => {
+      console.error('Unable to prepare car shaders', e);
     });
-    return () => {
-      cancelAnimationFrame(raf1);
-      cancelAnimationFrame(raf2);
-    };
-  }, [gltf, gl, camera, onFirstFrame]);
+    const remove = addAfterEffect(() => {
+      if (!alive || !compiled || reported.current || gl.info.render.frame <= first + 1 || gl.info.render.calls === 0) return;
+      // Once only, under the curtain: wait for the submitted frame to finish.
+      gl.getContext().finish();
+      reported.current = true;
+      onFirstFrame?.(gltf.scene.uuid);
+      if (import.meta.env.DEV) window.__S90Ready = { modelId: gltf.scene.uuid, frame: gl.info.render.frame, shaderPrepared: true, firstFrameReady: true };
+    });
+    return () => { alive = false; remove(); };
+  }, [gltf, gl, scene, camera, onFirstFrame]);
 
   useEffect(() => {
     const mat = paintMaterial.current;

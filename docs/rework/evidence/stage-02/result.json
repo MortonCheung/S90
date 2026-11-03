@@ -18,7 +18,7 @@
   },
   {
     "mode": "normal",
-    "state": "preparing",
+    "state": "ready",
     "percent": "100",
     "bars": 1,
     "duplicate": 0

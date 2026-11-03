@@ -112,10 +112,11 @@ export default function Opening({
 
   // Curtain: the paper splits along the centre line, the line drawing leaves with it.
   useEffect(() => {
-    if (!ready || !drawn || !markup || revealed.current) return undefined;
+    if (!ready || !drawn || (!markup && !artError) || revealed.current) return undefined;
     revealed.current = true;
     const timeline = gsap.timeline({
       defaults: { ease: 'power4.inOut' },
+      onStart: () => { if (stageRef.current) stageRef.current.dataset.revealing = "true"; },
       onComplete: onOpened,
     });
     timeline
@@ -124,7 +125,7 @@ export default function Opening({
       .to(lineRef.current, { opacity: 0, duration: 0.5 }, 0.08)
       .to(frameRef.current, { opacity: 0, duration: 0.55 }, 0.55);
     return () => timeline.kill();
-  }, [ready, drawn, markup, onOpened]);
+  }, [ready, drawn, markup, artError, onOpened]);
 
   const visual = getLoadingVisual({ status: assetStatus, progress, total, firstFrameReady });
 
@@ -136,6 +137,7 @@ export default function Opening({
           className="sheet__art"
           dangerouslySetInnerHTML={markup ? { __html: markup } : undefined}
         />
+        <div className="sheet__edge" />
       </div>
       <div className="sheet sheet--bottom" ref={bottomRef}>
         <div className="sheet__paper" />
@@ -143,6 +145,7 @@ export default function Opening({
           className="sheet__art"
           dangerouslySetInnerHTML={markup ? { __html: markup } : undefined}
         />
+        <div className="sheet__edge" />
       </div>
 
       <div className="opening__line" ref={lineRef} data-state={visual.state}

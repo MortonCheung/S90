@@ -1,0 +1,35 @@
+[
+  {
+    "width": 1600,
+    "requests": 1,
+    "canvas": 1,
+    "ready": {
+      "modelId": "bacab0da-8a3f-41f6-ae01-95bd5d987b85",
+      "frame": 64,
+      "shaderPrepared": true,
+      "firstFrameReady": true
+    }
+  },
+  {
+    "width": 1440,
+    "requests": 1,
+    "canvas": 1,
+    "ready": {
+      "modelId": "91bc116f-ff2e-4bbb-a765-fe80df777f47",
+      "frame": 58,
+      "shaderPrepared": true,
+      "firstFrameReady": true
+    }
+  },
+  {
+    "width": 390,
+    "requests": 1,
+    "canvas": 1,
+    "ready": {
+      "modelId": "f2e6ee7f-f24b-4274-af15-f071a3c9d9ff",
+      "frame": 56,
+      "shaderPrepared": true,
+      "firstFrameReady": true
+    }
+  }
+]
