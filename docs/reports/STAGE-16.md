@@ -4,7 +4,7 @@
 测量而不是承诺；记录环境、帧率、构建体积与移动端表现。
 
 ## 实测
-- 桌面：Chromium headless + Metal，1600×900，**52fps**；SwiftShader 仅 0.5fps（不可用）。
+- 桌面：Chromium headless + Metal，1600×900，**52fps**（首次）；空缓存完整流程复测 **61fps**；SwiftShader 仅 0.5fps（不可用）。
 - 构建：JS 1,149.70 kB（gzip 331.12 kB）、CSS 15.20 kB。
 - 移动：390×844，无横向溢出，详情转底部抽屉，探索后拉后整车在画面内。
 - 模型 14.54 MB；首帧编译 5.3–6.3s（两次实测，本地）。

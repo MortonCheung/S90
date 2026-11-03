@@ -20,7 +20,7 @@
 | 14 车漆 | `STAGE-14.md` | PASS |
 | 15 热点 | `STAGE-15.md` | PASS |
 | 16 性能兼容 | `STAGE-16.md` | 桌面/移动仿真 PASS；真机 UNVERIFIED |
-| 17 失败恢复 | `STAGE-17.md` | 主要路径 PASS；WebGL 丢失 BLOCKED |
+| 17 失败恢复 | `STAGE-17.md` | 失败/重试、WebGL 不可用回退 PASS；运行中上下文丢失 BLOCKED |
 | 18 展板材料 | `STAGE-18.md` | PASS |
 
 ## 关键截图
@@ -38,6 +38,7 @@
 | `back-to-story.png` | 返回主线 |
 | `mobile-opening.png` / `mobile-detail4.png` / `mobile-explore3.png` | 移动端三态 |
 | `error-retry.png` | 模型失败 + 重试 |
+| `webgl-fallback.png` | WebGL 不可用静态回退 |
 | `reverse-010.png` | 反向滚动 |
 
 ## 运行证据（本次）
