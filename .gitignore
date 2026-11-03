@@ -1,0 +1,6 @@
+node_modules/
+dist/
+source_assets/*.glb
+*.mov
+.DS_Store
+test-results/
