@@ -58,7 +58,7 @@ reference/audit/  参考网站取证（仅研究用，不进入成品）
 ## 规格
 
 - 单 Canvas / 单模型实例 / 单主相机；模型 14.54 MB。
-- 桌面 1600×900 实测 52fps（headless Chromium + Metal）；移动 390×844 无横向溢出。
+- 桌面 1600×900 实测 52–61fps（headless Chromium + Metal，多次）；移动 390×844 无横向溢出。
 - 构建：`dist` JS 1,149.70 kB（gzip 331.12 kB）。
 
 ## 已知问题
