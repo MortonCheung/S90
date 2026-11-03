@@ -37,7 +37,7 @@
 | 文件 | 尺寸 | 色彩 | dpi | 大小 | 判定 |
 | --- | --- | --- | --- | --- | --- |
 | `deliverables/s90_board_01.jpg` | 4961×3508 | RGB | 300 | 5.984 MB | PASS |
-| `deliverables/s90_board_02.jpg` | 4961×3508 | RGB | 300 | 5.803 MB | PASS |
+| `deliverables/s90_board_02.jpg` | 4961×3508 | RGB | 300 | 5.774 MB | PASS |
 | `deliverables/s90_board_03.jpg` | 4961×3508 | RGB | 300 | 5.897 MB | PASS |
 
 展板 02 的“概念内饰”注记、展板 03 的探索/移动端内容均来自本轮真实截图；页脚无姓名/学校。
