@@ -1,0 +1,50 @@
+{
+  "id": "demo",
+  "url": "https://demo.morton.xin",
+  "started": "2026-11-03T07:33:51.793Z",
+  "steps": [],
+  "meta": {
+    "title": "VEYRA — Electric, inside out.",
+    "height": 900,
+    "videos": [],
+    "canvases": [
+      {
+        "w": 300,
+        "h": 150,
+        "cls": "hover-video"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://demo.morton.xin/media/exterior-polished.png",
+        "w": 1670,
+        "h": 941
+      },
+      {
+        "src": "https://demo.morton.xin/media/exterior-polished.png",
+        "w": 1670,
+        "h": 941
+      },
+      {
+        "src": "https://demo.morton.xin/media/battery-blue.png",
+        "w": 0,
+        "h": 0
+      }
+    ],
+    "hasGSAP": false,
+    "hasThree": false,
+    "bodyBg": "rgba(0, 0, 0, 0)",
+    "text": "VEYRA\nElectric vehicle design\nIndependent concept\nElectric, inside out.\n\nExplore beneath the surface.\nSelect a point to begin.\n\nEnergy storage\n\nThe energy\nbeneath you.\n\nA traction battery stores electrical energy and supplies it to the drive system. In this concept, it sits low beneath the cabin.\n\n01\nCell modules\n02\nHigh-voltage connection\n03\nProtective enclosure\nFor the driver\n\nA low, flat package leaves the cabin above it open.\n\nPreparing the views\nElectric drive\n\nLift the hood. Explore how the motor turns electricity into motion.\n\nBattery architecture\n\nLook beneath the body. Discover the energy stored under the cabin.\n\nBody finishes\n\nFive colours. From studio silver to a vivid electric green.\n\nWheel designs\n\nThree expressions. Compare multi-spoke, aero and forged wheels.\n\nVEYRA — Design study\nExplore systems. Personalise the exterior.\n\nVehicle overview. Choose a system."
+  },
+  "resources": [
+    "script https://demo.morton.xin/assets/index-CPi4Lcyz.js",
+    "image https://demo.morton.xin/media/exterior-polished.png",
+    "image https://demo.morton.xin/media/battery-blue.png",
+    "image https://demo.morton.xin/media/drive-blue.png",
+    "media https://demo.morton.xin/media/hood-hover-forward.mp4",
+    "media https://demo.morton.xin/media/hood-hover-reverse.mp4",
+    "media https://demo.morton.xin/media/battery-hover-forward.mp4",
+    "media https://demo.morton.xin/media/battery-hover-reverse.mp4"
+  ],
+  "console": []
+}

@@ -1,0 +1,198 @@
+{
+  "id": "heron",
+  "url": "https://heronaiapp.com",
+  "started": "2026-11-03T07:33:03.945Z",
+  "steps": [],
+  "meta": {
+    "title": "Heron AI | Works inside your design tools",
+    "height": 900,
+    "videos": [],
+    "canvases": [
+      {
+        "w": 1440,
+        "h": 900,
+        "cls": ""
+      }
+    ],
+    "images": [
+      {
+        "src": "https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bbf/6a6b2e33f9a255a16702aabb_load.svg",
+        "w": 3000,
+        "h": 1845
+      },
+      {
+        "src": "https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bbf/6a703ca7b25c47076637c631_4f993b1a199968429382e85294f3e6d1_Full.webp",
+        "w": 2060,
+        "h": 1037
+      },
+      {
+        "src": "https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bbf/6a69a23dcc24456128e2afe3_image%20345.avif",
+        "w": 1766,
+        "h": 1766
+      },
+      {
+        "src": "https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bc0/6a634f5e18b19cdfe5aaf7e7_Logo%20partner-11.png",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "src": "https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bc0/6a634f8490f683f582b7c815_Logo%20partner-12.png",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "src": "https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bc0/6a634fa421f5ab60c373150c_Logo%20partner-13.png",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "src": "https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bc0/6a634fb5d19a05a393885a50_Logo%20partner-14.png",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "src": "https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bc0/6a63503b2a4d020430c23b00_Logo%20partner-15.png",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "src": "https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bc0/6a63504c77c27729e0ddbb11_Logo%20partner-16.png",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "src": "https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bc0/6a6350857d1202ebd68239df_Logo%20partner-17.png",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "src": "https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bc0/6a6350b8134d3cc5f515c4db_Logo%20partner-18.png",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "src": "https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bbf/6a4b5161f0d11f1602cc3c77_kk.png",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "src": "https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bbf/6a4b5161f0d11f1602cc3c29_ll.png",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "src": "https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bbf/6a4b5161f0d11f1602cc3c84_fff.png",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "src": "https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bbf/6a4b5161f0d11f1602cc3c5e_Dimensions.png",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "src": "https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bbf/6a66fd66235c9b3dc9658cce_b7a2ba681bb6f203cb6b6f354b9db94f_solution1.jpg",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "src": "https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bbf/6a66fd6676c8ee4725207aaa_c250d7593ed0b070d3eb6aa486953f89_solution2.avif",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "src": "https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bbf/6a69a34e15d1eb4aadac9ae6_b03ba3ff201b6aa651aadafe895f2928_Before-1.avif",
+        "w": 1440,
+        "h": 870
+      },
+      {
+        "src": "https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bbf/6a69a34ee521ff1cc6d69306_95fbf6e81134860c2ab2e4e9f5b9c723_Before.avif",
+        "w": 2880,
+        "h": 1740
+      },
+      {
+        "src": "https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bbf/6a670fa1cfadff37a55ba10b_8b74c365290a3a568eb43a2526db7de5_Illust%20why%20us%20section%20(1).jpg",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "src": "https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bbf/6a6875a79d14cd95a2ee4f14_box-1.png",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "src": "https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bbf/6a6875a7aadcc2ec708b1cfe_box-2.png",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "src": "https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bbf/6a6715f67b405f421aeee3d4_1d0ff022380f5c6528ed6d4cd29accf8_Illust%20why%20us%20section.jpg",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "src": "https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bbf/6a687b0f1d1ada1f534fc126_box-3.png",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "src": "https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bbf/6a857d63d8e9eceab3a8a191_f4cd8364f148923074b6f17ed50f6efc_fff%20(1).png",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "src": "https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bbf/6a672441c43e84bf175b8fc9_f0abac54ab792d099695bd11ba88c3a0_Illust%20why%20us%20section%20(1).jpg",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "src": "https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bbf/6a672d855c5776ffd13a0b9b_660f6807d3ea3c427c195ecf4c16359d_Frame%202087327319%20(1).jpg",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "src": "https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bbf/6a672d855c5776ffd13a0b9f_61fddc00f08323cea212d4479c223bf4_Frame%202087327318%20(1).jpg",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "src": "https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bbf/6a672d85516d2cebabe5ae10_8c825758515cc7b9420562a48360bf3a_Frame%201707479505%20(1).jpg",
+        "w": 0,
+        "h": 0
+      },
+      {
+        "src": "https://cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bbf/6a857fd09f73ba800be8cc97_img%20(1).png",
+        "w": 0,
+        "h": 0
+      }
+    ],
+    "hasGSAP": true,
+    "hasThree": false,
+    "bodyBg": "rgba(0, 0, 0, 0)",
+    "text": "PRODUCT\nPRODUCT\nHERON CHAT WIDGET\nHERON CHAT WIDGET\nHERON DASHBOARD\nHERON DASHBOARD\nPRICING\nPRICING\nRESOURCES\nRESOURCES\nINSIGHTS\nINSIGHTS\nAI PRACTICES\nAI PRACTICES\nDESIGN WORKFLOWS\nDESIGN WORKFLOWS\nABOUT\nABOUT\nCONTACT US\nCONTACT US\n20%\nDESIGNED\nBY BEARPLUS,\nTHE AWARD-WINNING\nDESIGN AGENCY\nWELCOME TO HERON AI\n\nTYPE\n:\nTECHNOLOGY/AI SOFTWARE COMPANY\nFOUNDED\n:\n2026\nFOCUS      \n:\nAI-POWERED BUILDING CODE COMPLIANCE FOR ARCHITECTS\n(BIM / REVIT INTEGRATION)\nLOCATION\n:\n1801 CALIFORNIA ST. SUITE 2400 DENVER, CO 80202\n001 INITIALIZE CORE SYSTEM\n002 LOAD AI MODELS\n003 CONFIGURE DATA PIPELINES\n004 SYNC DISTRIBUTED NODES\n005 VALIDATE INPUT STREAMS\n006 OPTIMIZE INFERENCE ENGINE\n007 DEPLOY TEST ENVIRONMENT\n008 ENABLE REAL-TIME PROCESSING\n009 RUN DIAGNOSTICS\n010 START EXECUTION\nIBC 1015.3\nGUARDRAIL REQUIRED FOR FALL PROTECTION\nIBC 1011.11\nHANDRAILS REQUIRED.\n    \n   \n        \n         \n    \n \nDISCOVER MORE\nFASTER ITERATIONS\nFEWER MISTAKES\nLESS BUSYWORK\nFASTER ITERATIONS\nFEWER MISTAKES\nLESS BUSYWORK\nFASTER ITERATIONS\nFEWER MISTAKES\nLESS BUSYWORK\nFASTER ITERATIONS\nFEWER MISTAKES\nLESS BUSYWORK\nFASTER ITERATIONS\nFEWER MISTAKES\nLESS BUSYWORK\nTHE REPETITIVE PARTS OF\nMODELLING SHOULDN'T\nEAT YOUR DAY. HER"
+  },
+  "resources": [
+    "image https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bbf/6a703ca7b25c47076637c631_4f993b1a199968429382e85294f3e6d1_Full.webp",
+    "image https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bbf/6a6ad84d47e6be3956e3a35a_cta-sketch.webp",
+    "image https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bbf/6a698acae521ff1cc6cba1f2_3a9b60f8f07a704746b20978dd8d73d1_Frame%20484%20(1).png",
+    "script https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6a4b5161f0d11f1602cc3bbf",
+    "script https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bbf/js/webflow.a0aa6ca1.b7683852b8a60d8e.js",
+    "script https://unpkg.com/lenis@1.1.5/dist/lenis.min.js",
+    "script https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js",
+    "script https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js",
+    "script https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js",
+    "script https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js",
+    "script https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js",
+    "script https://heronai-bp.netlify.app/config.js",
+    "script https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js",
+    "image https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bbf/6a8553546e24603c87f64acf_5884414ce5b036db18e0f9b93e96310e_heron_1.jpg",
+    "image https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bbf/6a8572d56e24603c870c8690_505b3d65554a02469f21b0cccfc9348c_After%20(1).jpg",
+    "image https://heronaiapp.com/cdn.prod.website-files.com/6a4b5161f0d11f1602cc3bbf/6a4b5161f0d11f1602cc3cc4_615801a3aaf9bfaa3a8ac5c616b665eb_cta%20image.webp",
+    "script https://heronai-bp.netlify.app/main.js",
+    "script https://cdn.mxpnl.com/libs/mixpanel-recorder-CcIR1Do8.min.js",
+    "script https://scripts.clarity.ms/0.8.75/clarity.js"
+  ],
+  "console": [
+    "[warning] The resource https://heronaiapp.com/cdn.prod.website-files.com/68f73a0fbae6fa626a19135c/6900476d411e3ea05889428f_bg.svg was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+  ]
+}

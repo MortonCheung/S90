@@ -1,0 +1,14 @@
+document https://demo.morton.xin/
+script https://demo.morton.xin/assets/index-CPi4Lcyz.js
+stylesheet https://demo.morton.xin/assets/index-DgcAGnMv.css
+script https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092
+stylesheet https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400&display=swap
+image https://demo.morton.xin/media/exterior-polished.png
+image https://demo.morton.xin/media/battery-blue.png
+xhr https://demo.morton.xin/cdn-cgi/rum?
+image https://demo.morton.xin/media/drive-blue.png
+font https://fonts.gstatic.com/s/spacegrotesk/v22/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7oUXskPMBBSSJLm2E.woff2
+media https://demo.morton.xin/media/hood-hover-forward.mp4
+media https://demo.morton.xin/media/hood-hover-reverse.mp4
+media https://demo.morton.xin/media/battery-hover-forward.mp4
+media https://demo.morton.xin/media/battery-hover-reverse.mp4
