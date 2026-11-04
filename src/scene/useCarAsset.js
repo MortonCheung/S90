@@ -10,25 +10,27 @@ function tuneMaterial(material) {
   const name = material.name || '';
 
   if (/^Car_Paint$/i.test(name)) {
-    material.metalness = 0.82;
-    material.roughness = 0.3;
+    material.metalness = 0.68;
+    material.roughness = 0.28;
     if ('clearcoat' in material) {
-      material.clearcoat = 1;
-      material.clearcoatRoughness = 0.055;
+      material.clearcoat = 0.9;
+      material.clearcoatRoughness = 0.10;
     }
-    material.envMapIntensity = 1.25;
+    material.envMapIntensity = 1.0;
   } else if (/^Glass$/i.test(name)) {
-    material.transmission = 0;
-    material.transparent = true;
-    material.opacity = 0.66;
+    material.transmission = 0.68;
+    material.ior = 1.5;
+    material.thickness = 0.008;
+    material.transparent = false;
+    material.opacity = 1;
     material.roughness = 0.03;
-    material.metalness = 0.1;
-    material.depthWrite = false;
-    material.envMapIntensity = 1.5;
+    material.metalness = 0;
+    material.depthWrite = true;
+    material.envMapIntensity = 1.0;
     material.needsUpdate = true;
   } else if (/chrome/i.test(name)) {
-    material.envMapIntensity = 1.7;
-    material.roughness = 0.06;
+    material.envMapIntensity = 1.0;
+    material.roughness = 0.14;
   } else if (/Black_Glossy/i.test(name)) {
     material.roughness = 0.12;
     material.envMapIntensity = 1.4;
@@ -66,17 +68,27 @@ export function useCarAsset() {
       urlRef.current,
       (gltf) => {
         if (cancelled) return;
-        const seen = new Set();
+        const replacements = new Map();
         gltf.scene.traverse((obj) => {
           if (!obj.isMesh) return;
           obj.castShadow = false;
           obj.receiveShadow = false;
-          const materials = Array.isArray(obj.material) ? obj.material : [obj.material];
-          materials.forEach((m) => {
-            if (!m || seen.has(m.uuid)) return;
-            seen.add(m.uuid);
-            tuneMaterial(m);
-          });
+          const upgrade = (original) => {
+            if (!original) return original;
+            if (replacements.has(original)) return replacements.get(original);
+            let material = original;
+            if (original.name === 'Glass' && !original.isMeshPhysicalMaterial) {
+              material = new THREE.MeshPhysicalMaterial();
+              THREE.MeshStandardMaterial.prototype.copy.call(material, original);
+              material.defines = { STANDARD: '', PHYSICAL: '' };
+              material.name = original.name;
+              material.color.set('#455254');
+            }
+            tuneMaterial(material);
+            replacements.set(original, material);
+            return material;
+          };
+          obj.material = Array.isArray(obj.material) ? obj.material.map(upgrade) : upgrade(obj.material);
         });
         gltf.scene.updateMatrixWorld(true);
         setState({ status: 'ready', progress: 1, total: 0, gltf, error: null });

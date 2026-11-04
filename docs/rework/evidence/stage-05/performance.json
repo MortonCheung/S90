@@ -1,0 +1,13 @@
+{
+  "name": "stage-05",
+  "firstFrameMs": 7832,
+  "timing": {
+    "frames": 143,
+    "fps": 47.55886656906291,
+    "p95Ms": 33.400000000001455,
+    "triangles": 6591828,
+    "calls": 394,
+    "renderer": "WebKit WebGL"
+  },
+  "errors": []
+}

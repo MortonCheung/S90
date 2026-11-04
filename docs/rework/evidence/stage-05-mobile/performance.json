@@ -1,0 +1,13 @@
+{
+  "name": "stage-05-mobile",
+  "firstFrameMs": 1827,
+  "timing": {
+    "frames": 181,
+    "fps": 60.053085600293315,
+    "p95Ms": 16.700000000000728,
+    "triangles": 6591830,
+    "calls": 395,
+    "renderer": "WebKit WebGL"
+  },
+  "errors": []
+}

@@ -1,0 +1,53 @@
+[
+  {
+    "profile": "soft",
+    "Car_Paint": {
+      "type": "MeshPhysicalMaterial",
+      "metalness": 0.68,
+      "roughness": 0.28,
+      "clearcoat": 0.9,
+      "transmission": 0
+    },
+    "Glass": {
+      "type": "MeshPhysicalMaterial",
+      "metalness": 0,
+      "roughness": 0.03,
+      "clearcoat": 0,
+      "transmission": 0.92
+    }
+  },
+  {
+    "profile": "contrast",
+    "Car_Paint": {
+      "type": "MeshPhysicalMaterial",
+      "metalness": 0.68,
+      "roughness": 0.28,
+      "clearcoat": 0.9,
+      "transmission": 0
+    },
+    "Glass": {
+      "type": "MeshPhysicalMaterial",
+      "metalness": 0,
+      "roughness": 0.03,
+      "clearcoat": 0,
+      "transmission": 0.92
+    }
+  },
+  {
+    "profile": "balanced",
+    "Car_Paint": {
+      "type": "MeshPhysicalMaterial",
+      "metalness": 0.68,
+      "roughness": 0.28,
+      "clearcoat": 0.9,
+      "transmission": 0
+    },
+    "Glass": {
+      "type": "MeshPhysicalMaterial",
+      "metalness": 0,
+      "roughness": 0.03,
+      "clearcoat": 0,
+      "transmission": 0.92
+    }
+  }
+]
