@@ -14,7 +14,7 @@ import {
   chapterAt,
   detailState,
 } from './story/story.js';
-import { clamp, damp } from './lib/math.js';
+import { clamp } from './lib/math.js';
 import { PAINTS } from './story/paints.js';
 import { CABIN_THEMES } from './story/cabin.js';
 
@@ -89,17 +89,14 @@ export default function App() {
 
   useEffect(() => {
     let raf = 0;
-    let last = performance.now();
     const st = stateRef.current;
 
-    const tick = (now) => {
-      const dt = Math.min(0.05, Math.max(0.001, (now - last) / 1000));
-      last = now;
+    const tick = () => {
 
       const max = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
       const raw = clamp(window.scrollY / max);
       st.raw = raw;
-      st.smooth = damp(st.smooth, raw, 16, dt);
+      st.smooth = raw;
 
       const detail = detailState(st.smooth);
       st.detailFactor = detail.factor;

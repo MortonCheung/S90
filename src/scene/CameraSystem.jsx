@@ -138,6 +138,12 @@ export function CameraSystem({ stateRef, explore, api }) {
     };
   }, [api, camera, explore]);
 
+  useEffect(() => {
+    if (!import.meta.env.DEV) return undefined;
+    window.__S90Shot = () => ({ progress:stateRef.current.smooth, position:camera.position.toArray(), quaternion:camera.quaternion.toArray(), target:_tgt.toArray(), fov:camera.fov, aspect:camera.aspect, owner:explore?'orbit':blend.current.active?'blend':'story', targetNdc:_tgt.clone().project(camera).toArray() });
+    return () => { delete window.__S90Shot; };
+  }, [camera, explore, stateRef]);
+
   useFrame((_, delta) => {
     const controls = controlsRef.current;
     if (explore) {
@@ -175,7 +181,7 @@ export function CameraSystem({ stateRef, explore, api }) {
       // Lens shift instead of rotating towards the text panel: the car stays
       // exactly as framed shot-wise, but occupies the free column.
       const isNarrow = width <= 820;
-      camera.projectionMatrix.elements[8] += (isNarrow ? 0.12 : 0.38) * detailFactor;
+      camera.projectionMatrix.elements[8] += (isNarrow ? 0.12 : 0.325) * detailFactor;
       camera.projectionMatrix.elements[9] += (isNarrow ? -0.24 : 0) * detailFactor;
       camera.projectionMatrixInverse.copy(camera.projectionMatrix).invert();
     }

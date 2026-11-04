@@ -32,103 +32,38 @@ export function openingPose(aspect) {
   };
 }
 
-/** Pull the story camera back on narrow screens so the car is never cropped. */
-export function distanceScale(aspect) {
-  return clamp(Math.pow(1.62 / (aspect || 16 / 9), 0.6), 1, 1.85);
-}
-
-/**
- * Camera keyframes.  `t` is scroll progress, positions are metres in car space
- * (front +Z, right side -X, floor y=0).
- */
-export const CAMERA_KEYS = [
-  { t: 0.0, pos: null, target: [0, 0.74, 0.015], fov: OPENING_FOV },
-  { t: 0.075, pos: [-6.6, 1.55, 6.9], target: [0, 0.62, 0.1], fov: 31 },
-  { t: 0.2, pos: [-4.5, 1.12, 5.7], target: [-0.3, 0.66, 2.05], fov: 26 },
-  { t: 0.33, pos: [-4.1, 0.72, 3.55], target: [-0.95, 0.42, 1.55], fov: 25 },
-  { t: 0.46, pos: [-11.8, 0.98, 0.2], target: [0, 0.68, -0.05], fov: 24 },
-  { t: 0.59, pos: [-3.9, 1.2, 1.1], target: [-0.2, 0.95, 0.4], fov: 28 },
-  { t: 0.715, pos: [-5.6, 1.42, -5.9], target: [0, 0.72, -1.9], fov: 30 },
-  { t: 0.84, pos: [-7.9, 2.55, -6.7], target: [0, 0.66, 0], fov: 31 },
-  { t: 0.93, pos: [-7.3, 2.35, -6.15], target: [0, 0.68, 0], fov: 30 },
-  { t: 1.0, pos: [-7.3, 2.35, -6.15], target: [0, 0.68, 0], fov: 30 },
+const SHOTS = [
+  { from:.069, to:.145, pos:[-4.8,1.65,5.7], target:[0,.69,.14], fov:31, whole:true },
+  { from:.187, to:.228, pos:[-2.72,1.13,4.28], target:[-.63,.74,2.19], fov:29 },
+  { from:.318, to:.358, pos:[-2.81,.73,2.43], target:[-.91,.40,1.58], fov:31 },
+  { from:.448, to:.488, pos:[-8.5,.89,.05], target:[0,.71,.05], fov:29, whole:true },
+  { from:.578, to:.618, pos:[-3.25,1.56,.47], target:[-.63,.99,.21], fov:33 },
+  { from:.703, to:.738, pos:[-3.28,1.42,-4.85], target:[-.42,.73,-1.93], fov:32 },
+  { from:.91, to:1, pos:[-6.2,2.08,-5.45], target:[0,.68,0], fov:31, whole:true },
 ];
 
-
-function hermiteScalar(p0, p1, m0, m1, h, u) {
-  const u2 = u * u;
-  const u3 = u2 * u;
-  return (
-    (2 * u3 - 3 * u2 + 1) * p0 +
-    (u3 - 2 * u2 + u) * h * m0 +
-    (-2 * u3 + 3 * u2) * p1 +
-    (u3 - u2) * h * m1
-  );
-}
-
-const TARGET_VALUES = CAMERA_KEYS.map((k) => k.target);
-const FOV_VALUES = CAMERA_KEYS.map((k) => [k.fov]);
-const POS_VALUES = CAMERA_KEYS.map((k) => k.pos);
-
-function posSeries(openingPos) {
-  const values = POS_VALUES.slice();
-  values[0] = openingPos;
-  return values;
-}
-
-function sampleSeries(values, t) {
-  const n = CAMERA_KEYS.length;
-  if (t <= CAMERA_KEYS[0].t) return values[0].slice();
-  if (t >= CAMERA_KEYS[n - 1].t) return values[n - 1].slice();
-
-  let i = 0;
-  while (i < n - 2 && t > CAMERA_KEYS[i + 1].t) i += 1;
-
-  const t0 = CAMERA_KEYS[i].t;
-  const t1 = CAMERA_KEYS[i + 1].t;
-  const h = t1 - t0;
-  const u = clamp((t - t0) / h);
-
-  const p0 = values[i];
-  const p1 = values[i + 1];
-  const prev = i > 0 ? values[i - 1] : p0;
-  const next = i + 2 < n ? values[i + 2] : p1;
-
-  const tPrev = i > 0 ? CAMERA_KEYS[i - 1].t : t0;
-  const tNext = i + 2 < n ? CAMERA_KEYS[i + 2].t : t1;
-
-  const span0 = t1 - tPrev || h;
-  const span1 = tNext - t0 || h;
-
-  return [0, 1, 2].map((c) => {
-    const m0 = (p1[c] - prev[c]) / span0;
-    const m1 = (next[c] - p0[c]) / span1;
-    return hermiteScalar(p0[c], p1[c], m0, m1, h, u);
-  });
+const mix = (a,b,t) => a+(b-a)*t;
+const vectorMix = (a,b,t) => a.map((v,i)=>mix(v,b[i],t));
+function frameShot(shot, aspect) {
+  if (shot.from === 0) return shot;
+  const scale = shot.whole ? Math.max(1, 1.36 / aspect) : Math.max(1, Math.pow(.8 / aspect, .5));
+  return {...shot, pos:shot.pos.map((v,i)=>shot.target[i]+(v-shot.target[i])*scale)};
 }
 
 export function sampleCamera(progress, aspect) {
   const t = clamp(progress);
-  const open = openingPose(aspect);
-  const pos = sampleSeries(posSeries(open.pos), t);
-  const target = sampleSeries(TARGET_VALUES, t);
-
-  // Keep the camera fully responsive on portrait / narrow screens.
-  const scale = 1 + (distanceScale(aspect) - 1) * smoothstep(0.02, 0.11, t);
-  for (let c = 0; c < 3; c += 1) {
-    pos[c] = target[c] + (pos[c] - target[c]) * scale;
+  let previous = {...openingPose(aspect), from:0, to:.012};
+  for (const spec of SHOTS) {
+    const shot = frameShot(spec, aspect);
+    if (t <= previous.to) return previous;
+    if (t < shot.from) {
+      const e = smoothstep(previous.to, shot.from, t);
+      const fov = mix(previous.fov,shot.fov,e);
+      return {pos:vectorMix(previous.pos,shot.pos,e),target:vectorMix(previous.target,shot.target,e),fov};
+    }
+    previous = shot;
   }
-
-  const fov = sampleSeries(FOV_VALUES, t)[0];
-
-  // Phones crop a wide car at the same field of view; ease the last shot (and
-  // the orbit hand-off) back so the whole body stays inside the frame.
-  const narrowPull = aspect < 0.85 ? 1 + 0.32 * smoothstep(0.9, 1.0, t) : 1;
-  if (narrowPull !== 1) {
-    for (let c = 0; c < 3; c += 1) pos[c] = target[c] + (pos[c] - target[c]) * narrowPull;
-  }
-
-  return { pos, target, fov };
+  return previous;
 }
 
 export const CHAPTERS = [
