@@ -153,15 +153,10 @@ export function CameraSystem({ stateRef, explore, api }) {
 
     const { width, height } = sizeRef.current;
     const aspect = width / Math.max(1, height);
-    const detailFactor = stateRef.current.detailFactor || 0;
     const pose = sampleCamera(stateRef.current.smooth, aspect);
 
     _pos.fromArray(pose.pos);
     _tgt.fromArray(pose.target);
-
-    // Push back slightly while a detail panel is open so nothing is cropped.
-    const narrow = aspect < 0.85;
-    _pos.lerpVectors(_tgt, _pos, 1 + 0.055 * detailFactor + (narrow ? 0.16 * detailFactor : 0));
 
     if (blend.current.active) {
       blend.current.t += Math.min(delta, 0.05) / 0.85;
@@ -178,12 +173,7 @@ export function CameraSystem({ stateRef, explore, api }) {
       if (Math.abs(camera.fov - pose.fov) > 0.002) camera.fov = pose.fov;
       camera.updateProjectionMatrix();
 
-      // Lens shift instead of rotating towards the text panel: the car stays
-      // exactly as framed shot-wise, but occupies the free column.
-      const isNarrow = width <= 820;
-      camera.projectionMatrix.elements[8] += (isNarrow ? 0.12 : 0.325) * detailFactor;
-      camera.projectionMatrix.elements[9] += (isNarrow ? -0.24 : 0) * detailFactor;
-      camera.projectionMatrixInverse.copy(camera.projectionMatrix).invert();
+
     }
   });
 

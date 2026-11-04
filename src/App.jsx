@@ -51,6 +51,7 @@ export default function App() {
   const api = useRef({});
   const projected = useRef(HOTSPOTS.map(() => ({ x: 0, y: 0, visible: false })));
   const trackRef = useRef(null);
+  const visualRef = useRef(null);
   const barRef = useRef(null);
   const openedRef = useRef(false);
   openedRef.current = opened;
@@ -99,7 +100,10 @@ export default function App() {
       st.smooth = raw;
 
       const detail = detailState(st.smooth);
-      st.detailFactor = detail.factor;
+      if (detail.factor !== st.detailFactor) {
+        st.detailFactor = detail.factor;
+        visualRef.current?.style.setProperty('--detail-progress', detail.factor.toFixed(5));
+      }
       if (detail.id !== st.detailId) {
         st.detailId = detail.id;
         setUi((u) => (u.detailId === detail.id ? u : { ...u, detailId: detail.id }));
@@ -155,6 +159,7 @@ export default function App() {
 
   return (
     <div className="app">
+      <div className="visual-layout" ref={visualRef}>
       <div className="stage" aria-hidden="true">
         <Experience
           asset={asset}
@@ -169,6 +174,8 @@ export default function App() {
           onContextLost={() => setContextLost(true)}
         />
         <div className="stage__vignette" />
+      </div>
+        <DetailPanel detail={detail} open={Boolean(detail)} cabin={cabin} onCabin={setCabin} />
       </div>
 
       <div className="scroll-track" ref={trackRef} />
@@ -198,7 +205,6 @@ export default function App() {
         </div>
       ) : null}
 
-      <DetailPanel detail={detail} open={Boolean(detail)} cabin={cabin} onCabin={setCabin} />
 
       <ExploreLayer
         active={ui.explore}
