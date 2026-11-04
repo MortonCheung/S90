@@ -140,7 +140,7 @@ export function CameraSystem({ stateRef, explore, api }) {
 
   useEffect(() => {
     if (!import.meta.env.DEV) return undefined;
-    window.__S90Shot = () => ({ progress:stateRef.current.smooth, position:camera.position.toArray(), quaternion:camera.quaternion.toArray(), target:_tgt.toArray(), fov:camera.fov, aspect:camera.aspect, owner:explore?'orbit':blend.current.active?'blend':'story', targetNdc:_tgt.clone().project(camera).toArray() });
+    window.__S90Shot = () => ({ progress:stateRef.current.smooth, position:camera.position.toArray(), quaternion:camera.quaternion.toArray(), target:_tgt.toArray(), fov:camera.fov, near:camera.near, aspect:camera.aspect, owner:explore?'orbit':blend.current.active?'blend':'story', targetNdc:_tgt.clone().project(camera).toArray() });
     return () => { delete window.__S90Shot; };
   }, [camera, explore, stateRef]);
 
@@ -170,6 +170,7 @@ export function CameraSystem({ stateRef, explore, api }) {
     camera.lookAt(_tgt);
 
     if (camera.isPerspectiveCamera) {
+      camera.near = pose.near ?? .05;
       if (Math.abs(camera.fov - pose.fov) > 0.002) camera.fov = pose.fov;
       camera.updateProjectionMatrix();
 

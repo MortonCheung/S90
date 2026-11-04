@@ -37,7 +37,12 @@ const SHOTS = [
   { from:.187, to:.228, pos:[-2.72,1.13,4.28], target:[-.63,.74,2.19], fov:29 },
   { from:.318, to:.358, pos:[-2.81,.73,2.43], target:[-.91,.40,1.58], fov:31 },
   { from:.448, to:.488, pos:[-8.5,.89,.05], target:[0,.71,.05], fov:29, whole:true },
-  { from:.578, to:.618, pos:[-3.25,1.56,.47], target:[-.63,.99,.21], fov:33 },
+  { from:.549, to:.553, pos:[-2.50,1.22,-.40], target:[-.65,1.19,-.40], fov:34, cabin:true },
+  { from:.573, to:.573, pos:[-.65,1.18,-.40], target:[-.05,1.05,.30], fov:52, near:.018, cabin:true },
+  { from:.588, to:.607, pos:[-.23,1.18,-.65], target:[.06,.96,.87], fov:63, near:.018, cabin:true },
+  { from:.618, to:.626, pos:[-.03,1.13,-.56], target:[.08,.78,.76], fov:65, near:.018, cabin:true },
+  { from:.650, to:.650, pos:[-.65,1.18,-.40], target:[-.05,1.05,.30], fov:52, near:.018, cabin:true },
+  { from:.675, to:.675, pos:[-2.50,1.22,-.40], target:[-.65,1.19,-.40], fov:34, cabin:true },
   { from:.703, to:.738, pos:[-3.28,1.42,-4.85], target:[-.42,.73,-1.93], fov:32 },
   { from:.91, to:1, pos:[-6.2,2.08,-5.45], target:[0,.68,0], fov:31, whole:true },
 ];
@@ -46,6 +51,7 @@ const mix = (a,b,t) => a+(b-a)*t;
 const vectorMix = (a,b,t) => a.map((v,i)=>mix(v,b[i],t));
 function frameShot(shot, aspect) {
   if (shot.from === 0) return shot;
+  if (shot.cabin) return {...shot, fov:shot.fov + (shot.near ? 9 * (1 - smoothstep(.72, 1.18, aspect)) : 0)};
   const scale = shot.whole ? Math.max(1, 1.36 / aspect) : Math.max(1, Math.pow(.8 / aspect, .5));
   return {...shot, pos:shot.pos.map((v,i)=>shot.target[i]+(v-shot.target[i])*scale)};
 }
@@ -59,11 +65,18 @@ export function sampleCamera(progress, aspect) {
     if (t < shot.from) {
       const e = smoothstep(previous.to, shot.from, t);
       const fov = mix(previous.fov,shot.fov,e);
-      return {pos:vectorMix(previous.pos,shot.pos,e),target:vectorMix(previous.target,shot.target,e),fov};
+      return {pos:vectorMix(previous.pos,shot.pos,e),target:vectorMix(previous.target,shot.target,e),fov,near:mix(previous.near ?? .05,shot.near ?? .05,e)};
     }
     previous = shot;
   }
   return previous;
+}
+
+// Both passes through the rear side window use the same scroll-derived fade.
+export function cabinGlassOpacity(progress) {
+  const entry = Math.min(smoothstep(.555,.563,progress), 1-smoothstep(.574,.586,progress));
+  const exit = Math.min(smoothstep(.637,.647,progress), 1-smoothstep(.664,.674,progress));
+  return 1 - Math.max(entry, exit);
 }
 
 export const CHAPTERS = [

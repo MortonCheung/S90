@@ -1,19 +1,62 @@
 import { useEffect, useMemo, useRef } from 'react';
 import { CABIN_MATERIALS, CABIN_THEMES } from '../story/cabin.js';
 import * as THREE from 'three';
+import { cabinGlassOpacity } from '../story/story.js';
 import gsap from 'gsap';
-import { useThree, addAfterEffect } from '@react-three/fiber';
+import { useThree, useFrame, addAfterEffect } from '@react-three/fiber';
 
 /**
  * Mounts the single car instance.  The same object graph is reused for the
  * opening reveal, the story and free exploration — never re-loaded, never cloned.
  */
-export function CarModel({ gltf, paint, cabin, onFirstFrame }) {
+export function CarModel({ gltf, stateRef, paint, cabin, onFirstFrame }) {
   const gl = useThree((s) => s.gl);
   const camera = useThree((s) => s.camera);
   const scene = useThree((s) => s.scene);
   const reported = useRef(false);
   const paintMaterial = useRef(null);
+
+  const windowMesh = gltf.scene.getObjectByName('RearDoorGlass__Glass_0');
+  const glassRef = useRef(null);
+  useEffect(() => {
+    if (!windowMesh?.material || Array.isArray(windowMesh.material)) return undefined;
+    const original = windowMesh.material;
+    const faded = original.clone();
+    faded.transparent = true;
+    faded.depthWrite = false;
+    glassRef.current = { original, faded };
+    return () => {
+      windowMesh.visible = true;
+      windowMesh.material = original;
+      faded.dispose();
+      glassRef.current = null;
+    };
+  }, [windowMesh]);
+
+  useFrame(() => {
+    if (!glassRef.current || !windowMesh) return;
+    const opacity = cabinGlassOpacity(stateRef.current.smooth);
+    const { original, faded } = glassRef.current;
+    windowMesh.visible = opacity > 0.001;
+    windowMesh.material = opacity >= .999 ? original : faded;
+    faded.opacity = opacity;
+  });
+
+  // The instrument cover shares the dark exterior glass material in the GLB.
+  // Give this one interior surface a clear, thin cover to reveal the gauge texture.
+  useEffect(() => {
+    const cover = gltf.scene.getObjectByName('SpeedoGlass_Glass_0');
+    if (!cover?.material || Array.isArray(cover.material)) return undefined;
+    const original = cover.material;
+    const clear = original.clone();
+    clear.color.set('#c5c9ca');
+    clear.transmission = 0;
+    clear.transparent = true;
+    clear.opacity = .12;
+    clear.depthWrite = false;
+    cover.material = clear;
+    return () => { cover.material = original; clear.dispose(); };
+  }, [gltf]);
 
   const paintTargets = useMemo(() => {
     if (!gltf) return [];
