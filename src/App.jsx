@@ -100,6 +100,13 @@ export default function App() {
       st.smooth = raw;
 
       const detail = detailState(st.smooth);
+      if (raw !== st.lastDetailProgress && visualRef.current) {
+        st.lastDetailProgress = raw;
+        for (const item of DETAILS) {
+          const opacity = item.id === detail.content ? 1 - detail.mix : item.id === detail.next ? detail.mix : 0;
+          visualRef.current.style.setProperty(`--content-${item.id}`, opacity.toFixed(5));
+        }
+      }
       if (detail.factor !== st.detailFactor) {
         st.detailFactor = detail.factor;
         visualRef.current?.style.setProperty('--detail-progress', detail.factor.toFixed(5));
@@ -155,7 +162,6 @@ export default function App() {
   const onOpened = useCallback(() => setOpened(true), []);
 
   const chapter = CHAPTERS.find((c) => c.id === ui.chapterId) || CHAPTERS[0];
-  const detail = DETAILS.find((d) => d.id === ui.detailId) || null;
 
   return (
     <div className="app">
@@ -175,7 +181,7 @@ export default function App() {
         />
         <div className="stage__vignette" />
       </div>
-        <DetailPanel detail={detail} open={Boolean(detail)} cabin={cabin} onCabin={setCabin} />
+        <DetailPanel activeId={ui.detailId} cabin={cabin} onCabin={setCabin} />
       </div>
 
       <div className="scroll-track" ref={trackRef} />

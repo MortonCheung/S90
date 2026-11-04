@@ -1,30 +1,24 @@
-import { useEffect, useRef, useState } from 'react';
+import { useLayoutEffect, useRef } from 'react';
 import { CABIN_THEMES } from '../story/cabin.js';
+import { DETAILS } from '../story/story.js';
 
-export default function DetailPanel({ detail, open, cabin, onCabin }) {
+export default function DetailPanel({ activeId, cabin, onCabin }) {
   const panelRef = useRef(null);
-  const [last, setLast] = useState(null);
 
-  useEffect(() => {
-    if (detail) setLast(detail);
-  }, [detail]);
-
-  // When the panel closes while focus is inside it, hand focus back to the
-  // document so keyboard users are not stranded on a hidden control.
-  useEffect(() => {
-    if (open) return;
-    const panel = panelRef.current;
-    if (panel && panel.contains(document.activeElement)) {
-      document.activeElement.blur();
+  useLayoutEffect(() => {
+    const focused = document.activeElement;
+    if (panelRef.current?.contains(focused) && !focused.closest('[data-active="true"].detail__inner')) {
+      document.querySelector('.site-head .brand')?.focus({ preventScroll: true });
     }
-  }, [open]);
-
-  const data = detail || last;
+  }, [activeId]);
 
   return (
-    <aside className="detail" ref={panelRef} data-open={open} aria-hidden={!open} aria-live="polite">
-      {data ? (
-        <div className="detail__inner" key={data.id}>
+    <aside className="detail" ref={panelRef} data-open={Boolean(activeId)} data-content={activeId} aria-hidden={!activeId} aria-live="polite">
+      <div className="detail__stack">
+      {DETAILS.map((data) => (
+        <article className="detail__inner" key={data.id} data-content-id={data.id}
+          data-active={data.id === activeId} aria-hidden={data.id !== activeId}
+          style={{'--content-opacity': `var(--content-${data.id}, 0)`}}>
           <div className="detail__meta">
             <span>{data.chapter} / 06</span>
             <span className="detail__meta-line" />
@@ -49,7 +43,7 @@ export default function DetailPanel({ detail, open, cabin, onCabin }) {
                     data-active={cabin === theme.id}
                     onClick={() => onCabin(theme.id)}
                     aria-label={`内饰概念配色：${theme.label}`}
-                    tabIndex={open ? 0 : -1}
+                    tabIndex={activeId === data.id ? 0 : -1}
                   >
                     <span className="cabin-option__chip" style={{ background: theme.swatch }} />
                     <span>{theme.label}</span>
@@ -75,8 +69,9 @@ export default function DetailPanel({ detail, open, cabin, onCabin }) {
             <span className="detail__foot-rule" aria-hidden="true" />
             <span>继续滚动 · 画面继续</span>
           </div>
-        </div>
-      ) : null}
+        </article>
+      ))}
+      </div>
     </aside>
   );
 }

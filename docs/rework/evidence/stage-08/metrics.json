@@ -1,0 +1,176 @@
+{
+  "rows": [
+    {
+      "progress": 0.15,
+      "width": 0,
+      "active": null,
+      "opacity": [
+        0,
+        0
+      ]
+    },
+    {
+      "progress": 0.2,
+      "width": 520,
+      "active": "light",
+      "opacity": [
+        1,
+        0
+      ]
+    },
+    {
+      "progress": 0.25,
+      "width": 520,
+      "active": "light",
+      "opacity": [
+        0.99773,
+        0.00227
+      ]
+    },
+    {
+      "progress": 0.259,
+      "width": 520,
+      "active": "light",
+      "opacity": [
+        0.80923,
+        0.19077
+      ]
+    },
+    {
+      "progress": 0.267,
+      "width": 520,
+      "active": "light",
+      "opacity": [
+        0.50171,
+        0.49829
+      ]
+    },
+    {
+      "progress": 0.277,
+      "width": 520,
+      "active": "wheel",
+      "opacity": [
+        0.12486,
+        0.87514
+      ]
+    },
+    {
+      "progress": 0.29,
+      "width": 520,
+      "active": "wheel",
+      "opacity": [
+        0,
+        1
+      ]
+    },
+    {
+      "progress": 0.33,
+      "width": 520,
+      "active": "wheel",
+      "opacity": [
+        0,
+        1
+      ]
+    },
+    {
+      "progress": 0.4,
+      "width": 0,
+      "active": null,
+      "opacity": [
+        0,
+        0
+      ]
+    },
+    {
+      "progress": 0.46,
+      "width": 520,
+      "active": "profile",
+      "opacity": [
+        0,
+        0
+      ]
+    },
+    {
+      "progress": 0.4,
+      "width": 0,
+      "active": null,
+      "opacity": [
+        0,
+        0
+      ]
+    },
+    {
+      "progress": 0.33,
+      "width": 520,
+      "active": "wheel",
+      "opacity": [
+        0,
+        1
+      ]
+    },
+    {
+      "progress": 0.29,
+      "width": 520,
+      "active": "wheel",
+      "opacity": [
+        0,
+        1
+      ]
+    },
+    {
+      "progress": 0.277,
+      "width": 520,
+      "active": "wheel",
+      "opacity": [
+        0.12486,
+        0.87514
+      ]
+    },
+    {
+      "progress": 0.267,
+      "width": 520,
+      "active": "light",
+      "opacity": [
+        0.50171,
+        0.49829
+      ]
+    },
+    {
+      "progress": 0.259,
+      "width": 520,
+      "active": "light",
+      "opacity": [
+        0.80923,
+        0.19077
+      ]
+    },
+    {
+      "progress": 0.25,
+      "width": 520,
+      "active": "light",
+      "opacity": [
+        0.99773,
+        0.00227
+      ]
+    },
+    {
+      "progress": 0.2,
+      "width": 520,
+      "active": "light",
+      "opacity": [
+        1,
+        0
+      ]
+    },
+    {
+      "progress": 0.15,
+      "width": 0,
+      "active": null,
+      "opacity": [
+        0,
+        0
+      ]
+    }
+  ],
+  "focusRestored": true
+}

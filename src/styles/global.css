@@ -1492,9 +1492,30 @@ a {
   width:min(520px,38vw); max-width:none; flex-shrink:0;
   padding:76px clamp(24px,3.2vw,52px) 46px; border-left:1px solid var(--line);
   max-height:none; overflow:visible;
+  grid-area:1/1; align-self:center;
+  opacity:var(--content-opacity,0);
+}
+.detail__stack {
+  display:grid; flex-shrink:0;
   opacity:clamp(0,calc(var(--detail-progress,0)*2 - .6),1);
+}
+.detail__inner[data-active='false'] { pointer-events:none; }
+@media(max-width:860px) {
+  .detail__inner { align-self:start; }
 }
 @media(max-width:860px) {
   .visual-layout { grid-template-columns:minmax(0,1fr); grid-template-rows:minmax(0,1fr) calc(min(400px,45dvh) * var(--detail-progress,0)); }
   .visual-layout .detail__inner { width:100vw; padding:20px 22px 26px; border:0; border-top:1px solid var(--line); }
+}
+
+/* Keep outgoing and incoming text apart during the blend. */
+.detail__stack { --content-travel: 480px; }
+.detail__inner[data-content-id='light'] {
+  transform:translateY(calc((var(--content-opacity,0) - 1) * var(--content-travel)));
+}
+.detail__inner[data-content-id='wheel'] {
+  transform:translateY(calc((1 - var(--content-opacity,0)) * var(--content-travel)));
+}
+@media(max-width:860px) {
+  .detail__stack { --content-travel: min(360px,45dvh); }
 }

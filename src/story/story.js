@@ -148,26 +148,33 @@ export const DETAILS = [
   },
 ];
 
-export const DETAIL_BANDS = DETAILS.map((d) => ({
-  id: d.id,
-  from: { light: 0.168, wheel: 0.298, profile: 0.428, cabin: 0.558, rear: 0.68 }[d.id],
-  to: { light: 0.246, wheel: 0.376, profile: 0.506, cabin: 0.636, rear: 0.758 }[d.id],
-}));
+// The front lighting and wheel chapters share one reading space.
+// Exterior profile, cabin and tail each follow a deliberate full-width interval.
+const DETAIL_GROUPS = [
+  { from: 0.168, to: 0.376, content: 'light', next: 'wheel', changeFrom: 0.249, changeTo: 0.285 },
+  { from: 0.428, to: 0.506, content: 'profile' },
+  { from: 0.558, to: 0.636, content: 'cabin' },
+  { from: 0.680, to: 0.758, content: 'rear' },
+];
+const NO_DETAIL = { id: null, factor: 0, content: null, next: null, mix: 0 };
 
 export function detailState(progress) {
   const t = clamp(progress);
-  let best = { id: null, factor: 0, detail: null };
-  for (let i = 0; i < DETAIL_BANDS.length; i += 1) {
-    const band = DETAIL_BANDS[i];
-    const fade = Math.min(
-      smoothstep(band.from, band.from + 0.02, t),
-      1 - smoothstep(band.to - 0.02, band.to, t),
-    );
-    if (fade > best.factor) {
-      best = { id: band.id, factor: fade, detail: DETAILS[i] };
-    }
-  }
-  return best;
+  const group = DETAIL_GROUPS.find(({from, to}) => t > from && t < to);
+  if (!group) return NO_DETAIL;
+
+  const factor = Math.min(
+    smoothstep(group.from, group.from + 0.02, t),
+    1 - smoothstep(group.to - 0.02, group.to, t),
+  );
+  const mix = group.next ? smoothstep(group.changeFrom, group.changeTo, t) : 0;
+  return {
+    id: mix >= 0.5 ? group.next : group.content,
+    factor,
+    content: group.content,
+    next: group.next,
+    mix,
+  };
 }
 
 export function chapterAt(progress) {
