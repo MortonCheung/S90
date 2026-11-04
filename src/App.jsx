@@ -52,7 +52,7 @@ export default function App() {
   const projected = useRef(HOTSPOTS.map(() => ({ x: 0, y: 0, visible: false })));
   const trackRef = useRef(null);
   const visualRef = useRef(null);
-  const barRef = useRef(null);
+  const returningRef = useRef(false);
   const openedRef = useRef(false);
   openedRef.current = opened;
 
@@ -122,9 +122,10 @@ export default function App() {
         setUi((u) => (u.chapterId === chapter.id ? u : { ...u, chapterId: chapter.id }));
       }
 
-      const nextExplore = exploreRef.current
+      if (st.smooth <= EXPLORE_EXIT) returningRef.current = false;
+      const nextExplore = !returningRef.current && (exploreRef.current
         ? st.smooth > EXPLORE_EXIT
-        : st.smooth >= EXPLORE_ENTER;
+        : st.smooth >= EXPLORE_ENTER);
       if (nextExplore !== exploreRef.current) {
         exploreRef.current = nextExplore;
         setUi((u) => ({ ...u, explore: nextExplore }));
@@ -133,10 +134,6 @@ export default function App() {
       if (!st.scrolled && raw > 0.012) {
         st.scrolled = true;
         setUi((u) => ({ ...u, scrolled: true }));
-      }
-
-      if (barRef.current) {
-        barRef.current.style.transform = `scaleX(${st.smooth.toFixed(4)})`;
       }
 
       raf = requestAnimationFrame(tick);
@@ -148,15 +145,14 @@ export default function App() {
 
   const goChapter = useCallback((at) => {
     const max = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
-    window.scrollTo({ top: max * at, behavior: 'smooth' });
+    const behavior = matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth';
+    window.scrollTo({ top: max * at, behavior });
   }, []);
 
   const backToStory = useCallback(() => {
-    exploreRef.current = false;
-    setUi((u) => ({ ...u, explore: false }));
-    const max = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
-    window.scrollTo({ top: max * 0.86, behavior: 'smooth' });
-  }, []);
+    returningRef.current = true;
+    goChapter(0.86);
+  }, [goChapter]);
 
   const onDrawn = useCallback(() => setDrawn(true), []);
   const onOpened = useCallback(() => setOpened(true), []);
@@ -197,7 +193,6 @@ export default function App() {
         explore={ui.explore}
         scrolled={ui.scrolled}
         onChapter={goChapter}
-        barRef={barRef}
       />
 
       {contextLost ? (
@@ -225,7 +220,6 @@ export default function App() {
       {!opened ? (
         <Opening
           ready={asset.status === 'ready' && firstFrameReady}
-          loading={asset.status === 'loading'}
           progress={asset.progress}
           firstFrameReady={firstFrameReady}
           total={asset.total}

@@ -14,7 +14,6 @@ const ART_ASPECT = 2400 / 1350;
 
 export default function Opening({
   ready,
-  loading,
   progress,
   total,
   assetStatus,
@@ -30,7 +29,6 @@ export default function Opening({
   const topRef = useRef(null);
   const bottomRef = useRef(null);
   const lineRef = useRef(null);
-  const frameRef = useRef(null);
   const drawnRef = useRef(false);
   const revealed = useRef(false);
 
@@ -122,8 +120,7 @@ export default function Opening({
     timeline
       .to(topRef.current, { yPercent: -50, duration: 1.55 }, 0.08)
       .to(bottomRef.current, { yPercent: 50, duration: 1.55 }, 0.08)
-      .to(lineRef.current, { opacity: 0, duration: 0.5 }, 0.08)
-      .to(frameRef.current, { opacity: 0, duration: 0.55 }, 0.55);
+      .to(lineRef.current, { opacity: 0, duration: 0.5 }, 0.08);
     return () => timeline.kill();
   }, [ready, drawn, markup, artError, onOpened]);
 
@@ -153,27 +150,13 @@ export default function Opening({
         aria-valuenow={visual.fraction === null ? undefined : Math.round(visual.fraction * 100)}>
         <div className="opening__line-track" />
         <div className="opening__line-fill" style={{ transform: `scaleX(${visual.fraction ?? 0})` }} />
-        <span className="opening__line-label">{visual.label}</span>
-      </div>
-
-      <div className="opening__frame" ref={frameRef} aria-hidden="true">
-        <span className="opening__frame-corner opening__frame-corner--tl" />
-        <span className="opening__frame-corner opening__frame-corner--tr" />
-        <span className="opening__frame-corner opening__frame-corner--bl" />
-        <span className="opening__frame-corner opening__frame-corner--br" />
-        <span className="opening__frame-label opening__frame-label--tl">S90 / SIDE ELEVATION</span>
-        <span className="opening__frame-label opening__frame-label--tr">SCALE 1:1</span>
-        <span className="opening__frame-label opening__frame-label--bl">DIGITAL ATELIER · 2026</span>
       </div>
 
       {error ? (
         <div className="opening__error" role="alert">
           <span className="opening__error-mark">!</span>
           <h2>三维车模未能载入</h2>
-          <p>{String(error)}</p>
-          <p className="opening__error-note">
-            请确认 <code>public/assets/model/s90-opt.glb</code> 存在，或点击重试。
-          </p>
+          <p>请检查网络连接后重试。</p>
           <button type="button" className="btn btn--dark" onClick={onRetry}>
             重新载入
           </button>

@@ -1,0 +1,62 @@
+[
+  {
+    "viewport": {
+      "width": 1600,
+      "height": 900
+    },
+    "touch": false,
+    "overflow": 0,
+    "about": true,
+    "navigation": true,
+    "cabinPaint": true,
+    "paint": true,
+    "reset": true,
+    "back": true,
+    "errors": []
+  },
+  {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "touch": true,
+    "overflow": 0,
+    "about": true,
+    "navigation": true,
+    "cabinPaint": true,
+    "paint": true,
+    "reset": true,
+    "back": true,
+    "errors": []
+  },
+  {
+    "viewport": {
+      "width": 320,
+      "height": 680
+    },
+    "touch": true,
+    "overflow": 0,
+    "about": true,
+    "navigation": true,
+    "cabinPaint": true,
+    "paint": true,
+    "reset": true,
+    "back": true,
+    "errors": []
+  },
+  {
+    "viewport": {
+      "width": 844,
+      "height": 390
+    },
+    "touch": true,
+    "overflow": 0,
+    "about": true,
+    "navigation": true,
+    "cabinPaint": true,
+    "paint": true,
+    "reset": true,
+    "back": true,
+    "errors": []
+  }
+]

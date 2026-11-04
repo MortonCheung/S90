@@ -22,6 +22,8 @@ export default function ExploreLayer({
         if (!el || !point) continue;
         el.style.transform = `translate3d(${point.x.toFixed(1)}px, ${point.y.toFixed(1)}px, 0)`;
         el.dataset.visible = point.visible ? 'true' : 'false';
+        el.tabIndex = point.visible ? 0 : -1;
+        el.setAttribute('aria-hidden', String(!point.visible));
       }
       raf = requestAnimationFrame(tick);
     };
@@ -32,17 +34,19 @@ export default function ExploreLayer({
   useEffect(() => {
     if (!active) return undefined;
     const onKey = (event) => {
-      if (event.key === 'Escape') onBack();
+      if (event.key === 'Escape' && !event.defaultPrevented) onBack();
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
   }, [active, onBack]);
 
+  if (!active) return null;
+
   return (
     <div className="explore" data-active={active}>
       <div className="explore__title">
-        <span className="explore__title-en">FREE EXPLORE</span>
         <span className="explore__title-zh">自由探索</span>
+        <span className="explore__instruction">拖动旋转</span>
       </div>
 
       <div className="hotspot-layer" aria-hidden={!active}>
@@ -56,7 +60,7 @@ export default function ExploreLayer({
               dots.current[index] = el;
             }}
             onClick={() => api.current?.focus?.(spot.pos)}
-            tabIndex={active ? 0 : -1}
+            tabIndex={-1}
             aria-label={`查看${spot.label}`}
           >
             <span className="hotspot__dot" />
@@ -76,11 +80,11 @@ export default function ExploreLayer({
                 className="paint"
                 data-active={paint.toLowerCase() === item.hex.toLowerCase()}
                 onClick={() => onPaint(item.hex)}
+                aria-pressed={paint.toLowerCase() === item.hex.toLowerCase()}
                 aria-label={item.name}
                 title={`${item.name} · ${item.en}`}
               >
                 <span className="paint__chip" style={{ background: item.hex }} />
-                <span className="paint__name">{item.name}</span>
               </button>
             ))}
           </div>
@@ -95,7 +99,7 @@ export default function ExploreLayer({
               +
             </button>
             <button type="button" className="zoom__reset" onClick={() => api.current?.reset?.()}>
-              复位
+              重置视角
             </button>
           </div>
           <button type="button" className="btn btn--line" onClick={onBack}>
@@ -104,7 +108,6 @@ export default function ExploreLayer({
         </div>
       </div>
 
-      <div className="explore__hint">拖动旋转 · 滚轮继续页面 · ESC 返回</div>
     </div>
   );
 }

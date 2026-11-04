@@ -1,0 +1,17 @@
+[
+  {
+    "viewport": {
+      "width": 844,
+      "height": 390
+    },
+    "touch": true,
+    "overflow": 0,
+    "about": true,
+    "navigation": true,
+    "cabinPaint": true,
+    "paint": true,
+    "reset": true,
+    "back": true,
+    "errors": []
+  }
+]
