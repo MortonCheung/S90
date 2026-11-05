@@ -48,3 +48,15 @@
   width: 100%;
   height: 100%;
 }
+
+/* All acts live beneath the same transparent car Canvas. */
+.sketch-world,
+.sketch-layer {
+  position:absolute;
+  inset:0;
+  overflow:hidden;
+  pointer-events:none;
+}
+.sketch-world { z-index:-1; visibility:hidden; }
+.sketch-layer > svg { display:block; width:100%; height:100%; }
+.sketch-layer [data-wash='paper'] { display:none; }

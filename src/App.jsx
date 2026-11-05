@@ -18,6 +18,7 @@ import { clamp } from './lib/math.js';
 import { PAINTS } from './story/paints.js';
 import { CABIN_THEMES } from './story/cabin.js';
 import { actAt } from './journey/acts.js';
+import SketchScenes from './sketch/SketchScenes.jsx';
 
 const HOTSPOTS = DETAILS.map((d) => ({
   id: d.id,
@@ -121,6 +122,8 @@ export default function App() {
         setUi((u) => (u.detailId === detail.id ? u : { ...u, detailId: detail.id }));
       }
 
+      st.renderScene?.(raw, openedRef.current);
+
       const chapter = chapterAt(st.smooth);
       if (chapter.id !== st.chapterId) {
         st.chapterId = chapter.id;
@@ -174,6 +177,7 @@ export default function App() {
     <div className="app">
       <div className="visual-layout" ref={visualRef}>
       <div className="stage" aria-hidden="true">
+        <SketchScenes stateRef={stateRef} />
         <Experience
           asset={asset}
           paint={paint}

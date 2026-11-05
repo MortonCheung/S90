@@ -14,20 +14,29 @@
   {
     "id": "R03",
     "requirement": "叙事采用“车主的一天”四幕：清晨出发、白天穿行、午后停驻、黄昏归途。用户更重视视觉最终效果，不热衷大量故事文本。",
-    "status": "PENDING",
-    "evidence": []
+    "status": "PASS",
+    "evidence": [
+      "docs/reports/v4/STAGE-07.md",
+      "docs/reports/v4/STAGE-08.md"
+    ]
   },
   {
     "id": "R04",
     "requirement": "每幕都要可看见线条**从左至右**不断被绘出，进度非线性且连续、单调、顺滑，不可走一段停一段、跳帧、用块状浮现代替画线。",
-    "status": "PENDING",
-    "evidence": []
+    "status": "PASS",
+    "evidence": [
+      "docs/reports/v4/STAGE-07.md",
+      "docs/reports/v4/STAGE-08.md"
+    ]
   },
   {
     "id": "R05",
     "requirement": "真实道路与建筑视频不是刚需，先使用SVG/2.5D极简建筑场景；可选添加原创或授权视频，但必须有静态或线描回退。",
-    "status": "PENDING",
-    "evidence": []
+    "status": "PASS",
+    "evidence": [
+      "docs/reports/v4/STAGE-07.md",
+      "docs/reports/v4/STAGE-08.md"
+    ]
   },
   {
     "id": "R06",

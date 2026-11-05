@@ -1,0 +1,496 @@
+{
+  "samples": [
+    {
+      "act": {
+        "id": "day",
+        "label": "白天 · 穿行",
+        "sceneId": "city",
+        "range": [
+          0.27,
+          0.53
+        ],
+        "lineGrowthRange": [
+          0.27,
+          0.53
+        ],
+        "cameraSequence": [
+          "wheel",
+          "profile"
+        ],
+        "features": [
+          "wheel",
+          "profile"
+        ]
+      },
+      "localProgress": 0.00011246063877645707,
+      "progress": 0.2700292397660819,
+      "viewport": {
+        "width": 1080,
+        "height": 900
+      },
+      "visible": true,
+      "scenes": [
+        {
+          "id": "residence",
+          "actId": "morning",
+          "weight": 0.49912280741752724,
+          "draw": 1,
+          "visibleLength": 8906.172096252441
+        },
+        {
+          "id": "city",
+          "actId": "day",
+          "weight": 0.5008771925824728,
+          "draw": 0.08782189391607674,
+          "visibleLength": 390.0220718001609
+        },
+        {
+          "id": "arrival",
+          "actId": "afternoon",
+          "weight": 0,
+          "draw": 0,
+          "visibleLength": 0
+        },
+        {
+          "id": "road",
+          "actId": "evening",
+          "weight": 0,
+          "draw": 0,
+          "visibleLength": 0
+        }
+      ],
+      "colors": [
+        [
+          "--sketch-paper",
+          "rgb(241 240 235)"
+        ],
+        [
+          "--sketch-surface",
+          "rgb(249 248 243)"
+        ],
+        [
+          "--sketch-ground",
+          "rgb(227 230 224)"
+        ],
+        [
+          "--sketch-shade",
+          "rgb(207 213 206)"
+        ],
+        [
+          "--sketch-accent",
+          "rgb(132 142 128)"
+        ]
+      ]
+    },
+    {
+      "act": {
+        "id": "evening",
+        "label": "黄昏 · 归途",
+        "sceneId": "road",
+        "range": [
+          0.675,
+          1
+        ],
+        "lineGrowthRange": [
+          0.675,
+          1
+        ],
+        "cameraSequence": [
+          "rear",
+          "explore"
+        ],
+        "features": [
+          "rear",
+          "explore"
+        ]
+      },
+      "localProgress": 0.3846153846153847,
+      "progress": 0.8,
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "visible": true,
+      "scenes": [
+        {
+          "id": "residence",
+          "actId": "morning",
+          "weight": 0,
+          "draw": 1,
+          "visibleLength": 8906.172096252441
+        },
+        {
+          "id": "city",
+          "actId": "day",
+          "weight": 0,
+          "draw": 1,
+          "visibleLength": 9927.329345703125
+        },
+        {
+          "id": "arrival",
+          "actId": "afternoon",
+          "weight": 0,
+          "draw": 1,
+          "visibleLength": 10943.705364227295
+        },
+        {
+          "id": "road",
+          "actId": "evening",
+          "weight": 1,
+          "draw": 0.42857142857142866,
+          "visibleLength": 3690.400901734572
+        }
+      ],
+      "colors": [
+        [
+          "--sketch-paper",
+          "rgb(230 222 213)"
+        ],
+        [
+          "--sketch-surface",
+          "rgb(241 234 226)"
+        ],
+        [
+          "--sketch-ground",
+          "rgb(207 199 192)"
+        ],
+        [
+          "--sketch-shade",
+          "rgb(185 172 163)"
+        ],
+        [
+          "--sketch-accent",
+          "rgb(148 121 103)"
+        ]
+      ]
+    },
+    {
+      "act": {
+        "id": "morning",
+        "label": "清晨 · 出发",
+        "sceneId": "residence",
+        "range": [
+          0,
+          0.27
+        ],
+        "lineGrowthRange": [
+          0,
+          0.27
+        ],
+        "cameraSequence": [
+          "form",
+          "light"
+        ],
+        "features": [
+          "form",
+          "light"
+        ]
+      },
+      "localProgress": 0.7407407407407407,
+      "progress": 0.2,
+      "viewport": {
+        "width": 1080,
+        "height": 900
+      },
+      "visible": true,
+      "scenes": [
+        {
+          "id": "residence",
+          "actId": "morning",
+          "weight": 1,
+          "draw": 0.7407407407407407,
+          "visibleLength": 7848.337925772105
+        },
+        {
+          "id": "city",
+          "actId": "day",
+          "weight": 0,
+          "draw": 0,
+          "visibleLength": 0
+        },
+        {
+          "id": "arrival",
+          "actId": "afternoon",
+          "weight": 0,
+          "draw": 0,
+          "visibleLength": 0
+        },
+        {
+          "id": "road",
+          "actId": "evening",
+          "weight": 0,
+          "draw": 0,
+          "visibleLength": 0
+        }
+      ],
+      "colors": [
+        [
+          "--sketch-paper",
+          "rgb(243 242 236)"
+        ],
+        [
+          "--sketch-surface",
+          "rgb(250 249 244)"
+        ],
+        [
+          "--sketch-ground",
+          "rgb(230 233 226)"
+        ],
+        [
+          "--sketch-shade",
+          "rgb(211 217 208)"
+        ],
+        [
+          "--sketch-accent",
+          "rgb(139 146 124)"
+        ]
+      ]
+    },
+    {
+      "act": {
+        "id": "evening",
+        "label": "黄昏 · 归途",
+        "sceneId": "road",
+        "range": [
+          0.675,
+          1
+        ],
+        "lineGrowthRange": [
+          0.675,
+          1
+        ],
+        "cameraSequence": [
+          "rear",
+          "explore"
+        ],
+        "features": [
+          "rear",
+          "explore"
+        ]
+      },
+      "localProgress": 0.3846153846153847,
+      "progress": 0.8,
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "visible": true,
+      "scenes": [
+        {
+          "id": "residence",
+          "actId": "morning",
+          "weight": 0,
+          "draw": 1,
+          "visibleLength": 8906.172096252441
+        },
+        {
+          "id": "city",
+          "actId": "day",
+          "weight": 0,
+          "draw": 1,
+          "visibleLength": 9927.329345703125
+        },
+        {
+          "id": "arrival",
+          "actId": "afternoon",
+          "weight": 0,
+          "draw": 1,
+          "visibleLength": 10943.705364227295
+        },
+        {
+          "id": "road",
+          "actId": "evening",
+          "weight": 1,
+          "draw": 0.42857142857142866,
+          "visibleLength": 3690.400901734572
+        }
+      ],
+      "colors": [
+        [
+          "--sketch-paper",
+          "rgb(230 222 213)"
+        ],
+        [
+          "--sketch-surface",
+          "rgb(241 234 226)"
+        ],
+        [
+          "--sketch-ground",
+          "rgb(207 199 192)"
+        ],
+        [
+          "--sketch-shade",
+          "rgb(185 172 163)"
+        ],
+        [
+          "--sketch-accent",
+          "rgb(148 121 103)"
+        ]
+      ]
+    },
+    {
+      "act": {
+        "id": "day",
+        "label": "白天 · 穿行",
+        "sceneId": "city",
+        "range": [
+          0.27,
+          0.53
+        ],
+        "lineGrowthRange": [
+          0.27,
+          0.53
+        ],
+        "cameraSequence": [
+          "wheel",
+          "profile"
+        ],
+        "features": [
+          "wheel",
+          "profile"
+        ]
+      },
+      "localProgress": 0.00011246063877645707,
+      "progress": 0.2700292397660819,
+      "viewport": {
+        "width": 1080,
+        "height": 900
+      },
+      "visible": true,
+      "scenes": [
+        {
+          "id": "residence",
+          "actId": "morning",
+          "weight": 0.49912280741752724,
+          "draw": 1,
+          "visibleLength": 8906.172096252441
+        },
+        {
+          "id": "city",
+          "actId": "day",
+          "weight": 0.5008771925824728,
+          "draw": 0.08782189391607674,
+          "visibleLength": 390.0220718001609
+        },
+        {
+          "id": "arrival",
+          "actId": "afternoon",
+          "weight": 0,
+          "draw": 0,
+          "visibleLength": 0
+        },
+        {
+          "id": "road",
+          "actId": "evening",
+          "weight": 0,
+          "draw": 0,
+          "visibleLength": 0
+        }
+      ],
+      "colors": [
+        [
+          "--sketch-paper",
+          "rgb(241 240 235)"
+        ],
+        [
+          "--sketch-surface",
+          "rgb(249 248 243)"
+        ],
+        [
+          "--sketch-ground",
+          "rgb(227 230 224)"
+        ],
+        [
+          "--sketch-shade",
+          "rgb(207 213 206)"
+        ],
+        [
+          "--sketch-accent",
+          "rgb(132 142 128)"
+        ]
+      ]
+    }
+  ],
+  "refreshed": {
+    "act": {
+      "id": "evening",
+      "label": "黄昏 · 归途",
+      "sceneId": "road",
+      "range": [
+        0.675,
+        1
+      ],
+      "lineGrowthRange": [
+        0.675,
+        1
+      ],
+      "cameraSequence": [
+        "rear",
+        "explore"
+      ],
+      "features": [
+        "rear",
+        "explore"
+      ]
+    },
+    "localProgress": 0.3846153846153847,
+    "progress": 0.8,
+    "viewport": {
+      "width": 1600,
+      "height": 900
+    },
+    "visible": true,
+    "scenes": [
+      {
+        "id": "residence",
+        "actId": "morning",
+        "weight": 0,
+        "draw": 1,
+        "visibleLength": 8906.172096252441
+      },
+      {
+        "id": "city",
+        "actId": "day",
+        "weight": 0,
+        "draw": 1,
+        "visibleLength": 9927.329345703125
+      },
+      {
+        "id": "arrival",
+        "actId": "afternoon",
+        "weight": 0,
+        "draw": 1,
+        "visibleLength": 10943.705364227295
+      },
+      {
+        "id": "road",
+        "actId": "evening",
+        "weight": 1,
+        "draw": 0.42857142857142866,
+        "visibleLength": 3690.400901734572
+      }
+    ],
+    "colors": [
+      [
+        "--sketch-paper",
+        "rgb(230 222 213)"
+      ],
+      [
+        "--sketch-surface",
+        "rgb(241 234 226)"
+      ],
+      [
+        "--sketch-ground",
+        "rgb(207 199 192)"
+      ],
+      [
+        "--sketch-shade",
+        "rgb(185 172 163)"
+      ],
+      [
+        "--sketch-accent",
+        "rgb(148 121 103)"
+      ]
+    ]
+  }
+}
