@@ -80,6 +80,11 @@ export default function Opening({
     }
 
     const timeline = gsap.timeline({
+      onUpdate: () => {
+        if (import.meta.env.DEV && stageRef.current) {
+          stageRef.current.dataset.drawProgress = timeline.progress().toFixed(3);
+        }
+      },
       onComplete: () => {
         if (drawnRef.current) return;
         drawnRef.current = true;
@@ -112,6 +117,10 @@ export default function Opening({
   useEffect(() => {
     if (!ready || !drawn || (!markup && !artError) || revealed.current) return undefined;
     revealed.current = true;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      onOpened();
+      return undefined;
+    }
     const timeline = gsap.timeline({
       defaults: { ease: 'power4.inOut' },
       onStart: () => { if (stageRef.current) stageRef.current.dataset.revealing = "true"; },

@@ -5,7 +5,7 @@ import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.j
 
 export const MODEL_URL = '/assets/model/candidates/s90-quality-v3.glb';
 
-function tuneMaterial(material) {
+function tuneMaterial(material, surface) {
   if (!material) return;
   const name = material.name || '';
 
@@ -17,7 +17,7 @@ function tuneMaterial(material) {
       material.clearcoatRoughness = 0.10;
     }
     material.envMapIntensity = 1.0;
-  } else if (/^Glass$/i.test(name)) {
+  } else if (surface === 'window') {
     material.transmission = 0.68;
     material.ior = 1.5;
     material.thickness = 0.008;
@@ -28,6 +28,12 @@ function tuneMaterial(material) {
     material.depthWrite = true;
     material.envMapIntensity = 1.0;
     material.needsUpdate = true;
+  } else if (surface === 'rear-lens') {
+    material.color.set('#858589');
+    material.transparent = true;
+    material.opacity = .20;
+    material.depthWrite = false;
+    material.roughness = .08;
   } else if (/chrome/i.test(name)) {
     material.envMapIntensity = 1.0;
     material.roughness = 0.14;
@@ -75,17 +81,27 @@ export function useCarAsset() {
           obj.receiveShadow = false;
           const upgrade = (original) => {
             if (!original) return original;
-            if (replacements.has(original)) return replacements.get(original);
-            let material = original;
-            if (original.name === 'Glass' && !original.isMeshPhysicalMaterial) {
+            let surface = 'base';
+            if (original.name === 'Glass') {
+              if (/taillight/i.test(obj.name)) surface = 'rear-lens';
+              else if (/DoorGlass|SunRoof|Windsheild|QuarterpanelGlass/i.test(obj.name)) surface = 'window';
+            }
+            let materials = replacements.get(original);
+            if (!materials) {
+              materials = new Map();
+              replacements.set(original, materials);
+            }
+            if (materials.has(surface)) return materials.get(surface);
+            let material = surface === 'base' ? original : original.clone();
+            if (surface === 'window' && !original.isMeshPhysicalMaterial) {
               material = new THREE.MeshPhysicalMaterial();
               THREE.MeshStandardMaterial.prototype.copy.call(material, original);
               material.defines = { STANDARD: '', PHYSICAL: '' };
               material.name = original.name;
               material.color.set('#455254');
             }
-            tuneMaterial(material);
-            replacements.set(original, material);
+            tuneMaterial(material, surface);
+            materials.set(surface, material);
             return material;
           };
           obj.material = Array.isArray(obj.material) ? obj.material.map(upgrade) : upgrade(obj.material);

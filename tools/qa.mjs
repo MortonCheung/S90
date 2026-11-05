@@ -1,7 +1,5 @@
 import fs from 'node:fs';
-import { createRequire } from 'node:module';
-const require = createRequire(import.meta.url);
-const { chromium } = require('/Users/morton_cheung/Desktop/比赛/iTeach/node_modules/playwright');
+import { chromium } from 'playwright';
 
 const URL = process.argv[2] || 'http://127.0.0.1:5177/';
 const browser = await chromium.launch({ headless: true, args: ['--use-angle=metal','--ignore-gpu-blocklist','--enable-gpu'] });

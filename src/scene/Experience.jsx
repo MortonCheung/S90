@@ -71,7 +71,7 @@ export default function Experience({
     >
       <Studio ready={asset.status === 'ready'} />
       {asset.gltf ? (
-        <CarModel gltf={asset.gltf} stateRef={stateRef} paint={paint} cabin={cabin} onFirstFrame={onFirstFrame} />
+        <CarModel gltf={asset.gltf} stateRef={stateRef} paint={paint} cabin={cabin} onFirstFrame={onFirstFrame} onFrameError={onContextLost} />
       ) : null}
       <CameraSystem stateRef={stateRef} explore={explore} api={api} />
       <HotspotProjector items={hotspots} outRef={projected} />

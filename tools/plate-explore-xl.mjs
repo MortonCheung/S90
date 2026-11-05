@@ -1,6 +1,4 @@
-import { createRequire } from 'node:module';
-const require = createRequire(import.meta.url);
-const { chromium } = require('/Users/morton_cheung/Desktop/比赛/iTeach/node_modules/playwright');
+import { chromium } from 'playwright';
 const browser = await chromium.launch({ headless: true, args: ['--use-angle=metal','--ignore-gpu-blocklist','--enable-gpu'] });
 const page = await browser.newPage({ viewport: { width: 3900, height: 2194 }, deviceScaleFactor: 1 });
 await page.goto('http://127.0.0.1:5177/', { waitUntil: 'networkidle' });

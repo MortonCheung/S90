@@ -1,8 +1,6 @@
 import path from 'node:path';
-import { createRequire } from 'node:module';
 
-const require = createRequire(import.meta.url);
-const { chromium } = require('/Users/morton_cheung/Desktop/比赛/iTeach/node_modules/playwright');
+import { chromium } from 'playwright';
 
 const url = process.argv[2] || 'http://127.0.0.1:5177/';
 const out = process.argv[3] || 'docs/reports/shot.png';

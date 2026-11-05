@@ -1,9 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { createRequire } from 'node:module';
 
-const require = createRequire(import.meta.url);
-const { chromium } = require('/Users/morton_cheung/Desktop/比赛/iTeach/node_modules/playwright');
+import { chromium } from 'playwright';
 
 const SITES = [
   { id: 'heron', url: 'https://heronaiapp.com', shots: [1200, 3200, 7000] },

@@ -1,7 +1,5 @@
 import fs from 'node:fs';
-import { createRequire } from 'node:module';
-const require = createRequire(import.meta.url);
-const { chromium } = require('/Users/morton_cheung/Desktop/比赛/iTeach/node_modules/playwright');
+import { chromium } from 'playwright';
 
 const base = `
   @page { size: A4; margin: 0; }

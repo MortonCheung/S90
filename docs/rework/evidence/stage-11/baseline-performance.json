@@ -1,0 +1,18 @@
+[
+  {
+    "build": "baseline",
+    "visibleMs": 4102,
+    "fps": 60.3132289236322,
+    "modelBytes": 14539596,
+    "transferSize": 14539896,
+    "downloadMs": 68.70000000298023
+  },
+  {
+    "build": "v3",
+    "visibleMs": 2378,
+    "fps": 60.26102010920228,
+    "modelBytes": 73364248,
+    "transferSize": 73364548,
+    "downloadMs": 176.3999999910593
+  }
+]

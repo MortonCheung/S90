@@ -152,8 +152,11 @@ export function CameraSystem({ stateRef, explore, api }) {
     }
 
     const { width, height } = sizeRef.current;
-    const aspect = width / Math.max(1, height);
-    const pose = sampleCamera(stateRef.current.smooth, aspect);
+    const progress = stateRef.current.smooth;
+    // The terminal shot always uses the full stage. On a fast jump from a
+    // detail, ResizeObserver may still be delivering the preceding split size.
+    const aspect = progress >= .91 ? window.innerWidth / window.innerHeight : width / Math.max(1, height);
+    const pose = sampleCamera(progress, aspect);
 
     _pos.fromArray(pose.pos);
     _tgt.fromArray(pose.target);

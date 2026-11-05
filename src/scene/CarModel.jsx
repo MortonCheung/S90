@@ -9,7 +9,7 @@ import { useThree, useFrame, addAfterEffect } from '@react-three/fiber';
  * Mounts the single car instance.  The same object graph is reused for the
  * opening reveal, the story and free exploration — never re-loaded, never cloned.
  */
-export function CarModel({ gltf, stateRef, paint, cabin, onFirstFrame }) {
+export function CarModel({ gltf, stateRef, paint, cabin, onFirstFrame, onFrameError }) {
   const gl = useThree((s) => s.gl);
   const camera = useThree((s) => s.camera);
   const scene = useThree((s) => s.scene);
@@ -130,7 +130,9 @@ export function CarModel({ gltf, stateRef, paint, cabin, onFirstFrame }) {
     const first = gl.info.render.frame;
     // Compile the complete scene with its studio environment while masked.
     Promise.resolve(gl.compileAsync(scene, camera)).then(() => { compiled = true; }).catch((e) => {
+      if (!alive) return;
       console.error('Unable to prepare car shaders', e);
+      onFrameError?.();
     });
     const remove = addAfterEffect(() => {
       if (!alive || !compiled || reported.current || gl.info.render.frame <= first + 1 || gl.info.render.calls === 0) return;
@@ -141,7 +143,7 @@ export function CarModel({ gltf, stateRef, paint, cabin, onFirstFrame }) {
       if (import.meta.env.DEV) window.__S90Ready = { modelId: gltf.scene.uuid, frame: gl.info.render.frame, shaderPrepared: true, firstFrameReady: true };
     });
     return () => { alive = false; remove(); };
-  }, [gltf, gl, scene, camera, onFirstFrame]);
+  }, [gltf, gl, scene, camera, onFirstFrame, onFrameError]);
 
   useEffect(() => {
     const mat = paintMaterial.current;

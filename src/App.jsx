@@ -56,6 +56,7 @@ export default function App() {
   const openedRef = useRef(false);
   openedRef.current = opened;
 
+  const onContextLost = useCallback(() => setContextLost(true), []);
   const onFirstFrame = useCallback((id) => setFirstFrameId(id), []);
   const firstFrameReady = Boolean(asset.gltf && firstFrameId === asset.gltf.scene.uuid);
 
@@ -173,7 +174,7 @@ export default function App() {
           hotspots={HOTSPOTS}
           projected={projected}
           onFirstFrame={onFirstFrame}
-          onContextLost={() => setContextLost(true)}
+          onContextLost={onContextLost}
         />
         <div className="stage__vignette" />
       </div>

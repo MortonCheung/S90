@@ -1,7 +1,5 @@
 import path from 'node:path';
-import { createRequire } from 'node:module';
-const require = createRequire(import.meta.url);
-const { chromium } = require('/Users/morton_cheung/Desktop/比赛/iTeach/node_modules/playwright');
+import { chromium } from 'playwright';
 const browser = await chromium.launch({ headless: true, args: ['--use-angle=metal','--ignore-gpu-blocklist','--enable-gpu'] });
 const page = await browser.newPage({ viewport: { width: 4961, height: 3508 }, deviceScaleFactor: 1 });
 for (const n of ['01','02','03']) {
