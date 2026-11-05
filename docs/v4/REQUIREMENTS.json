@@ -1,0 +1,140 @@
+[
+  {
+    "id": "R01",
+    "requirement": "真正的视觉主角是手绘场景中的**真实三维S90**，不把车模卡通化。",
+    "status": "PENDING",
+    "evidence": []
+  },
+  {
+    "id": "R02",
+    "requirement": "场景参考illoca的建筑线描、纯色几何与空间组织；品牌表达仍要高级、豪华、克制。",
+    "status": "PENDING",
+    "evidence": []
+  },
+  {
+    "id": "R03",
+    "requirement": "叙事采用“车主的一天”四幕：清晨出发、白天穿行、午后停驻、黄昏归途。用户更重视视觉最终效果，不热衷大量故事文本。",
+    "status": "PENDING",
+    "evidence": []
+  },
+  {
+    "id": "R04",
+    "requirement": "每幕都要可看见线条**从左至右**不断被绘出，进度非线性且连续、单调、顺滑，不可走一段停一段、跳帧、用块状浮现代替画线。",
+    "status": "PENDING",
+    "evidence": []
+  },
+  {
+    "id": "R05",
+    "requirement": "真实道路与建筑视频不是刚需，先使用SVG/2.5D极简建筑场景；可选添加原创或授权视频，但必须有静态或线描回退。",
+    "status": "PENDING",
+    "evidence": []
+  },
+  {
+    "id": "R06",
+    "requirement": "先完成所有场景的基础结构与功能闭环，再处理质感和精修。",
+    "status": "PENDING",
+    "evidence": []
+  },
+  {
+    "id": "R07",
+    "requirement": "用户未来可能提供关键镜头截图，Agent要能据图微调位置/注视目标/FOV并渲染迭代。",
+    "status": "PENDING",
+    "evidence": []
+  },
+  {
+    "id": "R08",
+    "requirement": "模型仍有塑料玩具感，需真实对比几何、法线、PBR、环境反射与接触阴影后再优化。",
+    "status": "PENDING",
+    "evidence": []
+  },
+  {
+    "id": "R09",
+    "requirement": "用户已确认座舱现已能进入内部；不可以把旧版“未进入车内”误判当成当前事实。",
+    "status": "PENDING",
+    "evidence": []
+  },
+  {
+    "id": "R10",
+    "requirement": "产品部门给Leader明确施工单，每功能单独文档，Leader自动分阶段推进，无需用户逐阶段确认。",
+    "status": "PENDING",
+    "evidence": []
+  },
+  {
+    "id": "R11",
+    "requirement": "开场S90正侧视，线稿从左向右以2—3组主笔触生长，外轮廓不能过早完整出现。",
+    "status": "PENDING",
+    "evidence": []
+  },
+  {
+    "id": "R12",
+    "requirement": "中央横线是真实进度条，不是摆设；删除左下角重复加载条。真实资源未就绪不假装完成，完成后沿中线上下裂幕，背后真实3D车同位显现。",
+    "status": "PENDING",
+    "evidence": []
+  },
+  {
+    "id": "R13",
+    "requirement": "开场要有清晰绘制过程，不能把黑块逐渐填充当绘制。",
+    "status": "PENDING",
+    "evidence": []
+  },
+  {
+    "id": "R14",
+    "requirement": "主线细节包括整车、灯组、轮毂、侧面、座舱、车尾，不能因四幕新结构删掉旧章节。",
+    "status": "PENDING",
+    "evidence": []
+  },
+  {
+    "id": "R15",
+    "requirement": "镜头稳、有展示目的、距离与构图合理；具有进入、停留、退出阶段，避免随机晃动、硬切和穿模。",
+    "status": "PENDING",
+    "evidence": []
+  },
+  {
+    "id": "R16",
+    "requirement": "详情是左侧展示区域真实缩小、右侧内容真实展开；不可用覆盖式浮层冒充。内容切换不断片，反向可逆。",
+    "status": "PENDING",
+    "evidence": []
+  },
+  {
+    "id": "R17",
+    "requirement": "保留换漆、热点、拖动旋转、缩放、复位及返回主线；门体不支持独立开合则不提供伪操作。",
+    "status": "PENDING",
+    "evidence": []
+  },
+  {
+    "id": "R18",
+    "requirement": "禁止无意义小字、花哨文字、不合逻辑按钮、荧光线条、模板音效、大量卡片；偏好直角、纯色、低噪声的高端商业网站。",
+    "status": "PENDING",
+    "evidence": []
+  },
+  {
+    "id": "R19",
+    "requirement": "单Canvas、一个主汽车模型，重视内存释放、兼容Safari和资源失败回退。",
+    "status": "PENDING",
+    "evidence": []
+  },
+  {
+    "id": "R20",
+    "requirement": "正式远端 https://github.com/MortonCheung/S90.git；旧m4仅作参考，保护历史。",
+    "status": "PENDING",
+    "evidence": []
+  },
+  {
+    "id": "R21",
+    "requirement": "华灿奖交付包含至多三张A3 RGB 300dpi JPG及作品源码、设计说明、流程图等；文件大小与匿名要求在正式导出前再次核对主办方最新标准。",
+    "status": "PENDING",
+    "evidence": []
+  },
+  {
+    "id": "R22",
+    "requirement": "参考 Spyker、Heron、illoca、Anime.js 的视觉机制和结构，不照搬原站素材与代码。",
+    "status": "PENDING",
+    "evidence": []
+  },
+  {
+    "id": "R23",
+    "requirement": "REA调研由Agent执行，本包只是给出调研任务，不得假装作者已经运行REA。",
+    "status": "PENDING",
+    "evidence": []
+  }
+]
