@@ -197,6 +197,7 @@ export function CameraSystem({ stateRef, explore, api }) {
     camera.lookAt(_tgt);
 
     if (camera.isPerspectiveCamera) {
+      camera.aspect = aspect;
       camera.near = pose.near ?? .05;
       if (Math.abs(camera.fov - pose.fov) > 0.002) camera.fov = pose.fov;
       camera.updateProjectionMatrix();

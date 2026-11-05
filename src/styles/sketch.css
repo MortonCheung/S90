@@ -60,3 +60,18 @@
 .sketch-world { z-index:-1; visibility:hidden; }
 .sketch-layer > svg { display:block; width:100%; height:100%; }
 .sketch-layer [data-wash='paper'] { display:none; }
+
+/* One track definition keeps the Canvas, artwork and reader on the same grid. */
+.visual-layout {
+  --reader-width:min(520px,38vw);
+  --reader-height:min(400px,45dvh);
+  grid-template-columns:minmax(0,1fr) calc(var(--reader-width) * var(--detail-progress,0));
+}
+.visual-layout .detail__inner { width:var(--reader-width); }
+@media(max-width:860px) {
+  .visual-layout {
+    --reader-width:100vw;
+    grid-template-columns:minmax(0,1fr);
+    grid-template-rows:minmax(0,1fr) calc(var(--reader-height) * var(--detail-progress,0));
+  }
+}
