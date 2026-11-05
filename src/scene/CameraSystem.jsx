@@ -21,7 +21,8 @@ const easeInOutCubic = (t) =>
  * a short blend so neither transition is a cut.
  */
 export function CameraSystem({ stateRef, explore, api }) {
-  const { camera, size } = useThree();
+  const { camera, size, scene, gl } = useThree();
+  const previewRef = useRef(null);
   const controlsRef = useRef(null);
   const sizeRef = useRef(size);
   sizeRef.current = size;
@@ -140,9 +141,32 @@ export function CameraSystem({ stateRef, explore, api }) {
 
   useEffect(() => {
     if (!import.meta.env.DEV) return undefined;
-    window.__S90Shot = () => ({ progress:stateRef.current.smooth, position:camera.position.toArray(), quaternion:camera.quaternion.toArray(), target:_tgt.toArray(), fov:camera.fov, near:camera.near, aspect:camera.aspect, owner:explore?'orbit':blend.current.active?'blend':'story', targetNdc:_tgt.clone().project(camera).toArray() });
-    return () => { delete window.__S90Shot; };
-  }, [camera, explore, stateRef]);
+    window.__S90Shot = () => ({ progress:stateRef.current.smooth, position:camera.position.toArray(), quaternion:camera.quaternion.toArray(), target:_tgt.toArray(), fov:camera.fov, near:camera.near, aspect:camera.aspect, owner:previewRef.current?'calibration':explore?'orbit':blend.current.active?'blend':'story', targetNdc:_tgt.clone().project(camera).toArray() });
+    window.__S90Calibration = {
+      set(pose) { previewRef.current = pose; },
+      clear() { previewRef.current = null; },
+      measure(meshName) {
+        const model = scene.getObjectByProperty('uuid', window.__S90Ready?.modelId);
+        const object = meshName ? model?.getObjectByName(meshName) : model;
+        if (!object) throw new Error('Calibration subject is unavailable');
+        const box = new THREE.Box3().setFromObject(object);
+        const points = [];
+        for (const x of [box.min.x,box.max.x])
+          for (const y of [box.min.y,box.max.y])
+            for (const z of [box.min.z,box.max.z]) points.push(new THREE.Vector3(x,y,z).project(camera));
+        const rect = gl.domElement.getBoundingClientRect();
+        return [
+          Math.min(...points.map(p=>(p.x+1)/2)),
+          Math.min(...points.map(p=>(1-p.y)/2)),
+          Math.max(...points.map(p=>(p.x+1)/2)),
+          Math.max(...points.map(p=>(1-p.y)/2)),
+        ].map((value,index) => index % 2 === 0
+          ? (rect.left+value*rect.width)/innerWidth
+          : (rect.top+value*rect.height)/innerHeight);
+      },
+    };
+    return () => { delete window.__S90Shot; delete window.__S90Calibration; };
+  }, [camera, explore, stateRef, scene, gl]);
 
   useFrame((_, delta) => {
     const controls = controlsRef.current;
@@ -156,7 +180,7 @@ export function CameraSystem({ stateRef, explore, api }) {
     // The terminal shot always uses the full stage. On a fast jump from a
     // detail, ResizeObserver may still be delivering the preceding split size.
     const aspect = progress >= .91 ? window.innerWidth / window.innerHeight : width / Math.max(1, height);
-    const pose = sampleCamera(progress, aspect);
+    const pose = (import.meta.env.DEV && previewRef.current) || sampleCamera(progress, aspect);
 
     _pos.fromArray(pose.pos);
     _tgt.fromArray(pose.target);
