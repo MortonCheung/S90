@@ -1,0 +1,50 @@
+[
+  {
+    "name": "s90_board_01.jpg",
+    "pixels": [
+      4961,
+      3508
+    ],
+    "color": "RGB",
+    "profile": "sRGB",
+    "dpi": [
+      300,
+      300
+    ],
+    "bytes": 5793228,
+    "jpeg_quality": 97,
+    "grain_strength": 2.5
+  },
+  {
+    "name": "s90_board_02.jpg",
+    "pixels": [
+      4961,
+      3508
+    ],
+    "color": "RGB",
+    "profile": "sRGB",
+    "dpi": [
+      300,
+      300
+    ],
+    "bytes": 5325322,
+    "jpeg_quality": 97,
+    "grain_strength": 1.875
+  },
+  {
+    "name": "s90_board_03.jpg",
+    "pixels": [
+      4961,
+      3508
+    ],
+    "color": "RGB",
+    "profile": "sRGB",
+    "dpi": [
+      300,
+      300
+    ],
+    "bytes": 5856088,
+    "jpeg_quality": 97,
+    "grain_strength": 2.5
+  }
+]

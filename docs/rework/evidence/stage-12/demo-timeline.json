@@ -1,0 +1,61 @@
+{
+  "viewport": {
+    "width": 1600,
+    "height": 900
+  },
+  "chapters": [
+    {
+      "progress": 0.075,
+      "seconds": 11.094
+    },
+    {
+      "progress": 0.2,
+      "seconds": 13.253
+    },
+    {
+      "progress": 0.33,
+      "seconds": 15.506
+    },
+    {
+      "progress": 0.46,
+      "seconds": 17.755
+    },
+    {
+      "progress": 0.59,
+      "seconds": 19.902
+    },
+    {
+      "progress": 0.615,
+      "seconds": 22.587
+    },
+    {
+      "progress": 0.715,
+      "seconds": 25.084
+    },
+    {
+      "progress": 0.83,
+      "seconds": 27.219
+    },
+    {
+      "progress": 0.97,
+      "seconds": 28.884
+    },
+    {
+      "progress": 0.715,
+      "seconds": 37.485
+    },
+    {
+      "progress": 0.615,
+      "seconds": 38.932
+    },
+    {
+      "progress": 0.59,
+      "seconds": 40.166
+    },
+    {
+      "progress": 0.46,
+      "seconds": 41.667
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,31 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><title>静谧的秩序 · 数字媒体设计说明</title><link rel="stylesheet" href="documents.css"></head><body>
+<article class="page">
+<header><span>2026 华灿奖　/　数字媒体设计说明</span><span>VOLVO S90</span></header>
+<h1>静谧的秩序</h1>
+<p class="lead">Volvo S90 豪华商务轿车数字交互展厅。用一张正侧视线稿交代比例，再让车身、材质和座舱随着观看顺序展开。</p>
+<figure><img src="../../../docs/rework/evidence/stage-11/reveal-1.png" alt="线稿开缝中出现同位置的三维车辆"><figcaption>项目实拍 · 裂幕时的正侧视线稿与三维车身</figcaption></figure>
+<h2>01　从纸面进入展厅</h2>
+<p>纸色、墨线与有限的铜色索引延续制图纸的秩序。26 组主要笔触按水平位置推进，依次勾出车身、车窗及细节。中央横线跟随真实资源下载。画完线稿并完成车模的首帧渲染后，幕布上下分开，露出同机位的 S90。</p>
+<h2>02　以镜头组织阅读</h2>
+<p>普通滚动依次经过整车、灯组、轮毂、侧面、座舱与车尾。每个主题包含镜头移动和构图驻留。到达详情段时，阅读区获得独立空间，车身画布按可用尺寸重构取景。灯组切换至轮毂时延续同一阅读区，标题与正文连续过渡。</p>
+<footer><span>非官方概念设计</span><span>01 / 02</span></footer>
+</article>
+<article class="page">
+<header><span>2026 华灿奖　/　数字媒体设计说明</span><span>VOLVO S90</span></header>
+<h1>从座舱到探索</h1>
+<p class="lead">相机经过后侧窗进入车内，两个取景分别展示方向盘、仪表台、中央区域与前排座椅。叙事结束后，原相机连续交接给自由探索。</p>
+<div class="columns">
+<figure><img src="../../../docs/rework/evidence/stage-11/1600-0.615.png" alt="座舱详情实拍"><figcaption>车内第二机位</figcaption></figure>
+<figure><img src="../../../docs/rework/evidence/stage-11/1600-0.97.png" alt="自由探索实拍"><figcaption>全幅探索与返回入口</figcaption></figure>
+</div>
+<h2>03　设备与交互</h2>
+<p>桌面右侧分栏，窄屏将详情移至画布下方。滚动、章节入口和返回主线共用时间轴。探索支持拖拽旋转、四种车漆、部位热点。反向滚动可收合详情，并恢复沿途镜头。</p>
+<h2>04　实现与验证</h2>
+<p>React、Vite、React Three Fiber、Three.js 与 GSAP ScrollTrigger 共用一个 Canvas、一个 GLB 实例和一台主相机。模型由原始约 386.35 MB 优化至 73.36 MB，保留完整三角拓扑及原始法线与切线精度。使用环境反射、漆面清漆与独立玻璃材质重建光泽层次。</p>
+<p>桌面 Chrome 1600×900、1440×900 和移动模拟 390×844 已完成回归。Apple M3 上灯组静止驻留采样约 60 fps。404 重试、WebGL 上下文丢失与 WebGL 2 不可用回退均有实测。</p>
+<p class="limits">73.36 MB 模型增加首次网络传输量。公网弱网耗时、Safari、iOS 与 Android 真机表现仍待实测。</p>
+<h2>05　来源与署名</h2>
+<p>车模由 lazercar 发布，遵循 <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>。<a href="https://sketchfab.com/3d-models/volvo-s90-recharge-free-9462b07c10244fd4a28d86846dc9e3a9">原始模型页面</a>。项目调整了模型压缩、材质与灯光。展板和演示均来自本项目运行画面。</p>
+<footer><span>非官方概念设计</span><span>02 / 02</span></footer>
+</article>
+</body></html>

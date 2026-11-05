@@ -1,0 +1,19 @@
+@page{size:A4;margin:0}
+*{box-sizing:border-box;margin:0}
+body{background:#f0ece3;color:#1a1b1b;font:10pt/1.65 "Helvetica Neue","PingFang SC",sans-serif;-webkit-print-color-adjust:exact}
+.page{width:210mm;height:297mm;padding:17mm 20mm;position:relative;break-after:page}
+.page:last-child{break-after:auto}
+header,footer{display:flex;justify-content:space-between;gap:5mm;color:#5a4e42;font-size:8pt;letter-spacing:.055em}
+header{border-bottom:1px solid #b6a896;padding-bottom:3mm}
+footer{position:absolute;left:20mm;right:20mm;bottom:12mm;border-top:1px solid #b6a896;padding-top:3mm}
+h1,h2{font-family:"Songti SC",serif;font-weight:600;line-height:1.24}
+h1{font-size:37pt;margin-top:8mm}
+h2{font-size:17pt;margin:5.5mm 0 1.5mm}
+.lead{font-size:11pt;margin:3mm 0 4mm;color:#51483d}
+figure{margin:3.5mm 0}
+img{display:block;width:100%}
+figcaption{font-size:8pt;margin-top:1.2mm;color:#5a4e42}
+p+p{margin-top:2mm}
+.columns{display:grid;grid-template-columns:1fr 1fr;gap:6mm}
+a{color:#624936;text-underline-offset:2px}
+.limits{border-top:1px solid #b6a896;margin-top:5mm;padding-top:3mm}
