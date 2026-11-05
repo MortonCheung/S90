@@ -1,0 +1,65 @@
+{
+  "date": "2026-11-05T07:32:00.061Z",
+  "browser": "155.0.8059.85",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "variants": [
+    {
+      "mode": "svg",
+      "fps": 21.018593370923977,
+      "p95Ms": 116.59999999999991,
+      "heap": 10000000,
+      "paths": 80
+    },
+    {
+      "mode": "canvas",
+      "fps": 16.648764768958934,
+      "p95Ms": 116.79999999999973,
+      "heap": 10000000,
+      "paths": 80
+    }
+  ],
+  "packages": [
+    {
+      "name": "react",
+      "version": "18.3.1",
+      "license": "MIT"
+    },
+    {
+      "name": "three",
+      "version": "0.170.0",
+      "license": "MIT"
+    },
+    {
+      "name": "@react-three/fiber",
+      "version": "8.17.10",
+      "license": "MIT"
+    },
+    {
+      "name": "@react-three/drei",
+      "version": "9.117.3",
+      "license": "MIT"
+    },
+    {
+      "name": "gsap",
+      "version": "3.12.6",
+      "license": "Standard 'no charge' license: https://gsap.com/standard-license. Club GSAP members get more: https://gsap.com/licensing/. Why GreenSock doesn't employ an MIT license: https://gsap.com/why-license/"
+    },
+    {
+      "name": "vite",
+      "version": "6.0.7",
+      "license": "MIT"
+    },
+    {
+      "name": "playwright",
+      "version": "1.64.1",
+      "license": "Apache-2.0"
+    }
+  ],
+  "gsap": {
+    "minifiedBytes": 72304,
+    "gzipBytes": 28252
+  }
+}
