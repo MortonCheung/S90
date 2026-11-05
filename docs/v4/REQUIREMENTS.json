@@ -51,7 +51,8 @@
     "id": "R09",
     "requirement": "用户已确认座舱现已能进入内部；不可以把旧版“未进入车内”误判当成当前事实。",
     "status": "PENDING",
-    "evidence": []
+    "evidence": [],
+    "baseline": "EXISTING_WITH_REGRESSION_REQUIRED"
   },
   {
     "id": "R10",
@@ -66,13 +67,15 @@
     "id": "R11",
     "requirement": "开场S90正侧视，线稿从左向右以2—3组主笔触生长，外轮廓不能过早完整出现。",
     "status": "PENDING",
-    "evidence": []
+    "evidence": [],
+    "baseline": "EXISTING_WITH_REGRESSION_REQUIRED"
   },
   {
     "id": "R12",
     "requirement": "中央横线是真实进度条，不是摆设；删除左下角重复加载条。真实资源未就绪不假装完成，完成后沿中线上下裂幕，背后真实3D车同位显现。",
     "status": "PENDING",
-    "evidence": []
+    "evidence": [],
+    "baseline": "EXISTING_WITH_REGRESSION_REQUIRED"
   },
   {
     "id": "R13",
@@ -84,37 +87,44 @@
     "id": "R14",
     "requirement": "主线细节包括整车、灯组、轮毂、侧面、座舱、车尾，不能因四幕新结构删掉旧章节。",
     "status": "PENDING",
-    "evidence": []
+    "evidence": [],
+    "baseline": "EXISTING_WITH_REGRESSION_REQUIRED"
   },
   {
     "id": "R15",
     "requirement": "镜头稳、有展示目的、距离与构图合理；具有进入、停留、退出阶段，避免随机晃动、硬切和穿模。",
     "status": "PENDING",
-    "evidence": []
+    "evidence": [],
+    "baseline": "EXISTING_WITH_REGRESSION_REQUIRED"
   },
   {
     "id": "R16",
     "requirement": "详情是左侧展示区域真实缩小、右侧内容真实展开；不可用覆盖式浮层冒充。内容切换不断片，反向可逆。",
     "status": "PENDING",
-    "evidence": []
+    "evidence": [],
+    "baseline": "EXISTING_WITH_REGRESSION_REQUIRED"
   },
   {
     "id": "R17",
     "requirement": "保留换漆、热点、拖动旋转、缩放、复位及返回主线；门体不支持独立开合则不提供伪操作。",
     "status": "PENDING",
-    "evidence": []
+    "evidence": [],
+    "baseline": "EXISTING_WITH_REGRESSION_REQUIRED",
+    "baselineIssue": "窄屏隐藏缩放按钮，阶段14恢复"
   },
   {
     "id": "R18",
     "requirement": "禁止无意义小字、花哨文字、不合逻辑按钮、荧光线条、模板音效、大量卡片；偏好直角、纯色、低噪声的高端商业网站。",
     "status": "PENDING",
-    "evidence": []
+    "evidence": [],
+    "baseline": "EXISTING_WITH_REGRESSION_REQUIRED"
   },
   {
     "id": "R19",
     "requirement": "单Canvas、一个主汽车模型，重视内存释放、兼容Safari和资源失败回退。",
     "status": "PENDING",
-    "evidence": []
+    "evidence": [],
+    "baseline": "EXISTING_WITH_REGRESSION_REQUIRED"
   },
   {
     "id": "R20",

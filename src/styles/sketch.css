@@ -1,0 +1,50 @@
+/* Visual foundation only: all geometry, camera and input ownership stay intact. */
+.stage {
+  isolation: isolate;
+  background: var(--sketch-paper);
+}
+
+.stage__vignette {
+  background: none;
+}
+
+.sheet__paper,
+.fallback {
+  background: var(--sketch-paper);
+}
+
+.sheet__paper::after {
+  content: none;
+}
+
+.visual-layout .detail {
+  background: var(--sketch-surface);
+}
+
+.explore__title::before {
+  background: none;
+}
+
+.btn,
+.head-popover,
+.head-menu summary,
+.chapter-heading,
+.explore__title,
+.explore__bar {
+  border-radius: var(--sketch-radius);
+}
+
+/* The study layer is injected by QA only, never mounted by product code. */
+.sketch-study {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.sketch-study > svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

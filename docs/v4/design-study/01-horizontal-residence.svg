@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">水平庭院 · 原创建筑视觉小样A</title>
+  <desc id="desc">偏置的低层住宅、退后的廊架和宽阔前庭，中央留给真实汽车。仅用于固定机位设计比较。</desc>
+  <style>
+    .main{stroke:var(--sketch-ink,#555d56);stroke-width:var(--sketch-stroke-main,1.35px)}
+    .secondary{stroke:var(--sketch-secondary,#a4aca2);stroke-width:var(--sketch-stroke-detail,.75px)}
+    .quiet{stroke:var(--sketch-quiet,#dce0d7);stroke-width:var(--sketch-stroke-ground,.9px)}
+    path{vector-effect:non-scaling-stroke;stroke-linecap:butt;stroke-linejoin:miter}
+  </style>
+  <g data-layer="background">
+    <path fill="var(--sketch-paper,#f3f2ec)" d="M0 0H1600V900H0Z"/>
+    <path class="quiet" d="M46 438H348 M1295 438H1554"/>
+  </g>
+  <g data-layer="architecture">
+    <path fill="var(--sketch-surface,#faf9f4)" d="M102 203H527V437H102Z"/>
+    <path fill="var(--sketch-ground,#e6e9e2)" d="M527 203L663 212V385L527 437Z"/>
+    <path fill="var(--sketch-shade,#d3d9d0)" d="M121 230H514V249H121Z"/>
+    <path class="main" d="M86 203H543 M102 203V437 M102 437H527V203 M527 203L663 212V385L527 437"/>
+    <path class="main" d="M121 230H514 M136 249V419 M301 249V419 M466 249V419"/>
+    <path class="secondary" d="M121 249H514 M136 330H466 M148 249V419 M289 249V419 M313 249V419 M454 249V419"/>
+    <path class="secondary" d="M552 249L636 247V383L552 410Z M594 248V396"/>
+    <path class="main" d="M663 300H1068V309H663 M1049 309V430"/>
+    <path class="secondary" d="M696 309V429 M1028 309V430 M663 430H1050"/>
+  </g>
+  <g data-layer="detail">
+    <path fill="var(--sketch-accent,#8b927c)" d="M119 423H217V437H119Z"/>
+    <path class="secondary" d="M164 423V376 M164 391L147 377 M164 404L182 388 M154 382L147 369 M177 392L185 380"/>
+    <path class="secondary" d="M1185 380H1401V421H1185Z M1198 393H1387 M1272 380V421"/>
+    <path fill="var(--sketch-ground,#e6e9e2)" d="M1185 415H1401V421H1185Z"/>
+  </g>
+  <g data-layer="road">
+    <path class="quiet" d="M0 664L353 476 M0 813L469 476 M1478 900L1044 476 M1600 712L1202 476"/>
+    <path class="secondary" d="M68 460H312 M1355 460H1536"/>
+  </g>
+  <g data-layer="foreground">
+    <path class="quiet" d="M58 784H287 M1335 784H1541"/>
+  </g>
+</svg>

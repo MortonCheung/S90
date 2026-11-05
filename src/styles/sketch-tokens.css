@@ -1,0 +1,65 @@
+:root {
+  /* A quiet architectural drawing; the car keeps its existing PBR materials. */
+  --sketch-paper: #f3f2ec;
+  --sketch-surface: #faf9f4;
+  --sketch-ground: #e6e9e2;
+  --sketch-shade: #d3d9d0;
+  --sketch-ink: #555d56;
+  --sketch-secondary: #a4aca2;
+  --sketch-quiet: #dce0d7;
+  --sketch-accent: #8b927c;
+  --sketch-text: #252b27;
+  --sketch-muted: #686f66;
+  --sketch-stroke-main: 1.35px;
+  --sketch-stroke-detail: 0.75px;
+  --sketch-stroke-ground: 0.9px;
+  --sketch-radius: 0;
+  --sketch-duration-ui: 240ms;
+  --sketch-ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  /* Limits for later motion design, not an animation implementation. */
+  --sketch-motion-shift-max: 12px;
+  --sketch-motion-scale-max: 1.02;
+
+  --paper: var(--sketch-paper);
+  --paper-hi: var(--sketch-surface);
+  --paper-lo: var(--sketch-ground);
+  --ink: var(--sketch-text);
+  --ink-2: #414940;
+  --muted: var(--sketch-muted);
+  --line: #d5d9d0;
+  --line-strong: #a4aca2;
+  --bronze: #87735f;
+}
+
+/* Static colour studies only. No scroll state or scene orchestration is added. */
+[data-sketch-tone='morning'] {
+  --sketch-paper: #f3f2ec;
+  --sketch-surface: #faf9f4;
+  --sketch-ground: #e6e9e2;
+  --sketch-shade: #d3d9d0;
+  --sketch-accent: #8b927c;
+}
+
+[data-sketch-tone='day'] {
+  --sketch-paper: #efefea;
+  --sketch-surface: #f8f8f3;
+  --sketch-ground: #e0e3df;
+  --sketch-shade: #cbd2cc;
+  --sketch-accent: #7d8b83;
+}
+
+[data-sketch-tone='afternoon'] {
+  --sketch-paper: #f1eee7;
+  --sketch-surface: #f9f6f0;
+  --sketch-ground: #e5ded3;
+  --sketch-shade: #d5c8b7;
+  --sketch-accent: #9a856d;
+}
+
+[data-sketch-tone='dusk'] {
+  --sketch-paper: #e6ded5;
+  --sketch-surface: #f1eae2;
+  --sketch-ground: #cfc7c0;
+  --sketch-shade: #b9aca3;
+  --sketch-accent: #947967;
+}

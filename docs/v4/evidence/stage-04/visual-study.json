@@ -1,0 +1,331 @@
+{
+  "date": "2026-11-05T07:41:34.254Z",
+  "browser": "155.0.8059.85",
+  "viewport": {
+    "width": 1600,
+    "height": 900
+  },
+  "note": "Static fixed-camera comparison; palette variants are colour studies, not four implemented acts.",
+  "samples": [
+    {
+      "name": "00-pure-stage",
+      "shot": {
+        "progress": 0.075,
+        "position": [
+          -4.8,
+          1.65,
+          5.7
+        ],
+        "quaternion": [
+          -0.060860404376029735,
+          -0.3478719194405543,
+          -0.022636411573263866,
+          0.935290720426016
+        ],
+        "target": [
+          0,
+          0.69,
+          0.14
+        ],
+        "fov": 31,
+        "near": 0.05,
+        "aspect": 1.7777777777777777,
+        "owner": "story",
+        "targetNdc": [
+          2.279909741842756e-16,
+          -1.6212691497548481e-16,
+          0.9867490220866124
+        ]
+      },
+      "modelId": "0bcbc486-a9e4-4e5c-af6b-a59f5c39c7ae",
+      "canvasCount": 1,
+      "canvasSame": true,
+      "overflow": 0,
+      "paper": "#f3f2ec",
+      "ground": "#e6e9e2",
+      "stageBackground": "none",
+      "vignette": "none"
+    },
+    {
+      "name": "study-a-residence",
+      "shot": {
+        "progress": 0.075,
+        "position": [
+          -4.8,
+          1.65,
+          5.7
+        ],
+        "quaternion": [
+          -0.060860404376029735,
+          -0.3478719194405543,
+          -0.022636411573263866,
+          0.935290720426016
+        ],
+        "target": [
+          0,
+          0.69,
+          0.14
+        ],
+        "fov": 31,
+        "near": 0.05,
+        "aspect": 1.7777777777777777,
+        "owner": "story",
+        "targetNdc": [
+          2.279909741842756e-16,
+          -1.6212691497548481e-16,
+          0.9867490220866124
+        ]
+      },
+      "modelId": "0bcbc486-a9e4-4e5c-af6b-a59f5c39c7ae",
+      "canvasCount": 1,
+      "canvasSame": true,
+      "overflow": 0,
+      "paper": "#f3f2ec",
+      "ground": "#e6e9e2",
+      "stageBackground": "none",
+      "vignette": "none"
+    },
+    {
+      "name": "study-b-courtyard",
+      "shot": {
+        "progress": 0.075,
+        "position": [
+          -4.8,
+          1.65,
+          5.7
+        ],
+        "quaternion": [
+          -0.060860404376029735,
+          -0.3478719194405543,
+          -0.022636411573263866,
+          0.935290720426016
+        ],
+        "target": [
+          0,
+          0.69,
+          0.14
+        ],
+        "fov": 31,
+        "near": 0.05,
+        "aspect": 1.7777777777777777,
+        "owner": "story",
+        "targetNdc": [
+          2.279909741842756e-16,
+          -1.6212691497548481e-16,
+          0.9867490220866124
+        ]
+      },
+      "modelId": "0bcbc486-a9e4-4e5c-af6b-a59f5c39c7ae",
+      "canvasCount": 1,
+      "canvasSame": true,
+      "overflow": 0,
+      "paper": "#f3f2ec",
+      "ground": "#e6e9e2",
+      "stageBackground": "none",
+      "vignette": "none"
+    },
+    {
+      "name": "palette-morning",
+      "shot": {
+        "progress": 0.075,
+        "position": [
+          -4.8,
+          1.65,
+          5.7
+        ],
+        "quaternion": [
+          -0.060860404376029735,
+          -0.3478719194405543,
+          -0.022636411573263866,
+          0.935290720426016
+        ],
+        "target": [
+          0,
+          0.69,
+          0.14
+        ],
+        "fov": 31,
+        "near": 0.05,
+        "aspect": 1.7777777777777777,
+        "owner": "story",
+        "targetNdc": [
+          2.279909741842756e-16,
+          -1.6212691497548481e-16,
+          0.9867490220866124
+        ]
+      },
+      "modelId": "0bcbc486-a9e4-4e5c-af6b-a59f5c39c7ae",
+      "canvasCount": 1,
+      "canvasSame": true,
+      "overflow": 0,
+      "paper": "#f3f2ec",
+      "ground": "#e6e9e2",
+      "stageBackground": "none",
+      "vignette": "none"
+    },
+    {
+      "name": "palette-day",
+      "shot": {
+        "progress": 0.075,
+        "position": [
+          -4.8,
+          1.65,
+          5.7
+        ],
+        "quaternion": [
+          -0.060860404376029735,
+          -0.3478719194405543,
+          -0.022636411573263866,
+          0.935290720426016
+        ],
+        "target": [
+          0,
+          0.69,
+          0.14
+        ],
+        "fov": 31,
+        "near": 0.05,
+        "aspect": 1.7777777777777777,
+        "owner": "story",
+        "targetNdc": [
+          2.279909741842756e-16,
+          -1.6212691497548481e-16,
+          0.9867490220866124
+        ]
+      },
+      "modelId": "0bcbc486-a9e4-4e5c-af6b-a59f5c39c7ae",
+      "canvasCount": 1,
+      "canvasSame": true,
+      "overflow": 0,
+      "paper": "#efefea",
+      "ground": "#e0e3df",
+      "stageBackground": "none",
+      "vignette": "none"
+    },
+    {
+      "name": "palette-afternoon",
+      "shot": {
+        "progress": 0.075,
+        "position": [
+          -4.8,
+          1.65,
+          5.7
+        ],
+        "quaternion": [
+          -0.060860404376029735,
+          -0.3478719194405543,
+          -0.022636411573263866,
+          0.935290720426016
+        ],
+        "target": [
+          0,
+          0.69,
+          0.14
+        ],
+        "fov": 31,
+        "near": 0.05,
+        "aspect": 1.7777777777777777,
+        "owner": "story",
+        "targetNdc": [
+          2.279909741842756e-16,
+          -1.6212691497548481e-16,
+          0.9867490220866124
+        ]
+      },
+      "modelId": "0bcbc486-a9e4-4e5c-af6b-a59f5c39c7ae",
+      "canvasCount": 1,
+      "canvasSame": true,
+      "overflow": 0,
+      "paper": "#f1eee7",
+      "ground": "#e5ded3",
+      "stageBackground": "none",
+      "vignette": "none"
+    },
+    {
+      "name": "palette-dusk",
+      "shot": {
+        "progress": 0.075,
+        "position": [
+          -4.8,
+          1.65,
+          5.7
+        ],
+        "quaternion": [
+          -0.060860404376029735,
+          -0.3478719194405543,
+          -0.022636411573263866,
+          0.935290720426016
+        ],
+        "target": [
+          0,
+          0.69,
+          0.14
+        ],
+        "fov": 31,
+        "near": 0.05,
+        "aspect": 1.7777777777777777,
+        "owner": "story",
+        "targetNdc": [
+          2.279909741842756e-16,
+          -1.6212691497548481e-16,
+          0.9867490220866124
+        ]
+      },
+      "modelId": "0bcbc486-a9e4-4e5c-af6b-a59f5c39c7ae",
+      "canvasCount": 1,
+      "canvasSame": true,
+      "overflow": 0,
+      "paper": "#e6ded5",
+      "ground": "#cfc7c0",
+      "stageBackground": "none",
+      "vignette": "none"
+    },
+    {
+      "name": "99-clean-restored",
+      "shot": {
+        "progress": 0.075,
+        "position": [
+          -4.8,
+          1.65,
+          5.7
+        ],
+        "quaternion": [
+          -0.060860404376029735,
+          -0.3478719194405543,
+          -0.022636411573263866,
+          0.935290720426016
+        ],
+        "target": [
+          0,
+          0.69,
+          0.14
+        ],
+        "fov": 31,
+        "near": 0.05,
+        "aspect": 1.7777777777777777,
+        "owner": "story",
+        "targetNdc": [
+          2.279909741842756e-16,
+          -1.6212691497548481e-16,
+          0.9867490220866124
+        ]
+      },
+      "modelId": "0bcbc486-a9e4-4e5c-af6b-a59f5c39c7ae",
+      "canvasCount": 1,
+      "canvasSame": true,
+      "overflow": 0,
+      "paper": "#f3f2ec",
+      "ground": "#e6e9e2",
+      "stageBackground": "none",
+      "vignette": "none"
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:5177/assets/model/candidates/s90-quality-v3.glb",
+      "status": 200
+    }
+  ]
+}

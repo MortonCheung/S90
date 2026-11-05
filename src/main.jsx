@@ -3,6 +3,8 @@ import { createRoot } from 'react-dom/client';
 import App from './App.jsx';
 import './styles/tokens.css';
 import './styles/global.css';
+import './styles/sketch-tokens.css';
+import './styles/sketch.css';
 
 function hasWebGL() {
   try {

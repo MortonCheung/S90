@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">城市框景 · 原创建筑视觉小样B</title>
+  <desc id="desc">两侧错落的楼体夹出中央留白，细窗线、单一实色退台和浅色道路收束。仅用于固定机位设计比较。</desc>
+  <style>
+    .main{stroke:var(--sketch-ink,#555d56);stroke-width:var(--sketch-stroke-main,1.35px)}
+    .secondary{stroke:var(--sketch-secondary,#a4aca2);stroke-width:var(--sketch-stroke-detail,.75px)}
+    .quiet{stroke:var(--sketch-quiet,#dce0d7);stroke-width:var(--sketch-stroke-ground,.9px)}
+    path{vector-effect:non-scaling-stroke;stroke-linecap:butt;stroke-linejoin:miter}
+  </style>
+  <g data-layer="background">
+    <path fill="var(--sketch-paper,#f3f2ec)" d="M0 0H1600V900H0Z"/>
+    <path class="quiet" d="M490 421H651 M1032 421H1145"/>
+  </g>
+  <g data-layer="architecture">
+    <path fill="var(--sketch-surface,#faf9f4)" d="M88 145H343V439H88Z M1190 183H1460V440H1190Z"/>
+    <path fill="var(--sketch-ground,#e6e9e2)" d="M343 145L460 172V382L343 439Z M1148 190L1190 183V440L1148 415Z"/>
+    <path fill="var(--sketch-shade,#d3d9d0)" d="M88 310H343V334H88Z M1190 346H1460V369H1190Z"/>
+    <path class="main" d="M88 439V145H343V439H88 M343 145L460 172V382L343 439 M1190 440V183H1460V440H1190 M1190 183L1148 190V415L1190 440"/>
+    <path class="main" d="M88 222H343 M88 310H343 M1190 263H1460 M1190 346H1460"/>
+    <path class="secondary" d="M112 169H317V203H112Z M112 245H317V292H112Z M112 352H317V421H112Z M180 169V203 M250 169V203 M180 245V292 M250 245V292 M180 352V421 M250 352V421"/>
+    <path class="secondary" d="M367 205L434 211V370L367 400Z M399 208V385 M367 278L434 271 M367 340L434 322"/>
+    <path class="secondary" d="M1214 207H1436V245H1214Z M1214 284H1436V328H1214Z M1214 387H1436V423H1214Z M1286 207V245 M1362 207V245 M1286 284V328 M1362 284V328 M1286 387V423 M1362 387V423"/>
+    <path class="quiet" d="M535 307H665V414H535Z M1066 325H1123V414H1066Z"/>
+  </g>
+  <g data-layer="detail">
+    <path fill="var(--sketch-accent,#8b927c)" d="M94 427H244V439H94Z M1327 428H1453V440H1327Z"/>
+    <path class="secondary" d="M488 359V432 M481 359H495 M1110 367V432 M1103 367H1117"/>
+  </g>
+  <g data-layer="road">
+    <path class="quiet" d="M0 640L380 449 M0 900L545 449 M1600 640L1220 449 M1580 900L1049 449"/>
+    <path class="secondary" d="M48 466H334 M1287 466H1548"/>
+  </g>
+  <g data-layer="foreground">
+    <path class="quiet" d="M48 786H306 M1312 786H1552"/>
+  </g>
+</svg>
