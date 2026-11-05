@@ -17,6 +17,7 @@ import {
 import { clamp } from './lib/math.js';
 import { PAINTS } from './story/paints.js';
 import { CABIN_THEMES } from './story/cabin.js';
+import { actAt } from './journey/acts.js';
 
 const HOTSPOTS = DETAILS.map((d) => ({
   id: d.id,
@@ -46,6 +47,7 @@ export default function App() {
     detailFactor: 0,
     detailId: null,
     chapterId: 'form',
+    journey: actAt(0),
   });
   const exploreRef = useRef(false);
   const api = useRef({});
@@ -99,6 +101,8 @@ export default function App() {
       const raw = clamp(window.scrollY / max);
       st.raw = raw;
       st.smooth = raw;
+      st.journey = actAt(raw);
+      if (visualRef.current) visualRef.current.dataset.act = st.journey.act.id;
 
       const detail = detailState(st.smooth);
       if (raw !== st.lastDetailProgress && visualRef.current) {
@@ -142,6 +146,12 @@ export default function App() {
 
     raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
+  }, []);
+
+  useEffect(() => {
+    if (!import.meta.env.DEV) return undefined;
+    window.__S90Journey = () => stateRef.current.journey;
+    return () => { delete window.__S90Journey; };
   }, []);
 
   const goChapter = useCallback((at) => {

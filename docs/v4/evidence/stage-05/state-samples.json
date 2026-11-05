@@ -1,0 +1,285 @@
+{
+  "acts": [
+    {
+      "id": "morning",
+      "label": "清晨 · 出发",
+      "sceneId": "residence",
+      "range": [
+        0,
+        0.27
+      ],
+      "lineGrowthRange": [
+        0,
+        0.27
+      ],
+      "cameraSequence": [
+        "form",
+        "light"
+      ],
+      "features": [
+        "form",
+        "light"
+      ]
+    },
+    {
+      "id": "day",
+      "label": "白天 · 穿行",
+      "sceneId": "city",
+      "range": [
+        0.27,
+        0.53
+      ],
+      "lineGrowthRange": [
+        0.27,
+        0.53
+      ],
+      "cameraSequence": [
+        "wheel",
+        "profile"
+      ],
+      "features": [
+        "wheel",
+        "profile"
+      ]
+    },
+    {
+      "id": "afternoon",
+      "label": "午后 · 停驻",
+      "sceneId": "arrival",
+      "range": [
+        0.53,
+        0.675
+      ],
+      "lineGrowthRange": [
+        0.53,
+        0.675
+      ],
+      "cameraSequence": [
+        "cabin"
+      ],
+      "features": [
+        "cabin"
+      ]
+    },
+    {
+      "id": "evening",
+      "label": "黄昏 · 归途",
+      "sceneId": "road",
+      "range": [
+        0.675,
+        1
+      ],
+      "lineGrowthRange": [
+        0.675,
+        1
+      ],
+      "cameraSequence": [
+        "rear",
+        "explore"
+      ],
+      "features": [
+        "rear",
+        "explore"
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "t": 0,
+      "act": {
+        "id": "morning",
+        "label": "清晨 · 出发",
+        "sceneId": "residence",
+        "range": [
+          0,
+          0.27
+        ],
+        "lineGrowthRange": [
+          0,
+          0.27
+        ],
+        "cameraSequence": [
+          "form",
+          "light"
+        ],
+        "features": [
+          "form",
+          "light"
+        ]
+      },
+      "localProgress": 0
+    },
+    {
+      "t": 0.269,
+      "act": {
+        "id": "morning",
+        "label": "清晨 · 出发",
+        "sceneId": "residence",
+        "range": [
+          0,
+          0.27
+        ],
+        "lineGrowthRange": [
+          0,
+          0.27
+        ],
+        "cameraSequence": [
+          "form",
+          "light"
+        ],
+        "features": [
+          "form",
+          "light"
+        ]
+      },
+      "localProgress": 0.9962962962962963
+    },
+    {
+      "t": 0.27,
+      "act": {
+        "id": "day",
+        "label": "白天 · 穿行",
+        "sceneId": "city",
+        "range": [
+          0.27,
+          0.53
+        ],
+        "lineGrowthRange": [
+          0.27,
+          0.53
+        ],
+        "cameraSequence": [
+          "wheel",
+          "profile"
+        ],
+        "features": [
+          "wheel",
+          "profile"
+        ]
+      },
+      "localProgress": 0
+    },
+    {
+      "t": 0.529,
+      "act": {
+        "id": "day",
+        "label": "白天 · 穿行",
+        "sceneId": "city",
+        "range": [
+          0.27,
+          0.53
+        ],
+        "lineGrowthRange": [
+          0.27,
+          0.53
+        ],
+        "cameraSequence": [
+          "wheel",
+          "profile"
+        ],
+        "features": [
+          "wheel",
+          "profile"
+        ]
+      },
+      "localProgress": 0.9961538461538462
+    },
+    {
+      "t": 0.53,
+      "act": {
+        "id": "afternoon",
+        "label": "午后 · 停驻",
+        "sceneId": "arrival",
+        "range": [
+          0.53,
+          0.675
+        ],
+        "lineGrowthRange": [
+          0.53,
+          0.675
+        ],
+        "cameraSequence": [
+          "cabin"
+        ],
+        "features": [
+          "cabin"
+        ]
+      },
+      "localProgress": 0
+    },
+    {
+      "t": 0.674,
+      "act": {
+        "id": "afternoon",
+        "label": "午后 · 停驻",
+        "sceneId": "arrival",
+        "range": [
+          0.53,
+          0.675
+        ],
+        "lineGrowthRange": [
+          0.53,
+          0.675
+        ],
+        "cameraSequence": [
+          "cabin"
+        ],
+        "features": [
+          "cabin"
+        ]
+      },
+      "localProgress": 0.993103448275862
+    },
+    {
+      "t": 0.675,
+      "act": {
+        "id": "evening",
+        "label": "黄昏 · 归途",
+        "sceneId": "road",
+        "range": [
+          0.675,
+          1
+        ],
+        "lineGrowthRange": [
+          0.675,
+          1
+        ],
+        "cameraSequence": [
+          "rear",
+          "explore"
+        ],
+        "features": [
+          "rear",
+          "explore"
+        ]
+      },
+      "localProgress": 0
+    },
+    {
+      "t": 1,
+      "act": {
+        "id": "evening",
+        "label": "黄昏 · 归途",
+        "sceneId": "road",
+        "range": [
+          0.675,
+          1
+        ],
+        "lineGrowthRange": [
+          0.675,
+          1
+        ],
+        "cameraSequence": [
+          "rear",
+          "explore"
+        ],
+        "features": [
+          "rear",
+          "explore"
+        ]
+      },
+      "localProgress": 1
+    }
+  ],
+  "reversibleSamples": 1001
+}

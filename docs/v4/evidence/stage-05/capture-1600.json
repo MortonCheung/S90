@@ -1,0 +1,761 @@
+{
+  "viewport": {
+    "width": 1600,
+    "height": 900
+  },
+  "browser": "155.0.8059.85",
+  "samples": [
+    {
+      "t": 0,
+      "shot": {
+        "progress": 0,
+        "position": [
+          -16.998555654739974,
+          0.74,
+          0.015
+        ],
+        "quaternion": [
+          0,
+          -0.7071067811865475,
+          0,
+          0.7071067811865476
+        ],
+        "target": [
+          0,
+          0.74,
+          0.015
+        ],
+        "fov": 12,
+        "near": 0.05,
+        "aspect": 1.7777777777777777,
+        "owner": "story",
+        "targetNdc": [
+          1.1884459513311386e-15,
+          0,
+          0.9943664430482932
+        ]
+      },
+      "journey": {
+        "act": {
+          "id": "morning",
+          "label": "清晨 · 出发",
+          "sceneId": "residence",
+          "range": [
+            0,
+            0.27
+          ],
+          "lineGrowthRange": [
+            0,
+            0.27
+          ],
+          "cameraSequence": [
+            "form",
+            "light"
+          ],
+          "features": [
+            "form",
+            "light"
+          ]
+        },
+        "localProgress": 0
+      },
+      "canvas": 1,
+      "stage": {
+        "x": 0,
+        "y": 0,
+        "width": 1600,
+        "height": 900,
+        "top": 0,
+        "right": 1600,
+        "bottom": 900,
+        "left": 0
+      },
+      "overflow": 0,
+      "modelId": "a899eae1-e410-47a6-8fed-f1705982e777"
+    },
+    {
+      "t": 0.2,
+      "shot": {
+        "progress": 0.2,
+        "position": [
+          -2.72,
+          1.13,
+          4.28
+        ],
+        "quaternion": [
+          -0.0605585684677873,
+          -0.3818604369419899,
+          -0.025084180377257164,
+          0.9218926457990682
+        ],
+        "target": [
+          -0.63,
+          0.74,
+          2.19
+        ],
+        "fov": 29,
+        "near": 0.05,
+        "aspect": 1.2,
+        "owner": "story",
+        "targetNdc": [
+          0,
+          7.199673982321705e-17,
+          0.9667037071994189
+        ]
+      },
+      "journey": {
+        "act": {
+          "id": "morning",
+          "label": "清晨 · 出发",
+          "sceneId": "residence",
+          "range": [
+            0,
+            0.27
+          ],
+          "lineGrowthRange": [
+            0,
+            0.27
+          ],
+          "cameraSequence": [
+            "form",
+            "light"
+          ],
+          "features": [
+            "form",
+            "light"
+          ]
+        },
+        "localProgress": 0.7407407407407407
+      },
+      "canvas": 1,
+      "stage": {
+        "x": 0,
+        "y": 0,
+        "width": 1080,
+        "height": 900,
+        "top": 0,
+        "right": 1080,
+        "bottom": 900,
+        "left": 0
+      },
+      "overflow": 0,
+      "modelId": "a899eae1-e410-47a6-8fed-f1705982e777"
+    },
+    {
+      "t": 0.27,
+      "shot": {
+        "progress": 0.2700292397660819,
+        "position": [
+          -2.760550333277763,
+          0.9497762965432761,
+          3.4464653715126525
+        ],
+        "quaternion": [
+          -0.06400093884506478,
+          -0.4421049419246181,
+          -0.031645885012241075,
+          0.8941172395802311
+        ],
+        "target": [
+          -0.7561565924197067,
+          0.5868098520617847,
+          1.9151588522284961
+        ],
+        "fov": 29.90111851728362,
+        "near": 0.05,
+        "aspect": 1.2,
+        "owner": "story",
+        "targetNdc": [
+          -5.438431546268234e-16,
+          8.157647319402352e-17,
+          0.9610045037319787
+        ]
+      },
+      "journey": {
+        "act": {
+          "id": "day",
+          "label": "白天 · 穿行",
+          "sceneId": "city",
+          "range": [
+            0.27,
+            0.53
+          ],
+          "lineGrowthRange": [
+            0.27,
+            0.53
+          ],
+          "cameraSequence": [
+            "wheel",
+            "profile"
+          ],
+          "features": [
+            "wheel",
+            "profile"
+          ]
+        },
+        "localProgress": 0.00011246063877645707
+      },
+      "canvas": 1,
+      "stage": {
+        "x": 0,
+        "y": 0,
+        "width": 1080,
+        "height": 900,
+        "top": 0,
+        "right": 1080,
+        "bottom": 900,
+        "left": 0
+      },
+      "overflow": 0,
+      "modelId": "a899eae1-e410-47a6-8fed-f1705982e777"
+    },
+    {
+      "t": 0.33,
+      "shot": {
+        "progress": 0.32997076023391814,
+        "position": [
+          -2.81,
+          0.73,
+          2.43
+        ],
+        "quaternion": [
+          -0.0659037701915271,
+          -0.5422106697490333,
+          -0.04271486370313838,
+          0.8365642372846626
+        ],
+        "target": [
+          -0.91,
+          0.4,
+          1.58
+        ],
+        "fov": 31,
+        "near": 0.05,
+        "aspect": 1.2,
+        "owner": "story",
+        "targetNdc": [
+          3.165998666889369e-16,
+          1.424699400100216e-16,
+          0.9527936797547114
+        ]
+      },
+      "journey": {
+        "act": {
+          "id": "day",
+          "label": "白天 · 穿行",
+          "sceneId": "city",
+          "range": [
+            0.27,
+            0.53
+          ],
+          "lineGrowthRange": [
+            0.27,
+            0.53
+          ],
+          "cameraSequence": [
+            "wheel",
+            "profile"
+          ],
+          "features": [
+            "wheel",
+            "profile"
+          ]
+        },
+        "localProgress": 0.2306567701304543
+      },
+      "canvas": 1,
+      "stage": {
+        "x": 0,
+        "y": 0,
+        "width": 1080,
+        "height": 900,
+        "top": 0,
+        "right": 1080,
+        "bottom": 900,
+        "left": 0
+      },
+      "overflow": 0,
+      "modelId": "a899eae1-e410-47a6-8fed-f1705982e777"
+    },
+    {
+      "t": 0.53,
+      "shot": {
+        "progress": 0.5299707602339181,
+        "position": [
+          -3.8873864052721494,
+          1.1436937477100317,
+          -0.29594601960458883
+        ],
+        "quaternion": [
+          -0.00674984367457777,
+          -0.7070745643921641,
+          -0.00674984367457777,
+          0.7070745643921642
+        ],
+        "target": [
+          -0.49969980609551723,
+          1.079009087578228,
+          -0.29594601960458883
+        ],
+        "fov": 32.84384466227321,
+        "near": 0.05,
+        "aspect": 1.7777777777777777,
+        "owner": "story",
+        "targetNdc": [
+          6.253502999864974e-16,
+          0,
+          0.9707330519817269
+        ]
+      },
+      "journey": {
+        "act": {
+          "id": "day",
+          "label": "白天 · 穿行",
+          "sceneId": "city",
+          "range": [
+            0.27,
+            0.53
+          ],
+          "lineGrowthRange": [
+            0.27,
+            0.53
+          ],
+          "cameraSequence": [
+            "wheel",
+            "profile"
+          ],
+          "features": [
+            "wheel",
+            "profile"
+          ]
+        },
+        "localProgress": 0.9998875393612233
+      },
+      "canvas": 1,
+      "stage": {
+        "x": 0,
+        "y": 0,
+        "width": 1600,
+        "height": 900,
+        "top": 0,
+        "right": 1600,
+        "bottom": 900,
+        "left": 0
+      },
+      "overflow": 0,
+      "modelId": "a899eae1-e410-47a6-8fed-f1705982e777"
+    },
+    {
+      "t": 0.59,
+      "shot": {
+        "progress": 0.5900584795321637,
+        "position": [
+          -0.23,
+          1.18,
+          -0.65
+        ],
+        "quaternion": [
+          0.006640737970981511,
+          0.9930796389804365,
+          0.07024108238794088,
+          -0.09388781383468829
+        ],
+        "target": [
+          0.06,
+          0.96,
+          0.87
+        ],
+        "fov": 63,
+        "near": 0.018,
+        "aspect": 1.2,
+        "owner": "story",
+        "targetNdc": [
+          1.2074435525675176e-16,
+          -2.3182916209296337e-16,
+          0.9770560126846506
+        ]
+      },
+      "journey": {
+        "act": {
+          "id": "afternoon",
+          "label": "午后 · 停驻",
+          "sceneId": "arrival",
+          "range": [
+            0.53,
+            0.675
+          ],
+          "lineGrowthRange": [
+            0.53,
+            0.675
+          ],
+          "cameraSequence": [
+            "cabin"
+          ],
+          "features": [
+            "cabin"
+          ]
+        },
+        "localProgress": 0.41419641056664613
+      },
+      "canvas": 1,
+      "stage": {
+        "x": 0,
+        "y": 0,
+        "width": 1080,
+        "height": 900,
+        "top": 0,
+        "right": 1080,
+        "bottom": 900,
+        "left": 0
+      },
+      "overflow": 0,
+      "modelId": "a899eae1-e410-47a6-8fed-f1705982e777"
+    },
+    {
+      "t": 0.675,
+      "shot": {
+        "progress": 0.675,
+        "position": [
+          -2.5,
+          1.22,
+          -0.4
+        ],
+        "quaternion": [
+          -0.005732732949111246,
+          -0.7070835422868603,
+          -0.005732732949111246,
+          0.7070835422868603
+        ],
+        "target": [
+          -0.65,
+          1.19,
+          -0.4
+        ],
+        "fov": 34,
+        "near": 0.05,
+        "aspect": 1.7777777777777777,
+        "owner": "story",
+        "targetNdc": [
+          5.519947070903265e-17,
+          0,
+          0.9461963262655543
+        ]
+      },
+      "journey": {
+        "act": {
+          "id": "evening",
+          "label": "黄昏 · 归途",
+          "sceneId": "road",
+          "range": [
+            0.675,
+            1
+          ],
+          "lineGrowthRange": [
+            0.675,
+            1
+          ],
+          "cameraSequence": [
+            "rear",
+            "explore"
+          ],
+          "features": [
+            "rear",
+            "explore"
+          ]
+        },
+        "localProgress": 0
+      },
+      "canvas": 1,
+      "stage": {
+        "x": 0,
+        "y": 0,
+        "width": 1600,
+        "height": 900,
+        "top": 0,
+        "right": 1600,
+        "bottom": 900,
+        "left": 0
+      },
+      "overflow": 0,
+      "modelId": "a899eae1-e410-47a6-8fed-f1705982e777"
+    },
+    {
+      "t": 0.715,
+      "shot": {
+        "progress": 0.7150584795321637,
+        "position": [
+          -3.28,
+          1.42,
+          -4.85
+        ],
+        "quaternion": [
+          0.03156157936778563,
+          0.9226182591805043,
+          0.07732915136524604,
+          -0.3765628989739664
+        ],
+        "target": [
+          -0.42,
+          0.73,
+          -1.93
+        ],
+        "fov": 32,
+        "near": 0.05,
+        "aspect": 1.2,
+        "owner": "story",
+        "targetNdc": [
+          -1.5567698793825932e-16,
+          0,
+          0.9761223176550871
+        ]
+      },
+      "journey": {
+        "act": {
+          "id": "evening",
+          "label": "黄昏 · 归途",
+          "sceneId": "road",
+          "range": [
+            0.675,
+            1
+          ],
+          "lineGrowthRange": [
+            0.675,
+            1
+          ],
+          "cameraSequence": [
+            "rear",
+            "explore"
+          ],
+          "features": [
+            "rear",
+            "explore"
+          ]
+        },
+        "localProgress": 0.12325686009896519
+      },
+      "canvas": 1,
+      "stage": {
+        "x": 0,
+        "y": 0,
+        "width": 1080,
+        "height": 900,
+        "top": 0,
+        "right": 1080,
+        "bottom": 900,
+        "left": 0
+      },
+      "overflow": 0,
+      "modelId": "a899eae1-e410-47a6-8fed-f1705982e777"
+    },
+    {
+      "t": 0.97,
+      "shot": {
+        "progress": 0.9700292397660819,
+        "position": [
+          -6.200000000000001,
+          2.0799999999999996,
+          -5.449999999999999
+        ],
+        "quaternion": [
+          0.034582018589113556,
+          0.9078907879334224,
+          0.07644214126184068,
+          -0.4107249690671806
+        ],
+        "target": [
+          0,
+          0.68,
+          0
+        ],
+        "fov": 31,
+        "near": 0.05,
+        "aspect": 1.7777777777777777,
+        "owner": "orbit",
+        "targetNdc": [
+          -1.6702031409548168e-16,
+          -9.562802023716966e-17,
+          0.9883049932131769
+        ]
+      },
+      "journey": {
+        "act": {
+          "id": "evening",
+          "label": "黄昏 · 归途",
+          "sceneId": "road",
+          "range": [
+            0.675,
+            1
+          ],
+          "lineGrowthRange": [
+            0.675,
+            1
+          ],
+          "cameraSequence": [
+            "rear",
+            "explore"
+          ],
+          "features": [
+            "rear",
+            "explore"
+          ]
+        },
+        "localProgress": 0.907782276203329
+      },
+      "canvas": 1,
+      "stage": {
+        "x": 0,
+        "y": 0,
+        "width": 1600,
+        "height": 900,
+        "top": 0,
+        "right": 1600,
+        "bottom": 900,
+        "left": 0
+      },
+      "overflow": 0,
+      "modelId": "a899eae1-e410-47a6-8fed-f1705982e777"
+    },
+    {
+      "t": 0.59,
+      "shot": {
+        "progress": 0.5900584795321637,
+        "position": [
+          -0.23,
+          1.18,
+          -0.65
+        ],
+        "quaternion": [
+          0.044452214437576944,
+          0.947642061835402,
+          0.277368057756499,
+          -0.15187324915313835
+        ],
+        "target": [
+          0.004287327190875198,
+          0.700007526890751,
+          0.06216624426769038
+        ],
+        "fov": 63,
+        "near": 0.018,
+        "aspect": 1.2,
+        "owner": "blend",
+        "targetNdc": [
+          -1.3249817743197573e-17,
+          2.035172005355147e-16,
+          0.95964803896218
+        ]
+      },
+      "journey": {
+        "act": {
+          "id": "afternoon",
+          "label": "午后 · 停驻",
+          "sceneId": "arrival",
+          "range": [
+            0.53,
+            0.675
+          ],
+          "lineGrowthRange": [
+            0.53,
+            0.675
+          ],
+          "cameraSequence": [
+            "cabin"
+          ],
+          "features": [
+            "cabin"
+          ]
+        },
+        "localProgress": 0.41419641056664613
+      },
+      "canvas": 1,
+      "stage": {
+        "x": 0,
+        "y": 0,
+        "width": 1080,
+        "height": 900,
+        "top": 0,
+        "right": 1080,
+        "bottom": 900,
+        "left": 0
+      },
+      "overflow": 0,
+      "modelId": "a899eae1-e410-47a6-8fed-f1705982e777"
+    },
+    {
+      "t": 0.2,
+      "shot": {
+        "progress": 0.2,
+        "position": [
+          -2.72,
+          1.13,
+          4.28
+        ],
+        "quaternion": [
+          -0.0605585684677873,
+          -0.3818604369419899,
+          -0.025084180377257164,
+          0.9218926457990682
+        ],
+        "target": [
+          -0.63,
+          0.74,
+          2.19
+        ],
+        "fov": 29,
+        "near": 0.05,
+        "aspect": 1.2,
+        "owner": "story",
+        "targetNdc": [
+          0,
+          7.199673982321705e-17,
+          0.9667037071994189
+        ]
+      },
+      "journey": {
+        "act": {
+          "id": "morning",
+          "label": "清晨 · 出发",
+          "sceneId": "residence",
+          "range": [
+            0,
+            0.27
+          ],
+          "lineGrowthRange": [
+            0,
+            0.27
+          ],
+          "cameraSequence": [
+            "form",
+            "light"
+          ],
+          "features": [
+            "form",
+            "light"
+          ]
+        },
+        "localProgress": 0.7407407407407407
+      },
+      "canvas": 1,
+      "stage": {
+        "x": 0,
+        "y": 0,
+        "width": 1080,
+        "height": 900,
+        "top": 0,
+        "right": 1080,
+        "bottom": 900,
+        "left": 0
+      },
+      "overflow": 0,
+      "modelId": "a899eae1-e410-47a6-8fed-f1705982e777"
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:5177/assets/model/candidates/s90-quality-v3.glb",
+      "status": 200
+    }
+  ]
+}
