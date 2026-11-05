@@ -5,7 +5,7 @@ export const ACTS = [
   {
     id: 'morning', label: '清晨 · 出发', sceneId: 'residence',
     range: [0, .27], lineGrowthRange: [0, .27],
-    cameraSequence: ['form', 'light'], features: ['form', 'light'],
+    cameraSequence: ['whole', 'lamp'], features: ['form', 'light'],
   },
   {
     id: 'day', label: '白天 · 穿行', sceneId: 'city',
@@ -15,7 +15,7 @@ export const ACTS = [
   {
     id: 'afternoon', label: '午后 · 停驻', sceneId: 'arrival',
     range: [.53, .675], lineGrowthRange: [.53, .675],
-    cameraSequence: ['cabin'], features: ['cabin'],
+    cameraSequence: ['cabin-approach', 'cabin-window', 'cabin-dashboard', 'cabin-seats', 'cabin-return-window', 'cabin-exterior'], features: ['cabin'],
   },
   {
     id: 'evening', label: '黄昏 · 归途', sceneId: 'road',

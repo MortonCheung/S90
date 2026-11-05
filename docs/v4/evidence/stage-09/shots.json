@@ -1,0 +1,487 @@
+{
+  "anchors": [
+    {
+      "id": "whole",
+      "actId": "morning",
+      "focusPart": "vehicle",
+      "holdRange": [
+        0.069,
+        0.145
+      ],
+      "at": 0.107,
+      "pos": [
+        -4.8,
+        1.65,
+        5.7
+      ],
+      "target": [
+        0,
+        0.69,
+        0.14
+      ],
+      "fov": 31,
+      "sampled": {
+        "id": "whole",
+        "actId": "morning",
+        "focusPart": "vehicle",
+        "from": 0.069,
+        "to": 0.145,
+        "pos": [
+          -4.8,
+          1.65,
+          5.7
+        ],
+        "target": [
+          0,
+          0.69,
+          0.14
+        ],
+        "fov": 31,
+        "whole": true
+      }
+    },
+    {
+      "id": "lamp",
+      "actId": "morning",
+      "focusPart": "front-light",
+      "holdRange": [
+        0.187,
+        0.228
+      ],
+      "at": 0.20750000000000002,
+      "pos": [
+        -2.72,
+        1.13,
+        4.28
+      ],
+      "target": [
+        -0.63,
+        0.74,
+        2.19
+      ],
+      "fov": 29,
+      "sampled": {
+        "id": "lamp",
+        "actId": "morning",
+        "focusPart": "front-light",
+        "from": 0.187,
+        "to": 0.228,
+        "pos": [
+          -2.72,
+          1.13,
+          4.28
+        ],
+        "target": [
+          -0.63,
+          0.74,
+          2.19
+        ],
+        "fov": 29
+      }
+    },
+    {
+      "id": "wheel",
+      "actId": "day",
+      "focusPart": "front-wheel",
+      "holdRange": [
+        0.318,
+        0.358
+      ],
+      "at": 0.33799999999999997,
+      "pos": [
+        -2.81,
+        0.73,
+        2.43
+      ],
+      "target": [
+        -0.91,
+        0.4,
+        1.58
+      ],
+      "fov": 31,
+      "sampled": {
+        "id": "wheel",
+        "actId": "day",
+        "focusPart": "front-wheel",
+        "from": 0.318,
+        "to": 0.358,
+        "pos": [
+          -2.81,
+          0.73,
+          2.43
+        ],
+        "target": [
+          -0.91,
+          0.4,
+          1.58
+        ],
+        "fov": 31
+      }
+    },
+    {
+      "id": "profile",
+      "actId": "day",
+      "focusPart": "shoulder-line",
+      "holdRange": [
+        0.448,
+        0.488
+      ],
+      "at": 0.46799999999999997,
+      "pos": [
+        -8.5,
+        0.89,
+        0.05
+      ],
+      "target": [
+        0,
+        0.71,
+        0.05
+      ],
+      "fov": 29,
+      "sampled": {
+        "id": "profile",
+        "actId": "day",
+        "focusPart": "shoulder-line",
+        "from": 0.448,
+        "to": 0.488,
+        "pos": [
+          -8.5,
+          0.89,
+          0.05
+        ],
+        "target": [
+          0,
+          0.71,
+          0.05
+        ],
+        "fov": 29,
+        "whole": true
+      }
+    },
+    {
+      "id": "cabin-approach",
+      "actId": "afternoon",
+      "focusPart": "side-window",
+      "holdRange": [
+        0.549,
+        0.553
+      ],
+      "at": 0.551,
+      "pos": [
+        -2.5,
+        1.22,
+        -0.4
+      ],
+      "target": [
+        -0.65,
+        1.19,
+        -0.4
+      ],
+      "fov": 34,
+      "sampled": {
+        "id": "cabin-approach",
+        "actId": "afternoon",
+        "focusPart": "side-window",
+        "from": 0.549,
+        "to": 0.553,
+        "pos": [
+          -2.5,
+          1.22,
+          -0.4
+        ],
+        "target": [
+          -0.65,
+          1.19,
+          -0.4
+        ],
+        "fov": 34,
+        "cabin": true
+      }
+    },
+    {
+      "id": "cabin-window",
+      "actId": "afternoon",
+      "focusPart": "entry",
+      "holdRange": [
+        0.573,
+        0.573
+      ],
+      "at": 0.573,
+      "pos": [
+        -0.65,
+        1.18,
+        -0.4
+      ],
+      "target": [
+        -0.05,
+        1.05,
+        0.3
+      ],
+      "fov": 52,
+      "sampled": {
+        "id": "cabin-window",
+        "actId": "afternoon",
+        "focusPart": "entry",
+        "from": 0.573,
+        "to": 0.573,
+        "pos": [
+          -0.65,
+          1.18,
+          -0.4
+        ],
+        "target": [
+          -0.05,
+          1.05,
+          0.3
+        ],
+        "fov": 52,
+        "near": 0.018,
+        "cabin": true
+      }
+    },
+    {
+      "id": "cabin-dashboard",
+      "actId": "afternoon",
+      "focusPart": "dashboard",
+      "holdRange": [
+        0.588,
+        0.607
+      ],
+      "at": 0.5974999999999999,
+      "pos": [
+        -0.23,
+        1.18,
+        -0.65
+      ],
+      "target": [
+        0.06,
+        0.96,
+        0.87
+      ],
+      "fov": 63,
+      "sampled": {
+        "id": "cabin-dashboard",
+        "actId": "afternoon",
+        "focusPart": "dashboard",
+        "from": 0.588,
+        "to": 0.607,
+        "pos": [
+          -0.23,
+          1.18,
+          -0.65
+        ],
+        "target": [
+          0.06,
+          0.96,
+          0.87
+        ],
+        "fov": 63,
+        "near": 0.018,
+        "cabin": true
+      }
+    },
+    {
+      "id": "cabin-seats",
+      "actId": "afternoon",
+      "focusPart": "front-seats",
+      "holdRange": [
+        0.618,
+        0.626
+      ],
+      "at": 0.622,
+      "pos": [
+        -0.03,
+        1.13,
+        -0.56
+      ],
+      "target": [
+        0.08,
+        0.78,
+        0.76
+      ],
+      "fov": 65,
+      "sampled": {
+        "id": "cabin-seats",
+        "actId": "afternoon",
+        "focusPart": "front-seats",
+        "from": 0.618,
+        "to": 0.626,
+        "pos": [
+          -0.03,
+          1.13,
+          -0.56
+        ],
+        "target": [
+          0.08,
+          0.78,
+          0.76
+        ],
+        "fov": 65,
+        "near": 0.018,
+        "cabin": true
+      }
+    },
+    {
+      "id": "cabin-return-window",
+      "actId": "afternoon",
+      "focusPart": "exit",
+      "holdRange": [
+        0.65,
+        0.65
+      ],
+      "at": 0.65,
+      "pos": [
+        -0.65,
+        1.18,
+        -0.4
+      ],
+      "target": [
+        -0.05,
+        1.05,
+        0.3
+      ],
+      "fov": 52,
+      "sampled": {
+        "id": "cabin-return-window",
+        "actId": "afternoon",
+        "focusPart": "exit",
+        "from": 0.65,
+        "to": 0.65,
+        "pos": [
+          -0.65,
+          1.18,
+          -0.4
+        ],
+        "target": [
+          -0.05,
+          1.05,
+          0.3
+        ],
+        "fov": 52,
+        "near": 0.018,
+        "cabin": true
+      }
+    },
+    {
+      "id": "cabin-exterior",
+      "actId": "afternoon",
+      "focusPart": "side-window",
+      "holdRange": [
+        0.675,
+        0.675
+      ],
+      "at": 0.675,
+      "pos": [
+        -2.5,
+        1.22,
+        -0.4
+      ],
+      "target": [
+        -0.65,
+        1.19,
+        -0.4
+      ],
+      "fov": 34,
+      "sampled": {
+        "id": "cabin-exterior",
+        "actId": "afternoon",
+        "focusPart": "side-window",
+        "from": 0.675,
+        "to": 0.675,
+        "pos": [
+          -2.5,
+          1.22,
+          -0.4
+        ],
+        "target": [
+          -0.65,
+          1.19,
+          -0.4
+        ],
+        "fov": 34,
+        "cabin": true
+      }
+    },
+    {
+      "id": "rear",
+      "actId": "evening",
+      "focusPart": "tail-light",
+      "holdRange": [
+        0.703,
+        0.738
+      ],
+      "at": 0.7204999999999999,
+      "pos": [
+        -3.28,
+        1.42,
+        -4.85
+      ],
+      "target": [
+        -0.42,
+        0.73,
+        -1.93
+      ],
+      "fov": 32,
+      "sampled": {
+        "id": "rear",
+        "actId": "evening",
+        "focusPart": "tail-light",
+        "from": 0.703,
+        "to": 0.738,
+        "pos": [
+          -3.28,
+          1.42,
+          -4.85
+        ],
+        "target": [
+          -0.42,
+          0.73,
+          -1.93
+        ],
+        "fov": 32
+      }
+    },
+    {
+      "id": "explore",
+      "actId": "evening",
+      "focusPart": "whole-vehicle",
+      "holdRange": [
+        0.91,
+        1
+      ],
+      "at": 0.9550000000000001,
+      "pos": [
+        -6.2,
+        2.08,
+        -5.45
+      ],
+      "target": [
+        0,
+        0.68,
+        0
+      ],
+      "fov": 31,
+      "sampled": {
+        "id": "explore",
+        "actId": "evening",
+        "focusPart": "whole-vehicle",
+        "from": 0.91,
+        "to": 1,
+        "pos": [
+          -6.2,
+          2.08,
+          -5.45
+        ],
+        "target": [
+          0,
+          0.68,
+          0
+        ],
+        "fov": 31,
+        "whole": true
+      }
+    }
+  ],
+  "largestPositionStep": 0.01774861547563886,
+  "samples": 20001
+}
