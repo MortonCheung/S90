@@ -1,0 +1,20 @@
+S90 v3 阶段提交索引
+基线 ae52257295bdb9e84b6926a498cf165b7bc24675
+
+阶段  交付 SHA                                     本地原始 SHA                                 标题
+00    ed551d0adb14efe8228332e0e3e9b9ba37db06d3    028a03101a271449b3caaf4c1c24e4302f2209f1    test(visual): stage 00 preserve baseline and capture existing experience
+01    9456eb0f49ff3ddaf11af44700da37cc7382763e    a704d3ea58b1d38b8aa14e70d3cdbe05ca85850e    fix(opening): stage 01 draw spatially ordered major strokes
+02    3261f24d30f6af6fa77c096727e69b324895be2a    a9a424c032d8a35cccf376beae70e3c9c7ec7f9d    fix(opening): stage 02 bind central line to real resource progress
+03    a959bdca55507fafbee5fe5381b79907e62166ab    635253df1bb8033ac7af2a3473bbb5b20a9fe309    fix(opening): stage 03 gate reveal on completed scene frame
+04    ffd32379205e8263fcc624d80c74f2ee83d908be    6358c30026d36b70318d8c9ea03d7841d2c64bd5    fix(model): stage 04 preserve full topology and float normals
+05    818eefcbdc1b5eee4e798c742f515482947576bc    0ccfe167ee1e5be8db364d5896d104a3a0fe7848    fix(studio): stage 05 shape reflections and ground the car
+06    55f1afa9959ab5f1876f00b920804410c83c55ff    763d9d107ef3805c860be76635fa748221de7fb6    refactor(camera): stage 06 direct scroll with composed hold shots
+07    be682bcb0f1eb40fabd8a33d38689590c1a704c9    51872d50a7a3a65867c6ec3847657f5465437f5a    refactor(layout): stage 07 allocate real stage and reading tracks
+08    4d5b7cd6098fac10a7d2e9d533a35945352166a9    d770b48d41f6f67939ba967640476cb4d95fd73b    fix(detail): stage 08 preserve reading space across chapter changes
+09    51316db210cc35b765921e6f0315c48e23e9e6d0    3ebfffb477ee5ae4e05ad17d2044e508676e4940    fix(camera): stage 09 enter the real cabin through the rear side window
+10    87fbd21643b108d0af75cac32906925375356eb1    5153a35d7c81f1fe45ae2d6ec42189087d55593e    refactor(ui): stage 10 simplify controls and keep attribution accessible
+11    74dd0329830a7ff2fd3091eabbad92280e3047f8    a9d7ccc85c8f9465ec9230c7b3bf9f9f5d4ba211    test(visual): stage 11 verify narrative and repair regression findings
+12    dd1e7838f16b2383112ba578c43f4ae9ee317d56    7b85953cb7ee3859f027a800d382277ef6884328    docs(deliverables): stage 12 refresh competition boards and walkthrough
+
+阶段13提交由本索引所在提交收录。用 git log -1 --grep="stage 13" --format="%H %s" 查看。
+阶段00–12原始报告中的基准 SHA 指向执行当时的本地归档。两张施工包关键帧仅保留在本地归档，不属于发布分支的历史。

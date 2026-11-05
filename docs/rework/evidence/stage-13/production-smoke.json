@@ -1,0 +1,56 @@
+{
+  "host": "http://127.0.0.1:4177/",
+  "browser": "155.0.8059.85",
+  "runs": [
+    {
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "full": {
+        "x": 0,
+        "y": 0,
+        "width": 1600,
+        "height": 900
+      },
+      "split": {
+        "x": 0,
+        "y": 0,
+        "width": 1080,
+        "height": 900
+      },
+      "modelResponses": [
+        {
+          "path": "/assets/model/candidates/s90-quality-v3.glb",
+          "status": 200
+        }
+      ],
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "full": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "split": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 464.203125
+      },
+      "modelResponses": [
+        {
+          "path": "/assets/model/candidates/s90-quality-v3.glb",
+          "status": 200
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

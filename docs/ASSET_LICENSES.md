@@ -4,14 +4,15 @@
 | 项 | 内容 |
 | --- | --- |
 | 文件 | `volvo_s90_recharge_free.glb`（源，386,347,164 B） |
-| 优化产物 | `public/assets/model/s90-opt.glb`（14.54 MB，Meshopt + WebP） |
+| v3 运行产物 | `public/assets/model/candidates/s90-quality-v3.glb`（73,364,248 B，Meshopt + WebP） |
+| 初版产物 | `public/assets/model/s90-opt.glb`（14.54 MB，保留以追溯） |
 | 标题 | Volvo S90 Recharge (Free) |
 | 作者 | lazercar — https://sketchfab.com/lazercar |
 | 许可 | **CC BY 4.0** — https://creativecommons.org/licenses/by/4.0/ |
 | 来源 | https://sketchfab.com/3d-models/volvo-s90-recharge-free-9462b07c10244fd4a28d86846dc9e3a9 |
-| 修改 | 简化 0.45、贴图 WebP 2048、Meshopt 压缩、材质运行时调整（漆面/玻璃/镀铬） |
+| v3 修改 | 坐标与 UV 量化、WebP 2048、Meshopt 编码，保留原拓扑、法线和切线，运行时重新调整车漆、玻璃与金属材质 |
 
-署名要求已满足：页面右下（桌面）常驻 “车模 CC BY 4.0 · lazercar”；三张展板页脚均署名；本文件保留完整来源。
+页面「关于」保留作者、模型来源及 CC BY 4.0 链接。v3 参赛材料随设计说明 PDF 一并提供作者、来源、许可与修改说明。
 
 ## 2. 品牌与商标
 Volvo、S90 为沃尔沃集团商标。本项目为**非官方概念设计**，仅用于 2026 华灿奖参赛展示，不构成官方合作、广告或商业发布。页面与展板均标注“非官方概念设计”。

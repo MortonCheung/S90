@@ -1,5 +1,7 @@
 # 交互流程图说明
 
+> 本页为初版历史记录。当前 v3 以[新版参赛 PDF](../deliverables/v3/s90_interaction_flow.pdf)为准。
+
 ## 主流程
 
 ```
