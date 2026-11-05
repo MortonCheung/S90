@@ -38,6 +38,7 @@ try {
     const sample=await page.evaluate(()=>({
       shot:window.__S90Shot(),journey:window.__S90Journey?.() ?? null,
       scenes:window.__S90Scenes?.() ?? null,
+      registration:window.__S90Registration?.() ?? null,
       canvas:document.querySelectorAll('canvas').length,
       stage:document.querySelector('.stage').getBoundingClientRect().toJSON(),
       overflow:document.documentElement.scrollWidth-innerWidth,

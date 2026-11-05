@@ -47,8 +47,11 @@
   {
     "id": "R07",
     "requirement": "用户未来可能提供关键镜头截图，Agent要能据图微调位置/注视目标/FOV并渲染迭代。",
-    "status": "PENDING",
-    "evidence": []
+    "status": "PASS",
+    "evidence": [
+      "docs/reports/v4/STAGE-10.md",
+      "docs/v4/KEYFRAME_CALIBRATION.md"
+    ]
   },
   {
     "id": "R08",
@@ -95,8 +98,10 @@
   {
     "id": "R14",
     "requirement": "主线细节包括整车、灯组、轮毂、侧面、座舱、车尾，不能因四幕新结构删掉旧章节。",
-    "status": "PENDING",
-    "evidence": [],
+    "status": "PASS",
+    "evidence": [
+      "docs/reports/v4/STAGE-09.md"
+    ],
     "baseline": "EXISTING_WITH_REGRESSION_REQUIRED"
   },
   {

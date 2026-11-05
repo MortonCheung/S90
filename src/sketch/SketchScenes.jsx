@@ -17,6 +17,20 @@ export default function SketchScenes({ stateRef }) {
     const elements = [...world.children];
     const plans = elements.map(element => schedulePaths(measurePaths(element)));
     const washes = elements.map(element => [...element.querySelectorAll('[data-wash]:not([data-wash="paper"])')]);
+    const groups=elements.map(element=>[...element.querySelectorAll('svg > g[data-layer]')]);
+    let registrationKey='';
+    const register=({shiftX,shiftY,scale})=>{
+      const key=[shiftX,shiftY,scale].map(value=>value.toFixed(3)).join(':');
+      if(key===registrationKey) return;
+      registrationKey=key;
+      const depths={background:.12,architecture:.5,road:.8,detail:.5,foreground:1};
+      for(const scene of groups) for(const group of scene){
+        const depth=depths[group.dataset.layer];
+        const s=1+(scale-1)*depth;
+        group.setAttribute('transform',`translate(${shiftX*depth} ${shiftY*depth}) translate(800 590) scale(${s}) translate(-800 -590)`);
+      }
+    };
+    stateRef.current.registerScene=register;
     const root = document.documentElement;
     const previousColors = SCENE_COLORS.map(name => [`--sketch-${name}`,root.style.getPropertyValue(`--sketch-${name}`)]);
     let viewport = {width:world.clientWidth,height:world.clientHeight};
@@ -49,6 +63,7 @@ export default function SketchScenes({ stateRef }) {
     if (import.meta.env.DEV) window.__S90Scenes = () => stateRef.current.sceneState;
     return () => {
       observer.disconnect();
+      if(stateRef.current.registerScene===register) delete stateRef.current.registerScene;
       if (stateRef.current.renderScene === render) delete stateRef.current.renderScene;
       for (const [name,value] of previousColors) {
         if(value) root.style.setProperty(name,value);

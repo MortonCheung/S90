@@ -4,6 +4,7 @@ import { Canvas } from '@react-three/fiber';
 import { Studio } from './Studio.jsx';
 import { CarModel } from './CarModel.jsx';
 import { CameraSystem } from './CameraSystem.jsx';
+import SceneRegistration from '../sketch/SceneRegistration.jsx';
 
 function HotspotProjector({ items, outRef }) {
   const { camera, size } = useThree();
@@ -74,6 +75,7 @@ export default function Experience({
         <CarModel gltf={asset.gltf} stateRef={stateRef} paint={paint} cabin={cabin} onFirstFrame={onFirstFrame} onFrameError={onContextLost} />
       ) : null}
       <CameraSystem stateRef={stateRef} explore={explore} api={api} />
+      <SceneRegistration stateRef={stateRef} />
       <HotspotProjector items={hotspots} outRef={projected} />
     </Canvas>
   );
