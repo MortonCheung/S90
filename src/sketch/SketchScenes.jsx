@@ -47,6 +47,7 @@ export default function SketchScenes({ stateRef }) {
       const state = sampleScene(progress,viewport,ready);
       world.style.visibility = state.visible ? 'visible' : 'hidden';
       world.dataset.act = state.act.id;
+      world.style.opacity = String(state.exteriorWeight);
       for (const [name,value] of state.colors) root.style.setProperty(name,value);
       state.scenes.forEach((scene,index) => {
         elements[index].style.opacity = String(scene.weight);

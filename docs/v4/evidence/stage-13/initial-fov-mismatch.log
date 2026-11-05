@@ -1,0 +1,94 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
++ actual - expected
+... Skipped lines
+
+  {
+    canvas: 1,
+    exterior: 1,
+    glass: {
+      material: '65105715-c97e-4ab0-a7dd-dce7806367c2',
+...
+      aspect: 1.7777777777777777,
++     fov: 33.99874600121806,
+-     fov: 34,
+      near: 0.05,
+      owner: 'story',
+      position: [
+        -2.5,
+        1.22,
+...
+      targetNdc: [
++       5.5201631253900243e-17,
+-       5.519947070903265e-17,
+        0,
+        0.9461963262655543
+      ]
+    },
+    t: 0.552
+
+    at file:///Users/morton_cheung/Desktop/%E6%AF%94%E8%B5%9B/%E5%8D%8E%E7%81%BF%E5%A5%96/project/s90-digital-experience/tools/v4/cabin-check.mjs:34:52 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: {
+    t: 0.552,
+    shot: {
+      progress: 0.552046783625731,
+      position: [ -2.5, 1.22, -0.4 ],
+      quaternion: [
+        -0.005732732949111246,
+        -0.7070835422868603,
+        -0.005732732949111246,
+        0.7070835422868603
+      ],
+      target: [ -0.65, 1.19, -0.4 ],
+      fov: 33.99874600121806,
+      near: 0.05,
+      aspect: 1.7777777777777777,
+      owner: 'story',
+      targetNdc: [ 5.5201631253900243e-17, 0, 0.9461963262655543 ]
+    },
+    exterior: 1,
+    glass: {
+      visible: true,
+      opacity: 1,
+      material: '65105715-c97e-4ab0-a7dd-dce7806367c2'
+    },
+    modelId: 'a68417be-4cd7-4aca-96d1-c6383332f216',
+    canvas: 1
+  },
+  expected: {
+    t: 0.552,
+    shot: {
+      progress: 0.552046783625731,
+      position: [ -2.5, 1.22, -0.4 ],
+      quaternion: [
+        -0.005732732949111246,
+        -0.7070835422868603,
+        -0.005732732949111246,
+        0.7070835422868603
+      ],
+      target: [ -0.65, 1.19, -0.4 ],
+      fov: 34,
+      near: 0.05,
+      aspect: 1.7777777777777777,
+      owner: 'story',
+      targetNdc: [ 5.519947070903265e-17, 0, 0.9461963262655543 ]
+    },
+    exterior: 1,
+    glass: {
+      visible: true,
+      opacity: 1,
+      material: '65105715-c97e-4ab0-a7dd-dce7806367c2'
+    },
+    modelId: 'a68417be-4cd7-4aca-96d1-c6383332f216',
+    canvas: 1
+  },
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.15.0

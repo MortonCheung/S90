@@ -34,6 +34,7 @@ export default function DetailPanel({ activeId, cabin, onCabin }) {
                     type="button"
                     className="cabin-option"
                     data-active={cabin === theme.id}
+                    aria-pressed={cabin === theme.id}
                     onClick={() => onCabin(theme.id)}
                     aria-label={`内饰概念配色：${theme.label}`}
                     tabIndex={activeId === data.id ? 0 : -1}
