@@ -1,0 +1,308 @@
+[
+  {
+    "path": "test-results/v4-reference/animejs/inspection.json",
+    "bytes": 66867,
+    "sha256": "e5609d466c97df9d4a4eeadc468a1bd3de2fbffe2d86eacf3e526f841e11910c",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/animejs/load-11582.png",
+    "bytes": 234428,
+    "sha256": "9b1d028be5a3ecebf88ca3c64c50c605acb12c05e36b3c7fbe1250ccaa6b2e5d",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/animejs/load-16659.png",
+    "bytes": 235889,
+    "sha256": "95e1bd6b412ad72094ec6350ddbb5ccd037ee7c4008d6056ea595590db4e7c3f",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/animejs/load-6082.png",
+    "bytes": 42037,
+    "sha256": "045a14c3578f9ded940306bd89fa037a436a2cc07da93764784ecb36e7ce4035",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/animejs/load-6833.png",
+    "bytes": 86807,
+    "sha256": "3743690c505bc104e431ec2687ebe425ca5c8ee1a5fe3e9ad7f05ce1d0f5958f",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/animejs/load-8435.png",
+    "bytes": 229112,
+    "sha256": "38315801dd204e04aa73a6e737c7699ce6c4c58b1b528ac49f5421ec3ff2aaef",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/animejs/page@42c366694be6c1da3a686d10541cf7de.webm",
+    "bytes": 3012509,
+    "sha256": "ec9e0cdbb9ea3c245a75b70622fbb4cb2b11716c0dae1e638e12ebcfee396bbb",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/demo/Paint.png",
+    "bytes": 612564,
+    "sha256": "7feaa58c014fec818c01a1063636b8c2201d360146f209030e410b794eba5160",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/demo/page@118e1f629f5d4d52917059d372ad7f8e.webm",
+    "bytes": 1145774,
+    "sha256": "40513e906efaedbcecf0a7aee8d0b2aecc15301c732db81c9fbf0349b8d245fb",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/demo/page@3df04e1bc6b139945fd062baf7d44f98.webm",
+    "bytes": 3145728,
+    "sha256": "5894d1936ee232ae061f5bfff9372afdfe21e1836b0595a2ea3a27ecc773f9d7",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/demo/page@b8207b18a24c5f9d941f9db8ddb4626f.webm",
+    "bytes": 1310720,
+    "sha256": "63fd913eec7c614252cfe7fea429baea3f90584c8feae73dcd8345f68142817e",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/demo/page@c039ed6d8f8775021590e265f6bf726c.webm",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "complete": false
+  },
+  {
+    "path": "test-results/v4-reference/demo/top.png",
+    "bytes": 623623,
+    "sha256": "abc8a51692db44e0c051cdbd15bd48b809ef867d3cd77f63da26d0db4f4c9852",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/heron/01-ready.png",
+    "bytes": 829750,
+    "sha256": "1201791f4aaf9d68b78f5767b3ffecedc33f1a5bff5508e4822ed0adfcd8132c",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/heron/02-menu-open.png",
+    "bytes": 838181,
+    "sha256": "29de1c856b3e71288f1020a29ba68c94602e763585c073f042b7f2286f3d419f",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/heron/03-menu-closed.png",
+    "bytes": 837404,
+    "sha256": "db114ee429bcfdcb781b73a855d741a502cc9a0ac0fb48d2c55fd0170ac363a2",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/heron/04-wheel-down.png",
+    "bytes": 837351,
+    "sha256": "f666cf4887a6e195826e9c132614b1ad65260185d3c50a4ae50200a9f3c95704",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/heron/05-wheel-down.png",
+    "bytes": 837419,
+    "sha256": "d436652e7939a7202e35d07362d47188ae5fe96e343d9f3ae0a0849186181640",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/heron/06-wheel-reverse.png",
+    "bytes": 837409,
+    "sha256": "3c8c79b84e587dd18363eb3d7cd9b9364fc25002567b03a83d5ed22f9cf1eeb1",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/heron/07-wheel-top.png",
+    "bytes": 837246,
+    "sha256": "bb5ebcbb52023ded9e181975f68a89ad4bd82b249d354001ecb0142a61f07f6d",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/heron/15-reload.png",
+    "bytes": 797677,
+    "sha256": "75e1a8ba7694d45453e8caea7d984b47b3f39ee3d6857cb34b2e95176dbb0a8a",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/heron/actions.json",
+    "bytes": 274064,
+    "sha256": "e46507872b473994e80b4b3f7fc3fa95f7a0f02fac4005779d178363f75792a1",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/heron/full-0-12.png",
+    "bytes": 837358,
+    "sha256": "f9d9d4ab70a543a6cbc3e8f4fdb33de72efceb8e16a94bb0f022c44ccb9c9df8",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/heron/full-0_25-7.png",
+    "bytes": 837298,
+    "sha256": "ad3a6af6de5380eb6994cc89d1cfa688a744023cd22f245b85d715ed08b15fd9",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/heron/full-0_5-11.png",
+    "bytes": 837224,
+    "sha256": "89da9aa7a28b1c64164bf012f1a22073f22a57e10297ed72e8a0c41c759135de",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/heron/full-0_5-8.png",
+    "bytes": 837405,
+    "sha256": "23e442f7b0c716dea0b2deda1107e2682fc2b8f2fe330d74ae4664a3d0e14ad3",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/heron/full-0_75-9.png",
+    "bytes": 837358,
+    "sha256": "cd67ec0fabcb25e628228794b1acb6cc87dcebf8061b0c18394d56338f5dedbe",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/heron/full-1-10.png",
+    "bytes": 837378,
+    "sha256": "677481fa69d417d00d9ee0dc85fd12557214318b76cb41b71866fb40114f9402",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/heron/inspection.json",
+    "bytes": 55114,
+    "sha256": "739f03fb99eb11a8fec7bd40a48d5a04cb0017b82d788b9c99b0a07daad9ba11",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/heron/load-18395.png",
+    "bytes": 827560,
+    "sha256": "d7831573d844cfdfa1b2027a9cf44e82b21e67c0cd746f13559f1df69a53b213",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/heron/load-28603.png",
+    "bytes": 829932,
+    "sha256": "a1a13fe326e7d2bbe153364cd0d78a2ba0adce13897ed03ab2c42661a5670889",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/heron/load-35615.png",
+    "bytes": 829841,
+    "sha256": "fa0e9252b322d9747af3dee75b1f0ab3f9d553ed19cfed50ba34042da90f75c0",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/heron/load-43926.png",
+    "bytes": 829957,
+    "sha256": "333cbe8a8762f7dffd9a04a06b41ae1a62c6adcb6da36158b514974a07f69d58",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/heron/load-7102.png",
+    "bytes": 152679,
+    "sha256": "67cbe18b8128f22daf2bb219a4f254184d472d36a7d93c7eda1a522798d06854",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/heron/opening-filmstrip.png",
+    "bytes": 234693,
+    "sha256": "67a13bc6855c03f0b75a34e2588a07a055e672461438951eeafa1cdf198eb4fa",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/heron/page@6b28d62115c5fee59181004edcf8e0a9.webm",
+    "bytes": 14251732,
+    "sha256": "7ec37c956a2b6be8c98e60e2f9c0db2cc7a9437c5130648a6d97aaade56c55b4",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/heron/page@71debd2a4c8d877594e2c1038f136ca1.webm",
+    "bytes": 13107200,
+    "sha256": "20e9a1abdaddb1540f2fa29ebd70889807d1e7ec6fab4fa7e61fa4028b541454",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/illoca/00-arrival.png",
+    "bytes": 1033987,
+    "sha256": "53a034c9e3fcf047e4ee6d5f37296211549ccef3f0239843f795c30279148b58",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/illoca/01-ready.png",
+    "bytes": 1663256,
+    "sha256": "0684de21e95d6d06a66c888433639d001143ecccbde364adb3eae366febad6a4",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/illoca/attempts.json",
+    "bytes": 6792,
+    "sha256": "230f28071b1380363f230df2f2afebf5a418d26bbb0ed3bf387ae9420ac726d7",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/illoca/forward-01.png",
+    "bytes": 1976205,
+    "sha256": "f0f1f6341c8e1ff7da23bb5b943820f4172264753a1a8e45bfdb7efbb2ca6fcb",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/illoca/forward-02.png",
+    "bytes": 2036431,
+    "sha256": "bbfb7137ca23b6bee4d61a3b365fafb16d662468e6927871b9679185e347c181",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/illoca/forward-03.png",
+    "bytes": 1934762,
+    "sha256": "f13000c289d77bd9946c4d447d53dc37a3746f98b84484a7f3c6f2d5015868ac",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/illoca/forward-04.png",
+    "bytes": 2039744,
+    "sha256": "558d7a1108e894ffad4ce2c6cc75213dc1087b5192ac9ca980ebb65be0a78f5b",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/illoca/forward-05.png",
+    "bytes": 1971155,
+    "sha256": "f9e750d1abbaa15c46da2abc322c5ad1559c36e8a48ad9ce9674fb501d963606",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/illoca/forward-06.png",
+    "bytes": 1978327,
+    "sha256": "8b6cd74c46591a0d3131b254f428891fc0ade2587d39abfc2493d90d90f9d55e",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/illoca/page@45709bc4d102e3ea7b1dbf70a56446bb.webm",
+    "bytes": 6291456,
+    "sha256": "d0a50cc906e4fc371d722cadfcfca4eb4cbd9311473c0ef8a2bff6f475635856",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/illoca/page@d363414a702ee95f7297274205a1c104.webm",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "complete": false
+  },
+  {
+    "path": "test-results/v4-reference/illoca/rea-compatibility.json",
+    "bytes": 1122,
+    "sha256": "4d381fda3bc9559e6d52d6f05a008363ab61f450ce02d926d3be46482db5b620",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/spykercars/probe.json",
+    "bytes": 40787,
+    "sha256": "021a23e8bca21032f9c02add80b0f111cdcf5d26501cf0877e394360b1bcf8b0",
+    "complete": true
+  },
+  {
+    "path": "test-results/v4-reference/spykercars/probe.png",
+    "bytes": 33674,
+    "sha256": "612e6b40e920dc5a1450756b9bb6a410b68c95adb3c65778b88c4d857eabb739",
+    "complete": true
+  }
+]

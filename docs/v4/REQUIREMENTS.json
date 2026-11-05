@@ -56,8 +56,11 @@
   {
     "id": "R10",
     "requirement": "产品部门给Leader明确施工单，每功能单独文档，Leader自动分阶段推进，无需用户逐阶段确认。",
-    "status": "PENDING",
-    "evidence": []
+    "status": "PASS",
+    "evidence": [
+      "docs/reports/v4/STAGE-01.md",
+      "docs/v4/BASELINE.md"
+    ]
   },
   {
     "id": "R11",
@@ -116,8 +119,11 @@
   {
     "id": "R20",
     "requirement": "正式远端 https://github.com/MortonCheung/S90.git；旧m4仅作参考，保护历史。",
-    "status": "PENDING",
-    "evidence": []
+    "status": "PASS",
+    "evidence": [
+      "docs/reports/v4/STAGE-01.md",
+      "docs/v4/BASELINE.md"
+    ]
   },
   {
     "id": "R21",
@@ -128,13 +134,17 @@
   {
     "id": "R22",
     "requirement": "参考 Spyker、Heron、illoca、Anime.js 的视觉机制和结构，不照搬原站素材与代码。",
-    "status": "PENDING",
-    "evidence": []
+    "status": "UNVERIFIED",
+    "evidence": [
+      "docs/research/evidence-index.md"
+    ]
   },
   {
     "id": "R23",
     "requirement": "REA调研由Agent执行，本包只是给出调研任务，不得假装作者已经运行REA。",
-    "status": "PENDING",
-    "evidence": []
+    "status": "PASS",
+    "evidence": [
+      "docs/research/rea.md"
+    ]
   }
 ]
