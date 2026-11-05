@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none" stroke-linecap="butt" stroke-linejoin="miter" role="img" aria-labelledby="residence-title residence-desc" data-scene="residence" data-safe-area="340 440 1000 295">
+  <title id="residence-title">清晨住宅 · 水平庭院</title>
+  <desc id="residence-desc">原创低层住宅与退后的廊架。偏左立面、稀疏窗格和宽前庭将中部偏下留给汽车。</desc>
+  <g data-layer="background" stroke="var(--sketch-quiet,#dce0d7)" stroke-width="0.9">
+    <path vector-effect="non-scaling-stroke" data-wash="paper" fill="var(--sketch-paper,#f3f2ec)" stroke="none" d="M0 0H1600V900H0Z"/>
+    <path vector-effect="non-scaling-stroke" id="residence-distant-left" data-ink="detail" data-direction="ltr" d="M46 438H348"/>
+    <path vector-effect="non-scaling-stroke" id="residence-distant-right" data-ink="detail" data-direction="ltr" d="M1295 438H1554"/>
+  </g>
+  <g data-layer="architecture" stroke="var(--sketch-ink,#555d56)" stroke-width="1.35">
+    <path vector-effect="non-scaling-stroke" data-wash="front-wall" fill="var(--sketch-surface,#faf9f4)" stroke="none" d="M102 203H527V437H102Z"/>
+    <path vector-effect="non-scaling-stroke" data-wash="recessed-side" fill="var(--sketch-ground,#e6e9e2)" stroke="none" d="M527 203L663 212V385L527 437Z"/>
+    <path vector-effect="non-scaling-stroke" data-wash="eave-shadow" fill="var(--sketch-shade,#d3d9d0)" stroke="none" d="M121 230H514V249H121Z"/>
+    <path vector-effect="non-scaling-stroke" id="residence-roof" data-ink="structure" data-direction="ltr" d="M86 203H543"/>
+    <path vector-effect="non-scaling-stroke" id="residence-left-jamb" data-ink="structure" data-direction="ltr" d="M102 203V437"/>
+    <path vector-effect="non-scaling-stroke" id="residence-front-base" data-ink="structure" data-direction="ltr" d="M102 437H527"/>
+    <path vector-effect="non-scaling-stroke" id="residence-corner" data-ink="structure" data-direction="ltr" d="M527 203V437"/>
+    <path vector-effect="non-scaling-stroke" id="residence-side-roof" data-ink="structure" data-direction="ltr" d="M527 203L663 212"/>
+    <path vector-effect="non-scaling-stroke" id="residence-side-base" data-ink="structure" data-direction="ltr" d="M527 437L663 385"/>
+    <path vector-effect="non-scaling-stroke" id="residence-side-end" data-ink="structure" data-direction="ltr" d="M663 212V385"/>
+    <path vector-effect="non-scaling-stroke" id="residence-recess-head" data-ink="structure" data-direction="ltr" d="M121 230H514"/>
+    <path vector-effect="non-scaling-stroke" id="residence-frame-left" data-ink="structure" data-direction="ltr" d="M136 249V419"/>
+    <path vector-effect="non-scaling-stroke" id="residence-frame-middle" data-ink="structure" data-direction="ltr" d="M301 249V419"/>
+    <path vector-effect="non-scaling-stroke" id="residence-frame-right" data-ink="structure" data-direction="ltr" d="M466 249V419"/>
+    <path vector-effect="non-scaling-stroke" id="residence-canopy-top" data-ink="structure" data-direction="ltr" d="M663 300H1068"/>
+    <path vector-effect="non-scaling-stroke" id="residence-canopy-under" data-ink="structure" data-direction="ltr" d="M663 309H1068"/>
+    <path vector-effect="non-scaling-stroke" id="residence-canopy-edge" data-ink="structure" data-direction="ltr" d="M1068 300V309"/>
+    <path vector-effect="non-scaling-stroke" id="residence-canopy-column" data-ink="structure" data-direction="ltr" d="M1049 309V430"/>
+  </g>
+  <g data-layer="road" stroke="var(--sketch-quiet,#dce0d7)" stroke-width="0.9">
+    <path vector-effect="non-scaling-stroke" id="residence-paving-left-a" data-ink="road" data-direction="ltr" d="M0 664L353 476"/>
+    <path vector-effect="non-scaling-stroke" id="residence-paving-left-b" data-ink="road" data-direction="ltr" d="M0 813L469 476"/>
+    <path vector-effect="non-scaling-stroke" id="residence-paving-right-a" data-ink="road" data-direction="ltr" d="M1044 476L1478 900"/>
+    <path vector-effect="non-scaling-stroke" id="residence-paving-right-b" data-ink="road" data-direction="ltr" d="M1202 476L1600 712"/>
+  </g>
+  <g data-layer="detail" stroke="var(--sketch-secondary,#a4aca2)" stroke-width="0.75">
+    <path vector-effect="non-scaling-stroke" data-wash="planter" fill="var(--sketch-accent,#8b927c)" stroke="none" d="M119 423H217V437H119Z"/>
+    <path vector-effect="non-scaling-stroke" id="residence-glazing-head" data-ink="detail" data-direction="ltr" d="M121 249H514"/>
+    <path vector-effect="non-scaling-stroke" id="residence-glazing-transom" data-ink="detail" data-direction="ltr" d="M136 330H466"/>
+    <path vector-effect="non-scaling-stroke" id="residence-mullion-left" data-ink="detail" data-direction="ltr" d="M148 249V419"/>
+    <path vector-effect="non-scaling-stroke" id="residence-mullion-middle" data-ink="detail" data-direction="ltr" d="M313 249V419"/>
+    <path vector-effect="non-scaling-stroke" id="residence-mullion-right" data-ink="detail" data-direction="ltr" d="M454 249V419"/>
+    <path vector-effect="non-scaling-stroke" id="residence-side-glazing-top" data-ink="detail" data-direction="ltr" d="M552 249L636 247"/>
+    <path vector-effect="non-scaling-stroke" id="residence-side-glazing-bottom" data-ink="detail" data-direction="ltr" d="M552 410L636 383"/>
+    <path vector-effect="non-scaling-stroke" id="residence-side-glazing-left" data-ink="detail" data-direction="ltr" d="M552 249V410"/>
+    <path vector-effect="non-scaling-stroke" id="residence-side-glazing-right" data-ink="detail" data-direction="ltr" d="M636 247V383"/>
+    <path vector-effect="non-scaling-stroke" id="residence-side-mullion" data-ink="detail" data-direction="ltr" d="M594 248V396"/>
+    <path vector-effect="non-scaling-stroke" id="residence-young-tree" data-ink="detail" data-direction="ltr" d="M164 376V423"/>
+    <path vector-effect="non-scaling-stroke" id="residence-tree-branch-left" data-ink="detail" data-direction="ltr" d="M147 377L164 391"/>
+    <path vector-effect="non-scaling-stroke" id="residence-tree-branch-right" data-ink="detail" data-direction="ltr" d="M164 404L182 388"/>
+    <path vector-effect="non-scaling-stroke" id="residence-bench-top" data-ink="detail" data-direction="ltr" d="M1185 393H1401"/>
+    <path vector-effect="non-scaling-stroke" id="residence-bench-leg-left" data-ink="detail" data-direction="ltr" d="M1198 393V421"/>
+    <path vector-effect="non-scaling-stroke" id="residence-bench-leg-right" data-ink="detail" data-direction="ltr" d="M1387 393V421"/>
+  </g>
+  <g data-layer="foreground" stroke="var(--sketch-quiet,#dce0d7)" stroke-width="0.9">
+    <path vector-effect="non-scaling-stroke" id="residence-near-joint-left" data-ink="road" data-direction="ltr" d="M58 784H287"/>
+    <path vector-effect="non-scaling-stroke" id="residence-near-joint-right" data-ink="road" data-direction="ltr" d="M1335 784H1541"/>
+  </g>
+</svg>

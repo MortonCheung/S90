@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none" stroke-linecap="butt" stroke-linejoin="miter" role="img" aria-labelledby="arrival-title arrival-desc" data-scene="arrival" data-safe-area="340 440 1000 295">
+  <title id="arrival-title">午后停驻 · 挑檐入口</title>
+  <desc id="arrival-desc">原创商务建筑入口，宽挑檐、偏置石墙、玻璃门厅和空旷落客前庭构成停驻空间。</desc>
+  <g data-layer="background" stroke="var(--sketch-quiet,#dce0d7)" stroke-width="0.9">
+    <path vector-effect="non-scaling-stroke" data-wash="paper" fill="var(--sketch-paper,#f1eee7)" stroke="none" d="M0 0H1600V900H0Z"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-distant-wall-top" data-ink="detail" data-direction="ltr" d="M1145 278H1532"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-distant-wall-end" data-ink="detail" data-direction="ltr" d="M1532 278V423"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-distant-ground" data-ink="detail" data-direction="ltr" d="M1328 423H1560"/>
+  </g>
+  <g data-layer="architecture" stroke="var(--sketch-ink,#555d56)" stroke-width="1.35">
+    <path vector-effect="non-scaling-stroke" data-wash="stone-screen" fill="var(--sketch-ground,#e5ded3)" stroke="none" d="M116 155H372V434H116Z"/>
+    <path vector-effect="non-scaling-stroke" data-wash="glass-hall" fill="var(--sketch-surface,#f9f6f0)" stroke="none" d="M372 220H1006V426H372Z"/>
+    <path vector-effect="non-scaling-stroke" data-wash="canopy-soffit" fill="var(--sketch-shade,#d5c8b7)" stroke="none" d="M82 218H1150L1104 240H82Z"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-stone-top" data-ink="structure" data-direction="ltr" d="M116 155H372"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-stone-left" data-ink="structure" data-direction="ltr" d="M116 155V434"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-stone-right" data-ink="structure" data-direction="ltr" d="M372 155V434"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-stone-base" data-ink="structure" data-direction="ltr" d="M116 434H372"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-canopy-roof" data-ink="structure" data-direction="ltr" d="M82 211H1150"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-canopy-front" data-ink="structure" data-direction="ltr" d="M82 218H1150"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-canopy-under" data-ink="structure" data-direction="ltr" d="M82 240H1104"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-canopy-return" data-ink="structure" data-direction="ltr" d="M1104 240L1150 218"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-canopy-edge-left" data-ink="structure" data-direction="ltr" d="M82 211V240"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-canopy-edge-right" data-ink="structure" data-direction="ltr" d="M1150 211V218"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-hall-left" data-ink="structure" data-direction="ltr" d="M400 240V426"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-hall-right" data-ink="structure" data-direction="ltr" d="M1006 240V426"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-hall-base" data-ink="structure" data-direction="ltr" d="M400 426H1006"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-outer-column" data-ink="structure" data-direction="ltr" d="M1104 240V432"/>
+  </g>
+  <g data-layer="road" stroke="var(--sketch-quiet,#dce0d7)" stroke-width="0.9">
+    <path vector-effect="non-scaling-stroke" id="arrival-front-joint-left" data-ink="road" data-direction="ltr" d="M0 690L344 474"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-front-joint-right" data-ink="road" data-direction="ltr" d="M1262 474L1600 654"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-step-edge-left" data-ink="road" data-direction="ltr" d="M64 457H314"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-step-edge-right" data-ink="road" data-direction="ltr" d="M1345 457H1535"/>
+  </g>
+  <g data-layer="detail" stroke="var(--sketch-secondary,#a4aca2)" stroke-width="0.75">
+    <path vector-effect="non-scaling-stroke" data-wash="low-planter" fill="var(--sketch-accent,#9a856d)" stroke="none" d="M1240 416H1420V432H1240Z"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-stone-joint-high" data-ink="detail" data-direction="ltr" d="M116 285H372"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-stone-joint-low" data-ink="detail" data-direction="ltr" d="M116 365H372"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-stone-vertical-joint" data-ink="detail" data-direction="ltr" d="M244 155V285"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-glass-head" data-ink="detail" data-direction="ltr" d="M400 270H1006"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-glass-transom" data-ink="detail" data-direction="ltr" d="M400 346H1006"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-glass-mullion-left" data-ink="detail" data-direction="ltr" d="M512 240V426"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-door-left" data-ink="detail" data-direction="ltr" d="M660 270V426"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-door-centre" data-ink="detail" data-direction="ltr" d="M744 270V426"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-door-right" data-ink="detail" data-direction="ltr" d="M828 270V426"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-glass-mullion-right" data-ink="detail" data-direction="ltr" d="M922 240V426"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-door-pull-left" data-ink="detail" data-direction="ltr" d="M730 354V380"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-door-pull-right" data-ink="detail" data-direction="ltr" d="M758 354V380"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-planter-top" data-ink="detail" data-direction="ltr" d="M1240 416H1420"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-grass-left" data-ink="detail" data-direction="ltr" d="M1280 387L1290 416"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-grass-centre" data-ink="detail" data-direction="ltr" d="M1309 378V416"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-grass-right" data-ink="detail" data-direction="ltr" d="M1325 416L1342 389"/>
+  </g>
+  <g data-layer="foreground" stroke="var(--sketch-quiet,#dce0d7)" stroke-width="0.9">
+    <path vector-effect="non-scaling-stroke" id="arrival-near-joint-left" data-ink="road" data-direction="ltr" d="M64 802H291"/>
+    <path vector-effect="non-scaling-stroke" id="arrival-near-joint-right" data-ink="road" data-direction="ltr" d="M1327 802H1539"/>
+  </g>
+</svg>

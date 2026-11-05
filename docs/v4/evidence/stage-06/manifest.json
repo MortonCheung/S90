@@ -1,0 +1,4699 @@
+{
+  "date": "2026-11-05T08:02:07.094Z",
+  "browser": "155.0.8059.85",
+  "viewBox": [
+    0,
+    0,
+    1600,
+    900
+  ],
+  "preview": {
+    "levels": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "method": "Static left-to-right inspection frontier; no timer, easing or runtime scheduler.",
+    "washPolicy": "Paper remains visible. Auxiliary fills appear only in the 100% inspection frame.",
+    "runtimeGrowthRange": null,
+    "note": "Spatial xRange is measured geometry, not the stage-07 animation time range. Vertical paths are shown once the static frontier passes their x coordinate."
+  },
+  "scenes": [
+    {
+      "id": "residence",
+      "viewBox": "0 0 1600 900",
+      "safeArea": [
+        340,
+        440,
+        1000,
+        295
+      ],
+      "layers": [
+        "background",
+        "architecture",
+        "road",
+        "detail",
+        "foreground"
+      ],
+      "forbidden": 0,
+      "hrefs": 0,
+      "unclassified": 0,
+      "mixedFillAndInk": 0,
+      "washes": [
+        {
+          "name": "paper",
+          "layer": "background"
+        },
+        {
+          "name": "front-wall",
+          "layer": "architecture"
+        },
+        {
+          "name": "recessed-side",
+          "layer": "architecture"
+        },
+        {
+          "name": "eave-shadow",
+          "layer": "architecture"
+        },
+        {
+          "name": "planter",
+          "layer": "detail"
+        }
+      ],
+      "paths": [
+        {
+          "id": "residence-distant-left",
+          "ink": "detail",
+          "layer": "background",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 302,
+          "start": [
+            46,
+            438
+          ],
+          "end": [
+            348,
+            438
+          ],
+          "bbox": {
+            "x": 46,
+            "y": 438,
+            "width": 302,
+            "height": 0
+          },
+          "xRange": [
+            0.02875,
+            0.2175
+          ],
+          "growthRange": null,
+          "stroke": "rgb(220, 224, 215)",
+          "strokeWidth": "0.9px"
+        },
+        {
+          "id": "residence-distant-right",
+          "ink": "detail",
+          "layer": "background",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 259,
+          "start": [
+            1295,
+            438
+          ],
+          "end": [
+            1554,
+            438
+          ],
+          "bbox": {
+            "x": 1295,
+            "y": 438,
+            "width": 259,
+            "height": 0
+          },
+          "xRange": [
+            0.809375,
+            0.97125
+          ],
+          "growthRange": null,
+          "stroke": "rgb(220, 224, 215)",
+          "strokeWidth": "0.9px"
+        },
+        {
+          "id": "residence-roof",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 457,
+          "start": [
+            86,
+            203
+          ],
+          "end": [
+            543,
+            203
+          ],
+          "bbox": {
+            "x": 86,
+            "y": 203,
+            "width": 457,
+            "height": 0
+          },
+          "xRange": [
+            0.05375,
+            0.339375
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "residence-left-jamb",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 234,
+          "start": [
+            102,
+            203
+          ],
+          "end": [
+            102,
+            437
+          ],
+          "bbox": {
+            "x": 102,
+            "y": 203,
+            "width": 0,
+            "height": 234
+          },
+          "xRange": [
+            0.06375,
+            0.06375
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "residence-front-base",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 425,
+          "start": [
+            102,
+            437
+          ],
+          "end": [
+            527,
+            437
+          ],
+          "bbox": {
+            "x": 102,
+            "y": 437,
+            "width": 425,
+            "height": 0
+          },
+          "xRange": [
+            0.06375,
+            0.329375
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "residence-corner",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 234,
+          "start": [
+            527,
+            203
+          ],
+          "end": [
+            527,
+            437
+          ],
+          "bbox": {
+            "x": 527,
+            "y": 203,
+            "width": 0,
+            "height": 234
+          },
+          "xRange": [
+            0.329375,
+            0.329375
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "residence-side-roof",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 136.29747009277344,
+          "start": [
+            527,
+            203
+          ],
+          "end": [
+            663,
+            212
+          ],
+          "bbox": {
+            "x": 527,
+            "y": 203,
+            "width": 136,
+            "height": 9
+          },
+          "xRange": [
+            0.329375,
+            0.414375
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "residence-side-base",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 145.60220336914062,
+          "start": [
+            527,
+            437
+          ],
+          "end": [
+            663,
+            385
+          ],
+          "bbox": {
+            "x": 527,
+            "y": 385,
+            "width": 136,
+            "height": 52
+          },
+          "xRange": [
+            0.329375,
+            0.414375
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "residence-side-end",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 173,
+          "start": [
+            663,
+            212
+          ],
+          "end": [
+            663,
+            385
+          ],
+          "bbox": {
+            "x": 663,
+            "y": 212,
+            "width": 0,
+            "height": 173
+          },
+          "xRange": [
+            0.414375,
+            0.414375
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "residence-recess-head",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 393,
+          "start": [
+            121,
+            230
+          ],
+          "end": [
+            514,
+            230
+          ],
+          "bbox": {
+            "x": 121,
+            "y": 230,
+            "width": 393,
+            "height": 0
+          },
+          "xRange": [
+            0.075625,
+            0.32125
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "residence-frame-left",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 170,
+          "start": [
+            136,
+            249
+          ],
+          "end": [
+            136,
+            419
+          ],
+          "bbox": {
+            "x": 136,
+            "y": 249,
+            "width": 0,
+            "height": 170
+          },
+          "xRange": [
+            0.085,
+            0.085
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "residence-frame-middle",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 170,
+          "start": [
+            301,
+            249
+          ],
+          "end": [
+            301,
+            419
+          ],
+          "bbox": {
+            "x": 301,
+            "y": 249,
+            "width": 0,
+            "height": 170
+          },
+          "xRange": [
+            0.188125,
+            0.188125
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "residence-frame-right",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 170,
+          "start": [
+            466,
+            249
+          ],
+          "end": [
+            466,
+            419
+          ],
+          "bbox": {
+            "x": 466,
+            "y": 249,
+            "width": 0,
+            "height": 170
+          },
+          "xRange": [
+            0.29125,
+            0.29125
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "residence-canopy-top",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 405,
+          "start": [
+            663,
+            300
+          ],
+          "end": [
+            1068,
+            300
+          ],
+          "bbox": {
+            "x": 663,
+            "y": 300,
+            "width": 405,
+            "height": 0
+          },
+          "xRange": [
+            0.414375,
+            0.6675
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "residence-canopy-under",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 405,
+          "start": [
+            663,
+            309
+          ],
+          "end": [
+            1068,
+            309
+          ],
+          "bbox": {
+            "x": 663,
+            "y": 309,
+            "width": 405,
+            "height": 0
+          },
+          "xRange": [
+            0.414375,
+            0.6675
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "residence-canopy-edge",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 9,
+          "start": [
+            1068,
+            300
+          ],
+          "end": [
+            1068,
+            309
+          ],
+          "bbox": {
+            "x": 1068,
+            "y": 300,
+            "width": 0,
+            "height": 9
+          },
+          "xRange": [
+            0.6675,
+            0.6675
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "residence-canopy-column",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 121,
+          "start": [
+            1049,
+            309
+          ],
+          "end": [
+            1049,
+            430
+          ],
+          "bbox": {
+            "x": 1049,
+            "y": 309,
+            "width": 0,
+            "height": 121
+          },
+          "xRange": [
+            0.655625,
+            0.655625
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "residence-paving-left-a",
+          "ink": "road",
+          "layer": "road",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 399.9412536621094,
+          "start": [
+            0,
+            664
+          ],
+          "end": [
+            353,
+            476
+          ],
+          "bbox": {
+            "x": 0,
+            "y": 476,
+            "width": 353,
+            "height": 188
+          },
+          "xRange": [
+            0,
+            0.220625
+          ],
+          "growthRange": null,
+          "stroke": "rgb(220, 224, 215)",
+          "strokeWidth": "0.9px"
+        },
+        {
+          "id": "residence-paving-left-b",
+          "ink": "road",
+          "layer": "road",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 577.5205688476562,
+          "start": [
+            0,
+            813
+          ],
+          "end": [
+            469,
+            476
+          ],
+          "bbox": {
+            "x": 0,
+            "y": 476,
+            "width": 469,
+            "height": 337
+          },
+          "xRange": [
+            0,
+            0.293125
+          ],
+          "growthRange": null,
+          "stroke": "rgb(220, 224, 215)",
+          "strokeWidth": "0.9px"
+        },
+        {
+          "id": "residence-paving-right-a",
+          "ink": "road",
+          "layer": "road",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 606.7388305664062,
+          "start": [
+            1044,
+            476
+          ],
+          "end": [
+            1478,
+            900
+          ],
+          "bbox": {
+            "x": 1044,
+            "y": 476,
+            "width": 434,
+            "height": 424
+          },
+          "xRange": [
+            0.6525,
+            0.92375
+          ],
+          "growthRange": null,
+          "stroke": "rgb(220, 224, 215)",
+          "strokeWidth": "0.9px"
+        },
+        {
+          "id": "residence-paving-right-b",
+          "ink": "road",
+          "layer": "road",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 462.70941162109375,
+          "start": [
+            1202,
+            476
+          ],
+          "end": [
+            1600,
+            712
+          ],
+          "bbox": {
+            "x": 1202,
+            "y": 476,
+            "width": 398,
+            "height": 236
+          },
+          "xRange": [
+            0.75125,
+            1
+          ],
+          "growthRange": null,
+          "stroke": "rgb(220, 224, 215)",
+          "strokeWidth": "0.9px"
+        },
+        {
+          "id": "residence-glazing-head",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 393,
+          "start": [
+            121,
+            249
+          ],
+          "end": [
+            514,
+            249
+          ],
+          "bbox": {
+            "x": 121,
+            "y": 249,
+            "width": 393,
+            "height": 0
+          },
+          "xRange": [
+            0.075625,
+            0.32125
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "residence-glazing-transom",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 330,
+          "start": [
+            136,
+            330
+          ],
+          "end": [
+            466,
+            330
+          ],
+          "bbox": {
+            "x": 136,
+            "y": 330,
+            "width": 330,
+            "height": 0
+          },
+          "xRange": [
+            0.085,
+            0.29125
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "residence-mullion-left",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 170,
+          "start": [
+            148,
+            249
+          ],
+          "end": [
+            148,
+            419
+          ],
+          "bbox": {
+            "x": 148,
+            "y": 249,
+            "width": 0,
+            "height": 170
+          },
+          "xRange": [
+            0.0925,
+            0.0925
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "residence-mullion-middle",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 170,
+          "start": [
+            313,
+            249
+          ],
+          "end": [
+            313,
+            419
+          ],
+          "bbox": {
+            "x": 313,
+            "y": 249,
+            "width": 0,
+            "height": 170
+          },
+          "xRange": [
+            0.195625,
+            0.195625
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "residence-mullion-right",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 170,
+          "start": [
+            454,
+            249
+          ],
+          "end": [
+            454,
+            419
+          ],
+          "bbox": {
+            "x": 454,
+            "y": 249,
+            "width": 0,
+            "height": 170
+          },
+          "xRange": [
+            0.28375,
+            0.28375
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "residence-side-glazing-top",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 84.0238037109375,
+          "start": [
+            552,
+            249
+          ],
+          "end": [
+            636,
+            247
+          ],
+          "bbox": {
+            "x": 552,
+            "y": 247,
+            "width": 84,
+            "height": 2
+          },
+          "xRange": [
+            0.345,
+            0.3975
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "residence-side-glazing-bottom",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 88.23265075683594,
+          "start": [
+            552,
+            410
+          ],
+          "end": [
+            636,
+            383
+          ],
+          "bbox": {
+            "x": 552,
+            "y": 383,
+            "width": 84,
+            "height": 27
+          },
+          "xRange": [
+            0.345,
+            0.3975
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "residence-side-glazing-left",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 161,
+          "start": [
+            552,
+            249
+          ],
+          "end": [
+            552,
+            410
+          ],
+          "bbox": {
+            "x": 552,
+            "y": 249,
+            "width": 0,
+            "height": 161
+          },
+          "xRange": [
+            0.345,
+            0.345
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "residence-side-glazing-right",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 136,
+          "start": [
+            636,
+            247
+          ],
+          "end": [
+            636,
+            383
+          ],
+          "bbox": {
+            "x": 636,
+            "y": 247,
+            "width": 0,
+            "height": 136
+          },
+          "xRange": [
+            0.3975,
+            0.3975
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "residence-side-mullion",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 148,
+          "start": [
+            594,
+            248
+          ],
+          "end": [
+            594,
+            396
+          ],
+          "bbox": {
+            "x": 594,
+            "y": 248,
+            "width": 0,
+            "height": 148
+          },
+          "xRange": [
+            0.37125,
+            0.37125
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "residence-young-tree",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 47,
+          "start": [
+            164,
+            376
+          ],
+          "end": [
+            164,
+            423
+          ],
+          "bbox": {
+            "x": 164,
+            "y": 376,
+            "width": 0,
+            "height": 47
+          },
+          "xRange": [
+            0.1025,
+            0.1025
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "residence-tree-branch-left",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 22.022714614868164,
+          "start": [
+            147,
+            377
+          ],
+          "end": [
+            164,
+            391
+          ],
+          "bbox": {
+            "x": 147,
+            "y": 377,
+            "width": 17,
+            "height": 14
+          },
+          "xRange": [
+            0.091875,
+            0.1025
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "residence-tree-branch-right",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 24.083189010620117,
+          "start": [
+            164,
+            404
+          ],
+          "end": [
+            182,
+            388
+          ],
+          "bbox": {
+            "x": 164,
+            "y": 388,
+            "width": 18,
+            "height": 16
+          },
+          "xRange": [
+            0.1025,
+            0.11375
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "residence-bench-top",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 216,
+          "start": [
+            1185,
+            393
+          ],
+          "end": [
+            1401,
+            393
+          ],
+          "bbox": {
+            "x": 1185,
+            "y": 393,
+            "width": 216,
+            "height": 0
+          },
+          "xRange": [
+            0.740625,
+            0.875625
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "residence-bench-leg-left",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 28,
+          "start": [
+            1198,
+            393
+          ],
+          "end": [
+            1198,
+            421
+          ],
+          "bbox": {
+            "x": 1198,
+            "y": 393,
+            "width": 0,
+            "height": 28
+          },
+          "xRange": [
+            0.74875,
+            0.74875
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "residence-bench-leg-right",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 28,
+          "start": [
+            1387,
+            393
+          ],
+          "end": [
+            1387,
+            421
+          ],
+          "bbox": {
+            "x": 1387,
+            "y": 393,
+            "width": 0,
+            "height": 28
+          },
+          "xRange": [
+            0.866875,
+            0.866875
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "residence-near-joint-left",
+          "ink": "road",
+          "layer": "foreground",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 229,
+          "start": [
+            58,
+            784
+          ],
+          "end": [
+            287,
+            784
+          ],
+          "bbox": {
+            "x": 58,
+            "y": 784,
+            "width": 229,
+            "height": 0
+          },
+          "xRange": [
+            0.03625,
+            0.179375
+          ],
+          "growthRange": null,
+          "stroke": "rgb(220, 224, 215)",
+          "strokeWidth": "0.9px"
+        },
+        {
+          "id": "residence-near-joint-right",
+          "ink": "road",
+          "layer": "foreground",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 206,
+          "start": [
+            1335,
+            784
+          ],
+          "end": [
+            1541,
+            784
+          ],
+          "bbox": {
+            "x": 1335,
+            "y": 784,
+            "width": 206,
+            "height": 0
+          },
+          "xRange": [
+            0.834375,
+            0.963125
+          ],
+          "growthRange": null,
+          "stroke": "rgb(220, 224, 215)",
+          "strokeWidth": "0.9px"
+        }
+      ],
+      "files": [
+        "residence-0.png",
+        "residence-25.png",
+        "residence-50.png",
+        "residence-75.png",
+        "residence-100.png"
+      ]
+    },
+    {
+      "id": "city",
+      "viewBox": "0 0 1600 900",
+      "safeArea": [
+        340,
+        440,
+        1000,
+        295
+      ],
+      "layers": [
+        "background",
+        "architecture",
+        "road",
+        "detail",
+        "foreground"
+      ],
+      "forbidden": 0,
+      "hrefs": 0,
+      "unclassified": 0,
+      "mixedFillAndInk": 0,
+      "washes": [
+        {
+          "name": "paper",
+          "layer": "background"
+        },
+        {
+          "name": "near-stone",
+          "layer": "architecture"
+        },
+        {
+          "name": "receding-face",
+          "layer": "architecture"
+        },
+        {
+          "name": "arcade-shadow",
+          "layer": "architecture"
+        },
+        {
+          "name": "shop-plinth",
+          "layer": "detail"
+        }
+      ],
+      "paths": [
+        {
+          "id": "city-distant-roof",
+          "ink": "detail",
+          "layer": "background",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 290,
+          "start": [
+            1098,
+            322
+          ],
+          "end": [
+            1388,
+            322
+          ],
+          "bbox": {
+            "x": 1098,
+            "y": 322,
+            "width": 290,
+            "height": 0
+          },
+          "xRange": [
+            0.68625,
+            0.8675
+          ],
+          "growthRange": null,
+          "stroke": "rgb(220, 224, 215)",
+          "strokeWidth": "0.9px"
+        },
+        {
+          "id": "city-distant-corner",
+          "ink": "detail",
+          "layer": "background",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 91,
+          "start": [
+            1388,
+            322
+          ],
+          "end": [
+            1388,
+            413
+          ],
+          "bbox": {
+            "x": 1388,
+            "y": 322,
+            "width": 0,
+            "height": 91
+          },
+          "xRange": [
+            0.8675,
+            0.8675
+          ],
+          "growthRange": null,
+          "stroke": "rgb(220, 224, 215)",
+          "strokeWidth": "0.9px"
+        },
+        {
+          "id": "city-distant-plinth",
+          "ink": "detail",
+          "layer": "background",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 296,
+          "start": [
+            1211,
+            413
+          ],
+          "end": [
+            1507,
+            413
+          ],
+          "bbox": {
+            "x": 1211,
+            "y": 413,
+            "width": 296,
+            "height": 0
+          },
+          "xRange": [
+            0.756875,
+            0.941875
+          ],
+          "growthRange": null,
+          "stroke": "rgb(220, 224, 215)",
+          "strokeWidth": "0.9px"
+        },
+        {
+          "id": "city-near-roof",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 261,
+          "start": [
+            70,
+            121
+          ],
+          "end": [
+            331,
+            121
+          ],
+          "bbox": {
+            "x": 70,
+            "y": 121,
+            "width": 261,
+            "height": 0
+          },
+          "xRange": [
+            0.04375,
+            0.206875
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "city-near-left",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 319,
+          "start": [
+            70,
+            121
+          ],
+          "end": [
+            70,
+            440
+          ],
+          "bbox": {
+            "x": 70,
+            "y": 121,
+            "width": 0,
+            "height": 319
+          },
+          "xRange": [
+            0.04375,
+            0.04375
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "city-near-corner",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 319,
+          "start": [
+            331,
+            121
+          ],
+          "end": [
+            331,
+            440
+          ],
+          "bbox": {
+            "x": 331,
+            "y": 121,
+            "width": 0,
+            "height": 319
+          },
+          "xRange": [
+            0.206875,
+            0.206875
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "city-near-plinth",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 261,
+          "start": [
+            70,
+            440
+          ],
+          "end": [
+            331,
+            440
+          ],
+          "bbox": {
+            "x": 70,
+            "y": 440,
+            "width": 261,
+            "height": 0
+          },
+          "xRange": [
+            0.04375,
+            0.206875
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "city-receding-roof",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 688.212158203125,
+          "start": [
+            331,
+            121
+          ],
+          "end": [
+            1011,
+            227
+          ],
+          "bbox": {
+            "x": 331,
+            "y": 121,
+            "width": 680,
+            "height": 106
+          },
+          "xRange": [
+            0.206875,
+            0.631875
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "city-receding-plinth",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 705.509765625,
+          "start": [
+            331,
+            440
+          ],
+          "end": [
+            1011,
+            252
+          ],
+          "bbox": {
+            "x": 331,
+            "y": 252,
+            "width": 680,
+            "height": 188
+          },
+          "xRange": [
+            0.206875,
+            0.631875
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "city-arcade-head",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 681.4873657226562,
+          "start": [
+            331,
+            286
+          ],
+          "end": [
+            1011,
+            241
+          ],
+          "bbox": {
+            "x": 331,
+            "y": 241,
+            "width": 680,
+            "height": 45
+          },
+          "xRange": [
+            0.206875,
+            0.631875
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "city-arcade-under",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 682.9121704101562,
+          "start": [
+            331,
+            310
+          ],
+          "end": [
+            1011,
+            247
+          ],
+          "bbox": {
+            "x": 331,
+            "y": 247,
+            "width": 680,
+            "height": 63
+          },
+          "xRange": [
+            0.206875,
+            0.631875
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "city-pier-near",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 123,
+          "start": [
+            478,
+            276
+          ],
+          "end": [
+            478,
+            399
+          ],
+          "bbox": {
+            "x": 478,
+            "y": 276,
+            "width": 0,
+            "height": 123
+          },
+          "xRange": [
+            0.29875,
+            0.29875
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "city-pier-middle",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 83,
+          "start": [
+            668,
+            264
+          ],
+          "end": [
+            668,
+            347
+          ],
+          "bbox": {
+            "x": 668,
+            "y": 264,
+            "width": 0,
+            "height": 83
+          },
+          "xRange": [
+            0.4175,
+            0.4175
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "city-pier-far",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 52,
+          "start": [
+            817,
+            254
+          ],
+          "end": [
+            817,
+            306
+          ],
+          "bbox": {
+            "x": 817,
+            "y": 254,
+            "width": 0,
+            "height": 52
+          },
+          "xRange": [
+            0.510625,
+            0.510625
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "city-pier-end",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 25,
+          "start": [
+            942,
+            246
+          ],
+          "end": [
+            942,
+            271
+          ],
+          "bbox": {
+            "x": 942,
+            "y": 246,
+            "width": 0,
+            "height": 25
+          },
+          "xRange": [
+            0.58875,
+            0.58875
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "city-kerb-left",
+          "ink": "road",
+          "layer": "road",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 435.79010009765625,
+          "start": [
+            0,
+            701
+          ],
+          "end": [
+            372,
+            474
+          ],
+          "bbox": {
+            "x": 0,
+            "y": 474,
+            "width": 372,
+            "height": 227
+          },
+          "xRange": [
+            0,
+            0.2325
+          ],
+          "growthRange": null,
+          "stroke": "rgb(220, 224, 215)",
+          "strokeWidth": "0.9px"
+        },
+        {
+          "id": "city-kerb-left-inner",
+          "ink": "road",
+          "layer": "road",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 469.5721435546875,
+          "start": [
+            0,
+            731
+          ],
+          "end": [
+            393,
+            474
+          ],
+          "bbox": {
+            "x": 0,
+            "y": 474,
+            "width": 393,
+            "height": 257
+          },
+          "xRange": [
+            0,
+            0.245625
+          ],
+          "growthRange": null,
+          "stroke": "rgb(220, 224, 215)",
+          "strokeWidth": "0.9px"
+        },
+        {
+          "id": "city-street-edge-right",
+          "ink": "road",
+          "layer": "road",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 514.1488037109375,
+          "start": [
+            1230,
+            474
+          ],
+          "end": [
+            1600,
+            831
+          ],
+          "bbox": {
+            "x": 1230,
+            "y": 474,
+            "width": 370,
+            "height": 357
+          },
+          "xRange": [
+            0.76875,
+            1
+          ],
+          "growthRange": null,
+          "stroke": "rgb(220, 224, 215)",
+          "strokeWidth": "0.9px"
+        },
+        {
+          "id": "city-far-crossing-left",
+          "ink": "road",
+          "layer": "road",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 234,
+          "start": [
+            58,
+            462
+          ],
+          "end": [
+            292,
+            462
+          ],
+          "bbox": {
+            "x": 58,
+            "y": 462,
+            "width": 234,
+            "height": 0
+          },
+          "xRange": [
+            0.03625,
+            0.1825
+          ],
+          "growthRange": null,
+          "stroke": "rgb(220, 224, 215)",
+          "strokeWidth": "0.9px"
+        },
+        {
+          "id": "city-far-crossing-right",
+          "ink": "road",
+          "layer": "road",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 194,
+          "start": [
+            1348,
+            462
+          ],
+          "end": [
+            1542,
+            462
+          ],
+          "bbox": {
+            "x": 1348,
+            "y": 462,
+            "width": 194,
+            "height": 0
+          },
+          "xRange": [
+            0.8425,
+            0.96375
+          ],
+          "growthRange": null,
+          "stroke": "rgb(220, 224, 215)",
+          "strokeWidth": "0.9px"
+        },
+        {
+          "id": "city-upper-window-head",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 210,
+          "start": [
+            96,
+            157
+          ],
+          "end": [
+            306,
+            157
+          ],
+          "bbox": {
+            "x": 96,
+            "y": 157,
+            "width": 210,
+            "height": 0
+          },
+          "xRange": [
+            0.06,
+            0.19125
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "city-upper-window-sill",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 210,
+          "start": [
+            96,
+            236
+          ],
+          "end": [
+            306,
+            236
+          ],
+          "bbox": {
+            "x": 96,
+            "y": 236,
+            "width": 210,
+            "height": 0
+          },
+          "xRange": [
+            0.06,
+            0.19125
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "city-window-left",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 79,
+          "start": [
+            96,
+            157
+          ],
+          "end": [
+            96,
+            236
+          ],
+          "bbox": {
+            "x": 96,
+            "y": 157,
+            "width": 0,
+            "height": 79
+          },
+          "xRange": [
+            0.06,
+            0.06
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "city-window-middle",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 79,
+          "start": [
+            201,
+            157
+          ],
+          "end": [
+            201,
+            236
+          ],
+          "bbox": {
+            "x": 201,
+            "y": 157,
+            "width": 0,
+            "height": 79
+          },
+          "xRange": [
+            0.125625,
+            0.125625
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "city-window-right",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 79,
+          "start": [
+            306,
+            157
+          ],
+          "end": [
+            306,
+            236
+          ],
+          "bbox": {
+            "x": 306,
+            "y": 157,
+            "width": 0,
+            "height": 79
+          },
+          "xRange": [
+            0.19125,
+            0.19125
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "city-shop-head",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 210,
+          "start": [
+            96,
+            310
+          ],
+          "end": [
+            306,
+            310
+          ],
+          "bbox": {
+            "x": 96,
+            "y": 310,
+            "width": 210,
+            "height": 0
+          },
+          "xRange": [
+            0.06,
+            0.19125
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "city-shop-left",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 110,
+          "start": [
+            96,
+            310
+          ],
+          "end": [
+            96,
+            420
+          ],
+          "bbox": {
+            "x": 96,
+            "y": 310,
+            "width": 0,
+            "height": 110
+          },
+          "xRange": [
+            0.06,
+            0.06
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "city-shop-door",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 110,
+          "start": [
+            240,
+            310
+          ],
+          "end": [
+            240,
+            420
+          ],
+          "bbox": {
+            "x": 240,
+            "y": 310,
+            "width": 0,
+            "height": 110
+          },
+          "xRange": [
+            0.15,
+            0.15
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "city-shop-right",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 110,
+          "start": [
+            306,
+            310
+          ],
+          "end": [
+            306,
+            420
+          ],
+          "bbox": {
+            "x": 306,
+            "y": 310,
+            "width": 0,
+            "height": 110
+          },
+          "xRange": [
+            0.19125,
+            0.19125
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "city-side-window-head",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 617.6447143554688,
+          "start": [
+            357,
+            163
+          ],
+          "end": [
+            971,
+            230
+          ],
+          "bbox": {
+            "x": 357,
+            "y": 163,
+            "width": 614,
+            "height": 67
+          },
+          "xRange": [
+            0.223125,
+            0.606875
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "city-side-window-sill",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 614.0521240234375,
+          "start": [
+            357,
+            229
+          ],
+          "end": [
+            971,
+            237
+          ],
+          "bbox": {
+            "x": 357,
+            "y": 229,
+            "width": 614,
+            "height": 8
+          },
+          "xRange": [
+            0.223125,
+            0.606875
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "city-side-window-near",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 55,
+          "start": [
+            478,
+            176
+          ],
+          "end": [
+            478,
+            231
+          ],
+          "bbox": {
+            "x": 478,
+            "y": 176,
+            "width": 0,
+            "height": 55
+          },
+          "xRange": [
+            0.29875,
+            0.29875
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "city-side-window-middle",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 36,
+          "start": [
+            668,
+            197
+          ],
+          "end": [
+            668,
+            233
+          ],
+          "bbox": {
+            "x": 668,
+            "y": 197,
+            "width": 0,
+            "height": 36
+          },
+          "xRange": [
+            0.4175,
+            0.4175
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "city-side-window-far",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 22,
+          "start": [
+            817,
+            213
+          ],
+          "end": [
+            817,
+            235
+          ],
+          "bbox": {
+            "x": 817,
+            "y": 213,
+            "width": 0,
+            "height": 22
+          },
+          "xRange": [
+            0.510625,
+            0.510625
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "city-lamp-stem",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 125,
+          "start": [
+            1446,
+            307
+          ],
+          "end": [
+            1446,
+            432
+          ],
+          "bbox": {
+            "x": 1446,
+            "y": 307,
+            "width": 0,
+            "height": 125
+          },
+          "xRange": [
+            0.90375,
+            0.90375
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "city-lamp-head",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 34,
+          "start": [
+            1429,
+            307
+          ],
+          "end": [
+            1463,
+            307
+          ],
+          "bbox": {
+            "x": 1429,
+            "y": 307,
+            "width": 34,
+            "height": 0
+          },
+          "xRange": [
+            0.893125,
+            0.914375
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "city-near-pavement",
+          "ink": "road",
+          "layer": "foreground",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 281,
+          "start": [
+            0,
+            833
+          ],
+          "end": [
+            281,
+            833
+          ],
+          "bbox": {
+            "x": 0,
+            "y": 833,
+            "width": 281,
+            "height": 0
+          },
+          "xRange": [
+            0,
+            0.175625
+          ],
+          "growthRange": null,
+          "stroke": "rgb(220, 224, 215)",
+          "strokeWidth": "0.9px"
+        },
+        {
+          "id": "city-near-right-joint",
+          "ink": "road",
+          "layer": "foreground",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 220,
+          "start": [
+            1360,
+            814
+          ],
+          "end": [
+            1580,
+            814
+          ],
+          "bbox": {
+            "x": 1360,
+            "y": 814,
+            "width": 220,
+            "height": 0
+          },
+          "xRange": [
+            0.85,
+            0.9875
+          ],
+          "growthRange": null,
+          "stroke": "rgb(220, 224, 215)",
+          "strokeWidth": "0.9px"
+        }
+      ],
+      "files": [
+        "city-0.png",
+        "city-25.png",
+        "city-50.png",
+        "city-75.png",
+        "city-100.png"
+      ]
+    },
+    {
+      "id": "arrival",
+      "viewBox": "0 0 1600 900",
+      "safeArea": [
+        340,
+        440,
+        1000,
+        295
+      ],
+      "layers": [
+        "background",
+        "architecture",
+        "road",
+        "detail",
+        "foreground"
+      ],
+      "forbidden": 0,
+      "hrefs": 0,
+      "unclassified": 0,
+      "mixedFillAndInk": 0,
+      "washes": [
+        {
+          "name": "paper",
+          "layer": "background"
+        },
+        {
+          "name": "stone-screen",
+          "layer": "architecture"
+        },
+        {
+          "name": "glass-hall",
+          "layer": "architecture"
+        },
+        {
+          "name": "canopy-soffit",
+          "layer": "architecture"
+        },
+        {
+          "name": "low-planter",
+          "layer": "detail"
+        }
+      ],
+      "paths": [
+        {
+          "id": "arrival-distant-wall-top",
+          "ink": "detail",
+          "layer": "background",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 387,
+          "start": [
+            1145,
+            278
+          ],
+          "end": [
+            1532,
+            278
+          ],
+          "bbox": {
+            "x": 1145,
+            "y": 278,
+            "width": 387,
+            "height": 0
+          },
+          "xRange": [
+            0.715625,
+            0.9575
+          ],
+          "growthRange": null,
+          "stroke": "rgb(220, 224, 215)",
+          "strokeWidth": "0.9px"
+        },
+        {
+          "id": "arrival-distant-wall-end",
+          "ink": "detail",
+          "layer": "background",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 145,
+          "start": [
+            1532,
+            278
+          ],
+          "end": [
+            1532,
+            423
+          ],
+          "bbox": {
+            "x": 1532,
+            "y": 278,
+            "width": 0,
+            "height": 145
+          },
+          "xRange": [
+            0.9575,
+            0.9575
+          ],
+          "growthRange": null,
+          "stroke": "rgb(220, 224, 215)",
+          "strokeWidth": "0.9px"
+        },
+        {
+          "id": "arrival-distant-ground",
+          "ink": "detail",
+          "layer": "background",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 232,
+          "start": [
+            1328,
+            423
+          ],
+          "end": [
+            1560,
+            423
+          ],
+          "bbox": {
+            "x": 1328,
+            "y": 423,
+            "width": 232,
+            "height": 0
+          },
+          "xRange": [
+            0.83,
+            0.975
+          ],
+          "growthRange": null,
+          "stroke": "rgb(220, 224, 215)",
+          "strokeWidth": "0.9px"
+        },
+        {
+          "id": "arrival-stone-top",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 256,
+          "start": [
+            116,
+            155
+          ],
+          "end": [
+            372,
+            155
+          ],
+          "bbox": {
+            "x": 116,
+            "y": 155,
+            "width": 256,
+            "height": 0
+          },
+          "xRange": [
+            0.0725,
+            0.2325
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "arrival-stone-left",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 279,
+          "start": [
+            116,
+            155
+          ],
+          "end": [
+            116,
+            434
+          ],
+          "bbox": {
+            "x": 116,
+            "y": 155,
+            "width": 0,
+            "height": 279
+          },
+          "xRange": [
+            0.0725,
+            0.0725
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "arrival-stone-right",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 279,
+          "start": [
+            372,
+            155
+          ],
+          "end": [
+            372,
+            434
+          ],
+          "bbox": {
+            "x": 372,
+            "y": 155,
+            "width": 0,
+            "height": 279
+          },
+          "xRange": [
+            0.2325,
+            0.2325
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "arrival-stone-base",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 256,
+          "start": [
+            116,
+            434
+          ],
+          "end": [
+            372,
+            434
+          ],
+          "bbox": {
+            "x": 116,
+            "y": 434,
+            "width": 256,
+            "height": 0
+          },
+          "xRange": [
+            0.0725,
+            0.2325
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "arrival-canopy-roof",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 1068,
+          "start": [
+            82,
+            211
+          ],
+          "end": [
+            1150,
+            211
+          ],
+          "bbox": {
+            "x": 82,
+            "y": 211,
+            "width": 1068,
+            "height": 0
+          },
+          "xRange": [
+            0.05125,
+            0.71875
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "arrival-canopy-front",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 1068,
+          "start": [
+            82,
+            218
+          ],
+          "end": [
+            1150,
+            218
+          ],
+          "bbox": {
+            "x": 82,
+            "y": 218,
+            "width": 1068,
+            "height": 0
+          },
+          "xRange": [
+            0.05125,
+            0.71875
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "arrival-canopy-under",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 1022,
+          "start": [
+            82,
+            240
+          ],
+          "end": [
+            1104,
+            240
+          ],
+          "bbox": {
+            "x": 82,
+            "y": 240,
+            "width": 1022,
+            "height": 0
+          },
+          "xRange": [
+            0.05125,
+            0.69
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "arrival-canopy-return",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 50.990196228027344,
+          "start": [
+            1104,
+            240
+          ],
+          "end": [
+            1150,
+            218
+          ],
+          "bbox": {
+            "x": 1104,
+            "y": 218,
+            "width": 46,
+            "height": 22
+          },
+          "xRange": [
+            0.69,
+            0.71875
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "arrival-canopy-edge-left",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 29,
+          "start": [
+            82,
+            211
+          ],
+          "end": [
+            82,
+            240
+          ],
+          "bbox": {
+            "x": 82,
+            "y": 211,
+            "width": 0,
+            "height": 29
+          },
+          "xRange": [
+            0.05125,
+            0.05125
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "arrival-canopy-edge-right",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 7,
+          "start": [
+            1150,
+            211
+          ],
+          "end": [
+            1150,
+            218
+          ],
+          "bbox": {
+            "x": 1150,
+            "y": 211,
+            "width": 0,
+            "height": 7
+          },
+          "xRange": [
+            0.71875,
+            0.71875
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "arrival-hall-left",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 186,
+          "start": [
+            400,
+            240
+          ],
+          "end": [
+            400,
+            426
+          ],
+          "bbox": {
+            "x": 400,
+            "y": 240,
+            "width": 0,
+            "height": 186
+          },
+          "xRange": [
+            0.25,
+            0.25
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "arrival-hall-right",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 186,
+          "start": [
+            1006,
+            240
+          ],
+          "end": [
+            1006,
+            426
+          ],
+          "bbox": {
+            "x": 1006,
+            "y": 240,
+            "width": 0,
+            "height": 186
+          },
+          "xRange": [
+            0.62875,
+            0.62875
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "arrival-hall-base",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 606,
+          "start": [
+            400,
+            426
+          ],
+          "end": [
+            1006,
+            426
+          ],
+          "bbox": {
+            "x": 400,
+            "y": 426,
+            "width": 606,
+            "height": 0
+          },
+          "xRange": [
+            0.25,
+            0.62875
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "arrival-outer-column",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 192,
+          "start": [
+            1104,
+            240
+          ],
+          "end": [
+            1104,
+            432
+          ],
+          "bbox": {
+            "x": 1104,
+            "y": 240,
+            "width": 0,
+            "height": 192
+          },
+          "xRange": [
+            0.69,
+            0.69
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "arrival-front-joint-left",
+          "ink": "road",
+          "layer": "road",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 406.19207763671875,
+          "start": [
+            0,
+            690
+          ],
+          "end": [
+            344,
+            474
+          ],
+          "bbox": {
+            "x": 0,
+            "y": 474,
+            "width": 344,
+            "height": 216
+          },
+          "xRange": [
+            0,
+            0.215
+          ],
+          "growthRange": null,
+          "stroke": "rgb(220, 224, 215)",
+          "strokeWidth": "0.9px"
+        },
+        {
+          "id": "arrival-front-joint-right",
+          "ink": "road",
+          "layer": "road",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 382.9412536621094,
+          "start": [
+            1262,
+            474
+          ],
+          "end": [
+            1600,
+            654
+          ],
+          "bbox": {
+            "x": 1262,
+            "y": 474,
+            "width": 338,
+            "height": 180
+          },
+          "xRange": [
+            0.78875,
+            1
+          ],
+          "growthRange": null,
+          "stroke": "rgb(220, 224, 215)",
+          "strokeWidth": "0.9px"
+        },
+        {
+          "id": "arrival-step-edge-left",
+          "ink": "road",
+          "layer": "road",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 250,
+          "start": [
+            64,
+            457
+          ],
+          "end": [
+            314,
+            457
+          ],
+          "bbox": {
+            "x": 64,
+            "y": 457,
+            "width": 250,
+            "height": 0
+          },
+          "xRange": [
+            0.04,
+            0.19625
+          ],
+          "growthRange": null,
+          "stroke": "rgb(220, 224, 215)",
+          "strokeWidth": "0.9px"
+        },
+        {
+          "id": "arrival-step-edge-right",
+          "ink": "road",
+          "layer": "road",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 190,
+          "start": [
+            1345,
+            457
+          ],
+          "end": [
+            1535,
+            457
+          ],
+          "bbox": {
+            "x": 1345,
+            "y": 457,
+            "width": 190,
+            "height": 0
+          },
+          "xRange": [
+            0.840625,
+            0.959375
+          ],
+          "growthRange": null,
+          "stroke": "rgb(220, 224, 215)",
+          "strokeWidth": "0.9px"
+        },
+        {
+          "id": "arrival-stone-joint-high",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 256,
+          "start": [
+            116,
+            285
+          ],
+          "end": [
+            372,
+            285
+          ],
+          "bbox": {
+            "x": 116,
+            "y": 285,
+            "width": 256,
+            "height": 0
+          },
+          "xRange": [
+            0.0725,
+            0.2325
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "arrival-stone-joint-low",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 256,
+          "start": [
+            116,
+            365
+          ],
+          "end": [
+            372,
+            365
+          ],
+          "bbox": {
+            "x": 116,
+            "y": 365,
+            "width": 256,
+            "height": 0
+          },
+          "xRange": [
+            0.0725,
+            0.2325
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "arrival-stone-vertical-joint",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 130,
+          "start": [
+            244,
+            155
+          ],
+          "end": [
+            244,
+            285
+          ],
+          "bbox": {
+            "x": 244,
+            "y": 155,
+            "width": 0,
+            "height": 130
+          },
+          "xRange": [
+            0.1525,
+            0.1525
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "arrival-glass-head",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 606,
+          "start": [
+            400,
+            270
+          ],
+          "end": [
+            1006,
+            270
+          ],
+          "bbox": {
+            "x": 400,
+            "y": 270,
+            "width": 606,
+            "height": 0
+          },
+          "xRange": [
+            0.25,
+            0.62875
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "arrival-glass-transom",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 606,
+          "start": [
+            400,
+            346
+          ],
+          "end": [
+            1006,
+            346
+          ],
+          "bbox": {
+            "x": 400,
+            "y": 346,
+            "width": 606,
+            "height": 0
+          },
+          "xRange": [
+            0.25,
+            0.62875
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "arrival-glass-mullion-left",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 186,
+          "start": [
+            512,
+            240
+          ],
+          "end": [
+            512,
+            426
+          ],
+          "bbox": {
+            "x": 512,
+            "y": 240,
+            "width": 0,
+            "height": 186
+          },
+          "xRange": [
+            0.32,
+            0.32
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "arrival-door-left",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 156,
+          "start": [
+            660,
+            270
+          ],
+          "end": [
+            660,
+            426
+          ],
+          "bbox": {
+            "x": 660,
+            "y": 270,
+            "width": 0,
+            "height": 156
+          },
+          "xRange": [
+            0.4125,
+            0.4125
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "arrival-door-centre",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 156,
+          "start": [
+            744,
+            270
+          ],
+          "end": [
+            744,
+            426
+          ],
+          "bbox": {
+            "x": 744,
+            "y": 270,
+            "width": 0,
+            "height": 156
+          },
+          "xRange": [
+            0.465,
+            0.465
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "arrival-door-right",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 156,
+          "start": [
+            828,
+            270
+          ],
+          "end": [
+            828,
+            426
+          ],
+          "bbox": {
+            "x": 828,
+            "y": 270,
+            "width": 0,
+            "height": 156
+          },
+          "xRange": [
+            0.5175,
+            0.5175
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "arrival-glass-mullion-right",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 186,
+          "start": [
+            922,
+            240
+          ],
+          "end": [
+            922,
+            426
+          ],
+          "bbox": {
+            "x": 922,
+            "y": 240,
+            "width": 0,
+            "height": 186
+          },
+          "xRange": [
+            0.57625,
+            0.57625
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "arrival-door-pull-left",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 26,
+          "start": [
+            730,
+            354
+          ],
+          "end": [
+            730,
+            380
+          ],
+          "bbox": {
+            "x": 730,
+            "y": 354,
+            "width": 0,
+            "height": 26
+          },
+          "xRange": [
+            0.45625,
+            0.45625
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "arrival-door-pull-right",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 26,
+          "start": [
+            758,
+            354
+          ],
+          "end": [
+            758,
+            380
+          ],
+          "bbox": {
+            "x": 758,
+            "y": 354,
+            "width": 0,
+            "height": 26
+          },
+          "xRange": [
+            0.47375,
+            0.47375
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "arrival-planter-top",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 180,
+          "start": [
+            1240,
+            416
+          ],
+          "end": [
+            1420,
+            416
+          ],
+          "bbox": {
+            "x": 1240,
+            "y": 416,
+            "width": 180,
+            "height": 0
+          },
+          "xRange": [
+            0.775,
+            0.8875
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "arrival-grass-left",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 30.675724029541016,
+          "start": [
+            1280,
+            387
+          ],
+          "end": [
+            1290,
+            416
+          ],
+          "bbox": {
+            "x": 1280,
+            "y": 387,
+            "width": 10,
+            "height": 29
+          },
+          "xRange": [
+            0.8,
+            0.80625
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "arrival-grass-centre",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 38,
+          "start": [
+            1309,
+            378
+          ],
+          "end": [
+            1309,
+            416
+          ],
+          "bbox": {
+            "x": 1309,
+            "y": 378,
+            "width": 0,
+            "height": 38
+          },
+          "xRange": [
+            0.818125,
+            0.818125
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "arrival-grass-right",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 31.906112670898438,
+          "start": [
+            1325,
+            416
+          ],
+          "end": [
+            1342,
+            389
+          ],
+          "bbox": {
+            "x": 1325,
+            "y": 389,
+            "width": 17,
+            "height": 27
+          },
+          "xRange": [
+            0.828125,
+            0.83875
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "arrival-near-joint-left",
+          "ink": "road",
+          "layer": "foreground",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 227,
+          "start": [
+            64,
+            802
+          ],
+          "end": [
+            291,
+            802
+          ],
+          "bbox": {
+            "x": 64,
+            "y": 802,
+            "width": 227,
+            "height": 0
+          },
+          "xRange": [
+            0.04,
+            0.181875
+          ],
+          "growthRange": null,
+          "stroke": "rgb(220, 224, 215)",
+          "strokeWidth": "0.9px"
+        },
+        {
+          "id": "arrival-near-joint-right",
+          "ink": "road",
+          "layer": "foreground",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 212,
+          "start": [
+            1327,
+            802
+          ],
+          "end": [
+            1539,
+            802
+          ],
+          "bbox": {
+            "x": 1327,
+            "y": 802,
+            "width": 212,
+            "height": 0
+          },
+          "xRange": [
+            0.829375,
+            0.961875
+          ],
+          "growthRange": null,
+          "stroke": "rgb(220, 224, 215)",
+          "strokeWidth": "0.9px"
+        }
+      ],
+      "files": [
+        "arrival-0.png",
+        "arrival-25.png",
+        "arrival-50.png",
+        "arrival-75.png",
+        "arrival-100.png"
+      ]
+    },
+    {
+      "id": "road",
+      "viewBox": "0 0 1600 900",
+      "safeArea": [
+        340,
+        440,
+        1000,
+        295
+      ],
+      "layers": [
+        "background",
+        "architecture",
+        "road",
+        "detail",
+        "foreground"
+      ],
+      "forbidden": 0,
+      "hrefs": 0,
+      "unclassified": 0,
+      "mixedFillAndInk": 0,
+      "washes": [
+        {
+          "name": "paper",
+          "layer": "background"
+        },
+        {
+          "name": "bridge-face",
+          "layer": "architecture"
+        },
+        {
+          "name": "bridge-soffit",
+          "layer": "architecture"
+        },
+        {
+          "name": "abutment",
+          "layer": "architecture"
+        },
+        {
+          "name": "verge-stone",
+          "layer": "detail"
+        }
+      ],
+      "paths": [
+        {
+          "id": "road-far-slope-left",
+          "ink": "detail",
+          "layer": "background",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 594.750732421875,
+          "start": [
+            28,
+            325
+          ],
+          "end": [
+            614,
+            322
+          ],
+          "bbox": {
+            "x": 28,
+            "y": 277.34844970703125,
+            "width": 586,
+            "height": 47.65155029296875
+          },
+          "xRange": [
+            0.0175,
+            0.38375
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "road-far-slope-right",
+          "ink": "detail",
+          "layer": "background",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 521.3954467773438,
+          "start": [
+            1058,
+            302
+          ],
+          "end": [
+            1570,
+            296
+          ],
+          "bbox": {
+            "x": 1058,
+            "y": 258.569091796875,
+            "width": 512,
+            "height": 43.430908203125
+          },
+          "xRange": [
+            0.66125,
+            0.98125
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "road-distant-ridge",
+          "ink": "detail",
+          "layer": "background",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 295.7809753417969,
+          "start": [
+            708,
+            310
+          ],
+          "end": [
+            1001,
+            305
+          ],
+          "bbox": {
+            "x": 708,
+            "y": 289.935302734375,
+            "width": 293,
+            "height": 20.064697265625
+          },
+          "xRange": [
+            0.4425,
+            0.625625
+          ],
+          "growthRange": null,
+          "stroke": "rgb(220, 224, 215)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "road-bridge-top",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 576.189208984375,
+          "start": [
+            62,
+            355
+          ],
+          "end": [
+            637,
+            318
+          ],
+          "bbox": {
+            "x": 62,
+            "y": 318,
+            "width": 575,
+            "height": 37
+          },
+          "xRange": [
+            0.03875,
+            0.398125
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "road-bridge-base",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 577.3464965820312,
+          "start": [
+            62,
+            386
+          ],
+          "end": [
+            637,
+            334
+          ],
+          "bbox": {
+            "x": 62,
+            "y": 334,
+            "width": 575,
+            "height": 52
+          },
+          "xRange": [
+            0.03875,
+            0.398125
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "road-bridge-end-near",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 31,
+          "start": [
+            62,
+            355
+          ],
+          "end": [
+            62,
+            386
+          ],
+          "bbox": {
+            "x": 62,
+            "y": 355,
+            "width": 0,
+            "height": 31
+          },
+          "xRange": [
+            0.03875,
+            0.03875
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "road-bridge-end-far",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 16,
+          "start": [
+            637,
+            318
+          ],
+          "end": [
+            637,
+            334
+          ],
+          "bbox": {
+            "x": 637,
+            "y": 318,
+            "width": 0,
+            "height": 16
+          },
+          "xRange": [
+            0.398125,
+            0.398125
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "road-pier-near-left",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 53,
+          "start": [
+            100,
+            385
+          ],
+          "end": [
+            100,
+            438
+          ],
+          "bbox": {
+            "x": 100,
+            "y": 385,
+            "width": 0,
+            "height": 53
+          },
+          "xRange": [
+            0.0625,
+            0.0625
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "road-pier-near-right",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 57,
+          "start": [
+            145,
+            381
+          ],
+          "end": [
+            145,
+            438
+          ],
+          "bbox": {
+            "x": 145,
+            "y": 381,
+            "width": 0,
+            "height": 57
+          },
+          "xRange": [
+            0.090625,
+            0.090625
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "road-pier-near-base",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 45,
+          "start": [
+            100,
+            438
+          ],
+          "end": [
+            145,
+            438
+          ],
+          "bbox": {
+            "x": 100,
+            "y": 438,
+            "width": 45,
+            "height": 0
+          },
+          "xRange": [
+            0.0625,
+            0.090625
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "road-pier-middle",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 46,
+          "start": [
+            322,
+            362
+          ],
+          "end": [
+            322,
+            408
+          ],
+          "bbox": {
+            "x": 322,
+            "y": 362,
+            "width": 0,
+            "height": 46
+          },
+          "xRange": [
+            0.20125,
+            0.20125
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "road-pier-far",
+          "ink": "structure",
+          "layer": "architecture",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 31,
+          "start": [
+            512,
+            345
+          ],
+          "end": [
+            512,
+            376
+          ],
+          "bbox": {
+            "x": 512,
+            "y": 345,
+            "width": 0,
+            "height": 31
+          },
+          "xRange": [
+            0.32,
+            0.32
+          ],
+          "growthRange": null,
+          "stroke": "rgb(85, 93, 86)",
+          "strokeWidth": "1.35px"
+        },
+        {
+          "id": "road-edge-left",
+          "ink": "road",
+          "layer": "road",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 420.13726806640625,
+          "start": [
+            0,
+            698
+          ],
+          "end": [
+            354,
+            472
+          ],
+          "bbox": {
+            "x": 0,
+            "y": 472,
+            "width": 354,
+            "height": 226
+          },
+          "xRange": [
+            0,
+            0.22125
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.9px"
+        },
+        {
+          "id": "road-edge-left-inner",
+          "ink": "road",
+          "layer": "road",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 454.75726318359375,
+          "start": [
+            0,
+            729
+          ],
+          "end": [
+            375,
+            472
+          ],
+          "bbox": {
+            "x": 0,
+            "y": 472,
+            "width": 375,
+            "height": 257
+          },
+          "xRange": [
+            0,
+            0.234375
+          ],
+          "growthRange": null,
+          "stroke": "rgb(220, 224, 215)",
+          "strokeWidth": "0.9px"
+        },
+        {
+          "id": "road-edge-right",
+          "ink": "road",
+          "layer": "road",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 462.501708984375,
+          "start": [
+            1262,
+            472
+          ],
+          "end": [
+            1600,
+            784
+          ],
+          "bbox": {
+            "x": 1262,
+            "y": 472,
+            "width": 338,
+            "height": 312
+          },
+          "xRange": [
+            0.78875,
+            1
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.9px"
+        },
+        {
+          "id": "road-far-verge-left",
+          "ink": "road",
+          "layer": "road",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 245,
+          "start": [
+            58,
+            461
+          ],
+          "end": [
+            303,
+            461
+          ],
+          "bbox": {
+            "x": 58,
+            "y": 461,
+            "width": 245,
+            "height": 0
+          },
+          "xRange": [
+            0.03625,
+            0.189375
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.9px"
+        },
+        {
+          "id": "road-far-verge-right",
+          "ink": "road",
+          "layer": "road",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 176,
+          "start": [
+            1368,
+            461
+          ],
+          "end": [
+            1544,
+            461
+          ],
+          "bbox": {
+            "x": 1368,
+            "y": 461,
+            "width": 176,
+            "height": 0
+          },
+          "xRange": [
+            0.855,
+            0.965
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.9px"
+        },
+        {
+          "id": "road-rail-top",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 575.3833618164062,
+          "start": [
+            62,
+            329
+          ],
+          "end": [
+            637,
+            308
+          ],
+          "bbox": {
+            "x": 62,
+            "y": 308,
+            "width": 575,
+            "height": 21
+          },
+          "xRange": [
+            0.03875,
+            0.398125
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "road-rail-post-near",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 25,
+          "start": [
+            100,
+            328
+          ],
+          "end": [
+            100,
+            353
+          ],
+          "bbox": {
+            "x": 100,
+            "y": 328,
+            "width": 0,
+            "height": 25
+          },
+          "xRange": [
+            0.0625,
+            0.0625
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "road-rail-post-middle",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 20,
+          "start": [
+            266,
+            322
+          ],
+          "end": [
+            266,
+            342
+          ],
+          "bbox": {
+            "x": 266,
+            "y": 322,
+            "width": 0,
+            "height": 20
+          },
+          "xRange": [
+            0.16625,
+            0.16625
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "road-rail-post-far",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 15,
+          "start": [
+            432,
+            316
+          ],
+          "end": [
+            432,
+            331
+          ],
+          "bbox": {
+            "x": 432,
+            "y": 316,
+            "width": 0,
+            "height": 15
+          },
+          "xRange": [
+            0.27,
+            0.27
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "road-rail-post-end",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 10,
+          "start": [
+            598,
+            310
+          ],
+          "end": [
+            598,
+            320
+          ],
+          "bbox": {
+            "x": 598,
+            "y": 310,
+            "width": 0,
+            "height": 10
+          },
+          "xRange": [
+            0.37375,
+            0.37375
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "road-marker-left",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 45,
+          "start": [
+            1322,
+            388
+          ],
+          "end": [
+            1322,
+            433
+          ],
+          "bbox": {
+            "x": 1322,
+            "y": 388,
+            "width": 0,
+            "height": 45
+          },
+          "xRange": [
+            0.82625,
+            0.82625
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "road-marker-left-cap",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 8,
+          "start": [
+            1318,
+            388
+          ],
+          "end": [
+            1326,
+            388
+          ],
+          "bbox": {
+            "x": 1318,
+            "y": 388,
+            "width": 8,
+            "height": 0
+          },
+          "xRange": [
+            0.82375,
+            0.82875
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "road-marker-right",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "vertical",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 53,
+          "start": [
+            1496,
+            380
+          ],
+          "end": [
+            1496,
+            433
+          ],
+          "bbox": {
+            "x": 1496,
+            "y": 380,
+            "width": 0,
+            "height": 53
+          },
+          "xRange": [
+            0.935,
+            0.935
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "road-marker-right-cap",
+          "ink": "detail",
+          "layer": "detail",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 8,
+          "start": [
+            1492,
+            380
+          ],
+          "end": [
+            1500,
+            380
+          ],
+          "bbox": {
+            "x": 1492,
+            "y": 380,
+            "width": 8,
+            "height": 0
+          },
+          "xRange": [
+            0.9325,
+            0.9375
+          ],
+          "growthRange": null,
+          "stroke": "rgb(164, 172, 162)",
+          "strokeWidth": "0.75px"
+        },
+        {
+          "id": "road-near-left-surface",
+          "ink": "road",
+          "layer": "foreground",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 226,
+          "start": [
+            26,
+            827
+          ],
+          "end": [
+            252,
+            827
+          ],
+          "bbox": {
+            "x": 26,
+            "y": 827,
+            "width": 226,
+            "height": 0
+          },
+          "xRange": [
+            0.01625,
+            0.1575
+          ],
+          "growthRange": null,
+          "stroke": "rgb(220, 224, 215)",
+          "strokeWidth": "0.9px"
+        },
+        {
+          "id": "road-near-right-surface",
+          "ink": "road",
+          "layer": "foreground",
+          "declaredDirection": "ltr",
+          "measuredDirection": "ltr",
+          "monotonicX": true,
+          "subpaths": 1,
+          "length": 163,
+          "start": [
+            1407,
+            851
+          ],
+          "end": [
+            1570,
+            851
+          ],
+          "bbox": {
+            "x": 1407,
+            "y": 851,
+            "width": 163,
+            "height": 0
+          },
+          "xRange": [
+            0.879375,
+            0.98125
+          ],
+          "growthRange": null,
+          "stroke": "rgb(220, 224, 215)",
+          "strokeWidth": "0.9px"
+        }
+      ],
+      "files": [
+        "road-0.png",
+        "road-25.png",
+        "road-50.png",
+        "road-75.png",
+        "road-100.png"
+      ]
+    }
+  ],
+  "errors": [],
+  "externalRequests": []
+}

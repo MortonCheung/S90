@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none" stroke-linecap="butt" stroke-linejoin="miter" role="img" aria-labelledby="road-title road-desc" data-scene="road" data-safe-area="340 440 1000 295">
+  <title id="road-title">黄昏归途 · 低桥远坡</title>
+  <desc id="road-desc">原创低桥沿左侧远退，浅坡线和小面积暖石面影衬出开阔道路；中部偏下保持空旷。</desc>
+  <g data-layer="background" stroke="var(--sketch-secondary,#a4aca2)" stroke-width="0.75">
+    <path vector-effect="non-scaling-stroke" data-wash="paper" fill="var(--sketch-paper,#e6ded5)" stroke="none" d="M0 0H1600V900H0Z"/>
+    <path vector-effect="non-scaling-stroke" id="road-far-slope-left" data-ink="detail" data-direction="ltr" d="M28 325C148 309 210 272 319 278C427 284 493 323 614 322"/>
+    <path vector-effect="non-scaling-stroke" id="road-far-slope-right" data-ink="detail" data-direction="ltr" d="M1058 302C1148 294 1187 254 1272 259C1374 265 1442 311 1570 296"/>
+    <path vector-effect="non-scaling-stroke" id="road-distant-ridge" data-ink="detail" data-direction="ltr" stroke="var(--sketch-quiet,#dce0d7)" d="M708 310C784 297 824 285 879 292C942 300 963 309 1001 305"/>
+  </g>
+  <g data-layer="architecture" stroke="var(--sketch-ink,#555d56)" stroke-width="1.35">
+    <path vector-effect="non-scaling-stroke" data-wash="bridge-face" fill="var(--sketch-ground,#cfc7c0)" stroke="none" d="M62 355L637 318V334L62 386Z"/>
+    <path vector-effect="non-scaling-stroke" data-wash="bridge-soffit" fill="var(--sketch-shade,#b9aca3)" stroke="none" d="M62 377L637 330V334L62 386Z"/>
+    <path vector-effect="non-scaling-stroke" data-wash="abutment" fill="var(--sketch-ground,#cfc7c0)" stroke="none" d="M100 385L145 381V438H100Z"/>
+    <path vector-effect="non-scaling-stroke" id="road-bridge-top" data-ink="structure" data-direction="ltr" d="M62 355L637 318"/>
+    <path vector-effect="non-scaling-stroke" id="road-bridge-base" data-ink="structure" data-direction="ltr" d="M62 386L637 334"/>
+    <path vector-effect="non-scaling-stroke" id="road-bridge-end-near" data-ink="structure" data-direction="ltr" d="M62 355V386"/>
+    <path vector-effect="non-scaling-stroke" id="road-bridge-end-far" data-ink="structure" data-direction="ltr" d="M637 318V334"/>
+    <path vector-effect="non-scaling-stroke" id="road-pier-near-left" data-ink="structure" data-direction="ltr" d="M100 385V438"/>
+    <path vector-effect="non-scaling-stroke" id="road-pier-near-right" data-ink="structure" data-direction="ltr" d="M145 381V438"/>
+    <path vector-effect="non-scaling-stroke" id="road-pier-near-base" data-ink="structure" data-direction="ltr" d="M100 438H145"/>
+    <path vector-effect="non-scaling-stroke" id="road-pier-middle" data-ink="structure" data-direction="ltr" d="M322 362V408"/>
+    <path vector-effect="non-scaling-stroke" id="road-pier-far" data-ink="structure" data-direction="ltr" d="M512 345V376"/>
+  </g>
+  <g data-layer="road" stroke="var(--sketch-secondary,#a4aca2)" stroke-width="0.9">
+    <path vector-effect="non-scaling-stroke" id="road-edge-left" data-ink="road" data-direction="ltr" d="M0 698C120 619 217 548 354 472"/>
+    <path vector-effect="non-scaling-stroke" id="road-edge-left-inner" data-ink="road" data-direction="ltr" stroke="var(--sketch-quiet,#dce0d7)" d="M0 729C131 636 237 555 375 472"/>
+    <path vector-effect="non-scaling-stroke" id="road-edge-right" data-ink="road" data-direction="ltr" d="M1262 472C1399 557 1502 659 1600 784"/>
+    <path vector-effect="non-scaling-stroke" id="road-far-verge-left" data-ink="road" data-direction="ltr" d="M58 461H303"/>
+    <path vector-effect="non-scaling-stroke" id="road-far-verge-right" data-ink="road" data-direction="ltr" d="M1368 461H1544"/>
+  </g>
+  <g data-layer="detail" stroke="var(--sketch-secondary,#a4aca2)" stroke-width="0.75">
+    <path vector-effect="non-scaling-stroke" data-wash="verge-stone" fill="var(--sketch-accent,#947967)" stroke="none" d="M1356 420H1468V432H1356Z"/>
+    <path vector-effect="non-scaling-stroke" id="road-rail-top" data-ink="detail" data-direction="ltr" d="M62 329L637 308"/>
+    <path vector-effect="non-scaling-stroke" id="road-rail-post-near" data-ink="detail" data-direction="ltr" d="M100 328V353"/>
+    <path vector-effect="non-scaling-stroke" id="road-rail-post-middle" data-ink="detail" data-direction="ltr" d="M266 322V342"/>
+    <path vector-effect="non-scaling-stroke" id="road-rail-post-far" data-ink="detail" data-direction="ltr" d="M432 316V331"/>
+    <path vector-effect="non-scaling-stroke" id="road-rail-post-end" data-ink="detail" data-direction="ltr" d="M598 310V320"/>
+    <path vector-effect="non-scaling-stroke" id="road-marker-left" data-ink="detail" data-direction="ltr" d="M1322 388V433"/>
+    <path vector-effect="non-scaling-stroke" id="road-marker-left-cap" data-ink="detail" data-direction="ltr" d="M1318 388H1326"/>
+    <path vector-effect="non-scaling-stroke" id="road-marker-right" data-ink="detail" data-direction="ltr" d="M1496 380V433"/>
+    <path vector-effect="non-scaling-stroke" id="road-marker-right-cap" data-ink="detail" data-direction="ltr" d="M1492 380H1500"/>
+  </g>
+  <g data-layer="foreground" stroke="var(--sketch-quiet,#dce0d7)" stroke-width="0.9">
+    <path vector-effect="non-scaling-stroke" id="road-near-left-surface" data-ink="road" data-direction="ltr" d="M26 827H252"/>
+    <path vector-effect="non-scaling-stroke" id="road-near-right-surface" data-ink="road" data-direction="ltr" d="M1407 851H1570"/>
+  </g>
+</svg>

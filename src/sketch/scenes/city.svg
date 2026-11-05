@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none" stroke-linecap="butt" stroke-linejoin="miter" role="img" aria-labelledby="city-title city-desc" data-scene="city" data-safe-area="340 440 1000 295">
+  <title id="city-title">白天长街 · 单侧街廊</title>
+  <desc id="city-desc">原创单侧城市街廊，由近处石材立面向远处细柱廊收束；右侧保持开阔，中央偏下不布置实体前景。</desc>
+  <g data-layer="background" stroke="var(--sketch-quiet,#dce0d7)" stroke-width="0.9">
+    <path vector-effect="non-scaling-stroke" data-wash="paper" fill="var(--sketch-paper,#efefea)" stroke="none" d="M0 0H1600V900H0Z"/>
+    <path vector-effect="non-scaling-stroke" id="city-distant-roof" data-ink="detail" data-direction="ltr" d="M1098 322H1388"/>
+    <path vector-effect="non-scaling-stroke" id="city-distant-corner" data-ink="detail" data-direction="ltr" d="M1388 322V413"/>
+    <path vector-effect="non-scaling-stroke" id="city-distant-plinth" data-ink="detail" data-direction="ltr" d="M1211 413H1507"/>
+  </g>
+  <g data-layer="architecture" stroke="var(--sketch-ink,#555d56)" stroke-width="1.35">
+    <path vector-effect="non-scaling-stroke" data-wash="near-stone" fill="var(--sketch-surface,#f8f8f3)" stroke="none" d="M70 121H331V440H70Z"/>
+    <path vector-effect="non-scaling-stroke" data-wash="receding-face" fill="var(--sketch-ground,#e0e3df)" stroke="none" d="M331 121L1011 227V252L331 440Z"/>
+    <path vector-effect="non-scaling-stroke" data-wash="arcade-shadow" fill="var(--sketch-shade,#cbd2cc)" stroke="none" d="M331 286L1011 241V247L331 310Z"/>
+    <path vector-effect="non-scaling-stroke" id="city-near-roof" data-ink="structure" data-direction="ltr" d="M70 121H331"/>
+    <path vector-effect="non-scaling-stroke" id="city-near-left" data-ink="structure" data-direction="ltr" d="M70 121V440"/>
+    <path vector-effect="non-scaling-stroke" id="city-near-corner" data-ink="structure" data-direction="ltr" d="M331 121V440"/>
+    <path vector-effect="non-scaling-stroke" id="city-near-plinth" data-ink="structure" data-direction="ltr" d="M70 440H331"/>
+    <path vector-effect="non-scaling-stroke" id="city-receding-roof" data-ink="structure" data-direction="ltr" d="M331 121L1011 227"/>
+    <path vector-effect="non-scaling-stroke" id="city-receding-plinth" data-ink="structure" data-direction="ltr" d="M331 440L1011 252"/>
+    <path vector-effect="non-scaling-stroke" id="city-arcade-head" data-ink="structure" data-direction="ltr" d="M331 286L1011 241"/>
+    <path vector-effect="non-scaling-stroke" id="city-arcade-under" data-ink="structure" data-direction="ltr" d="M331 310L1011 247"/>
+    <path vector-effect="non-scaling-stroke" id="city-pier-near" data-ink="structure" data-direction="ltr" d="M478 276V399"/>
+    <path vector-effect="non-scaling-stroke" id="city-pier-middle" data-ink="structure" data-direction="ltr" d="M668 264V347"/>
+    <path vector-effect="non-scaling-stroke" id="city-pier-far" data-ink="structure" data-direction="ltr" d="M817 254V306"/>
+    <path vector-effect="non-scaling-stroke" id="city-pier-end" data-ink="structure" data-direction="ltr" d="M942 246V271"/>
+  </g>
+  <g data-layer="road" stroke="var(--sketch-quiet,#dce0d7)" stroke-width="0.9">
+    <path vector-effect="non-scaling-stroke" id="city-kerb-left" data-ink="road" data-direction="ltr" d="M0 701L372 474"/>
+    <path vector-effect="non-scaling-stroke" id="city-kerb-left-inner" data-ink="road" data-direction="ltr" d="M0 731L393 474"/>
+    <path vector-effect="non-scaling-stroke" id="city-street-edge-right" data-ink="road" data-direction="ltr" d="M1230 474L1600 831"/>
+    <path vector-effect="non-scaling-stroke" id="city-far-crossing-left" data-ink="road" data-direction="ltr" d="M58 462H292"/>
+    <path vector-effect="non-scaling-stroke" id="city-far-crossing-right" data-ink="road" data-direction="ltr" d="M1348 462H1542"/>
+  </g>
+  <g data-layer="detail" stroke="var(--sketch-secondary,#a4aca2)" stroke-width="0.75">
+    <path vector-effect="non-scaling-stroke" data-wash="shop-plinth" fill="var(--sketch-accent,#7d8b83)" stroke="none" d="M88 427H291V440H88Z"/>
+    <path vector-effect="non-scaling-stroke" id="city-upper-window-head" data-ink="detail" data-direction="ltr" d="M96 157H306"/>
+    <path vector-effect="non-scaling-stroke" id="city-upper-window-sill" data-ink="detail" data-direction="ltr" d="M96 236H306"/>
+    <path vector-effect="non-scaling-stroke" id="city-window-left" data-ink="detail" data-direction="ltr" d="M96 157V236"/>
+    <path vector-effect="non-scaling-stroke" id="city-window-middle" data-ink="detail" data-direction="ltr" d="M201 157V236"/>
+    <path vector-effect="non-scaling-stroke" id="city-window-right" data-ink="detail" data-direction="ltr" d="M306 157V236"/>
+    <path vector-effect="non-scaling-stroke" id="city-shop-head" data-ink="detail" data-direction="ltr" d="M96 310H306"/>
+    <path vector-effect="non-scaling-stroke" id="city-shop-left" data-ink="detail" data-direction="ltr" d="M96 310V420"/>
+    <path vector-effect="non-scaling-stroke" id="city-shop-door" data-ink="detail" data-direction="ltr" d="M240 310V420"/>
+    <path vector-effect="non-scaling-stroke" id="city-shop-right" data-ink="detail" data-direction="ltr" d="M306 310V420"/>
+    <path vector-effect="non-scaling-stroke" id="city-side-window-head" data-ink="detail" data-direction="ltr" d="M357 163L971 230"/>
+    <path vector-effect="non-scaling-stroke" id="city-side-window-sill" data-ink="detail" data-direction="ltr" d="M357 229L971 237"/>
+    <path vector-effect="non-scaling-stroke" id="city-side-window-near" data-ink="detail" data-direction="ltr" d="M478 176V231"/>
+    <path vector-effect="non-scaling-stroke" id="city-side-window-middle" data-ink="detail" data-direction="ltr" d="M668 197V233"/>
+    <path vector-effect="non-scaling-stroke" id="city-side-window-far" data-ink="detail" data-direction="ltr" d="M817 213V235"/>
+    <path vector-effect="non-scaling-stroke" id="city-lamp-stem" data-ink="detail" data-direction="ltr" d="M1446 307V432"/>
+    <path vector-effect="non-scaling-stroke" id="city-lamp-head" data-ink="detail" data-direction="ltr" d="M1429 307H1463"/>
+  </g>
+  <g data-layer="foreground" stroke="var(--sketch-quiet,#dce0d7)" stroke-width="0.9">
+    <path vector-effect="non-scaling-stroke" id="city-near-pavement" data-ink="road" data-direction="ltr" d="M0 833H281"/>
+    <path vector-effect="non-scaling-stroke" id="city-near-right-joint" data-ink="road" data-direction="ltr" d="M1360 814H1580"/>
+  </g>
+</svg>
