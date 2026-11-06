@@ -1,6 +1,6 @@
 import { useEffect, useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
-import { getLoadingVisual } from './loading-state.js';
+import { getLoadingVisual, getOpeningPhase } from './loading-state.js';
 import { STROKE_PLAN } from './stroke-plan.js';
 import { measurePaths, schedulePaths, renderPaths } from '../sketch/lineGrowth.js';
 import { useLineart } from './useLineart.js';
@@ -107,7 +107,12 @@ export default function Opening({
     }
     const timeline = gsap.timeline({
       defaults: { ease: 'power4.inOut' },
-      onStart: () => { if (stageRef.current) stageRef.current.dataset.revealing = "true"; },
+      onStart: () => {
+        if (stageRef.current) {
+          stageRef.current.dataset.revealing = 'true';
+          stageRef.current.dataset.phase = 'revealing';
+        }
+      },
       onComplete: onOpened,
     });
     timeline
@@ -120,7 +125,7 @@ export default function Opening({
   const visual = getLoadingVisual({ status: assetStatus, progress, total, firstFrameReady });
 
   return (
-    <div className="opening" ref={stageRef} data-ready={ready && drawn}>
+    <div className="opening" ref={stageRef} data-ready={ready && drawn} data-phase={getOpeningPhase({status:assetStatus,firstFrameReady,drawn,revealing:revealed.current})}>
       <div className="sheet sheet--top" ref={topRef}>
         <div className="sheet__paper" />
         <div

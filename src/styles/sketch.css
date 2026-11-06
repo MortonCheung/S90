@@ -89,3 +89,11 @@
 .app[data-explore='true'] .scene * { touch-action:none !important; }
 
 .app[data-explore='true'] { touch-action:none; }
+
+.opening__line[data-state='preparing'] .opening__line-fill {
+  width:12%;
+  animation:load-cursor 1.8s ease-in-out infinite alternate;
+}
+@media(prefers-reduced-motion:reduce) {
+  .opening__line[data-state='preparing'] .opening__line-fill { transform:none !important; }
+}

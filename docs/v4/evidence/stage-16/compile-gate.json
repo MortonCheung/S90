@@ -1,0 +1,59 @@
+{
+  "states": [
+    [
+      {
+        "status": "loading"
+      },
+      "loading-model"
+    ],
+    [
+      {
+        "status": "ready"
+      },
+      "compiling"
+    ],
+    [
+      {
+        "status": "ready",
+        "firstFrameReady": true
+      },
+      "line-drawing"
+    ],
+    [
+      {
+        "status": "ready",
+        "firstFrameReady": true,
+        "drawn": true
+      },
+      "ready"
+    ],
+    [
+      {
+        "status": "ready",
+        "revealing": true
+      },
+      "revealing"
+    ],
+    [
+      {
+        "status": "ready",
+        "opened": true
+      },
+      "opened"
+    ],
+    [
+      {
+        "status": "error"
+      },
+      "error"
+    ]
+  ],
+  "sample": {
+    "phase": "compiling",
+    "progress": null,
+    "firstFrame": false,
+    "canvas": 1
+  },
+  "recovered": true,
+  "note": "Test delays completion of the real compile promise; production has no artificial delay"
+}

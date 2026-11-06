@@ -174,7 +174,7 @@ export default function App() {
   const chapter = CHAPTERS.find((c) => c.id === ui.chapterId) || CHAPTERS[0];
 
   return (
-    <div className="app" data-explore={ui.explore}>
+    <div className="app" data-explore={ui.explore} data-opening={opened ? 'opened' : 'preparing'}>
       <div className="visual-layout" ref={visualRef}>
       <div className="stage" aria-hidden="true">
         <SketchScenes stateRef={stateRef} />

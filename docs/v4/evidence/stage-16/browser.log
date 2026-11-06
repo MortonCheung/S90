@@ -1,0 +1,18 @@
+Viewport checked { width: 1600, height: 900 } {
+  fps: 60.29715504066833,
+  p95Ms: 16.700000000000728,
+  maxMs: 16.80000000000109,
+  gpu: 'ANGLE (Apple, ANGLE Metal Renderer: Apple M3, Unspecified Version)'
+}
+Viewport checked { width: 1440, height: 900 } {
+  fps: 60.32730060315316,
+  p95Ms: 16.700000000000728,
+  maxMs: 16.800000000000182,
+  gpu: 'ANGLE (Apple, ANGLE Metal Renderer: Apple M3, Unspecified Version)'
+}
+Viewport checked { width: 390, height: 844 } {
+  fps: 60.17887422294733,
+  p95Ms: 16.700000000000728,
+  maxMs: 16.800000000000182,
+  gpu: 'ANGLE (Apple, ANGLE Metal Renderer: Apple M3, Unspecified Version)'
+}
