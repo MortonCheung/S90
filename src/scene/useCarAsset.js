@@ -1,56 +1,10 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
+import { tuneMaterial, rememberMaterial } from './materialProfiles.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.js';
 
 export const MODEL_URL = '/assets/model/candidates/s90-preserved-v4.glb';
-
-function tuneMaterial(material, surface) {
-  if (!material) return;
-  const name = material.name || '';
-
-  if (/^Car_Paint$/i.test(name)) {
-    material.metalness = 0.68;
-    material.roughness = 0.28;
-    if ('clearcoat' in material) {
-      material.clearcoat = 0.9;
-      material.clearcoatRoughness = 0.10;
-    }
-    material.envMapIntensity = 1.0;
-  } else if (surface === 'window') {
-    material.transmission = 0.68;
-    material.ior = 1.5;
-    material.thickness = 0.008;
-    material.transparent = false;
-    material.opacity = 1;
-    material.roughness = 0.03;
-    material.metalness = 0;
-    material.depthWrite = true;
-    material.envMapIntensity = 1.0;
-    material.needsUpdate = true;
-  } else if (surface === 'rear-lens') {
-    material.color.set('#858589');
-    material.transparent = true;
-    material.opacity = .20;
-    material.depthWrite = false;
-    material.roughness = .08;
-  } else if (/chrome/i.test(name)) {
-    material.envMapIntensity = 1.0;
-    material.roughness = 0.14;
-  } else if (/Black_Glossy/i.test(name)) {
-    material.roughness = 0.12;
-    material.envMapIntensity = 1.4;
-  } else if (/Tire|rubber/i.test(name)) {
-    material.roughness = 0.72;
-    material.envMapIntensity = 0.5;
-  }
-
-  if (material.map) {
-    material.map.anisotropy = 8;
-    material.map.colorSpace = THREE.SRGBColorSpace;
-  }
-  material.needsUpdate = true;
-}
 
 export function useCarAsset() {
   const [state, setState] = useState({
@@ -81,6 +35,7 @@ export function useCarAsset() {
           obj.receiveShadow = false;
           const upgrade = (original) => {
             if (!original) return original;
+            rememberMaterial(original);
             let surface = 'base';
             if (original.name === 'Glass') {
               if (/taillight/i.test(obj.name)) surface = 'rear-lens';
@@ -98,7 +53,7 @@ export function useCarAsset() {
               THREE.MeshStandardMaterial.prototype.copy.call(material, original);
               material.defines = { STANDARD: '', PHYSICAL: '' };
               material.name = original.name;
-              material.color.set('#455254');
+              material.color.set('#748182');
             }
             tuneMaterial(material, surface);
             materials.set(surface, material);

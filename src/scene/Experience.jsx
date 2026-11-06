@@ -70,7 +70,7 @@ export default function Experience({
         );
       }}
     >
-      <Studio ready={asset.status === 'ready'} />
+      <Studio ready={asset.status === 'ready'} stateRef={stateRef} />
       {asset.gltf ? (
         <CarModel gltf={asset.gltf} stateRef={stateRef} paint={paint} cabin={cabin} onFirstFrame={onFirstFrame} onFrameError={onContextLost} />
       ) : null}

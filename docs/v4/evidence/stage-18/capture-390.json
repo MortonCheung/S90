@@ -1,0 +1,1031 @@
+{
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "browser": "155.0.8059.85",
+  "samples": [
+    {
+      "t": 0.075,
+      "shot": {
+        "progress": 0.07503637497401787,
+        "position": [
+          -14.127261538461541,
+          3.515452307692308,
+          16.504077948717953
+        ],
+        "quaternion": [
+          -0.06086040437602972,
+          -0.34787191944055423,
+          -0.022636411573263862,
+          0.9352907204260162
+        ],
+        "target": [
+          0,
+          0.69,
+          0.14
+        ],
+        "fov": 31,
+        "near": 0.05,
+        "aspect": 0.46208530805687204,
+        "owner": "story",
+        "targetNdc": [
+          8.444110154973165e-16,
+          -5.5085636360850866e-17,
+          0.9956628121508571
+        ]
+      },
+      "journey": {
+        "act": {
+          "id": "morning",
+          "label": "清晨 · 出发",
+          "sceneId": "residence",
+          "range": [
+            0,
+            0.27
+          ],
+          "lineGrowthRange": [
+            0,
+            0.27
+          ],
+          "cameraSequence": [
+            "whole",
+            "lamp"
+          ],
+          "features": [
+            "form",
+            "light"
+          ]
+        },
+        "localProgress": 0.27791249990376987
+      },
+      "scenes": {
+        "exteriorWeight": 1,
+        "act": {
+          "id": "morning",
+          "label": "清晨 · 出发",
+          "sceneId": "residence",
+          "range": [
+            0,
+            0.27
+          ],
+          "lineGrowthRange": [
+            0,
+            0.27
+          ],
+          "cameraSequence": [
+            "whole",
+            "lamp"
+          ],
+          "features": [
+            "form",
+            "light"
+          ]
+        },
+        "localProgress": 0.27791249990376987,
+        "progress": 0.07503637497401787,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "visible": true,
+        "scenes": [
+          {
+            "id": "residence",
+            "actId": "morning",
+            "weight": 1,
+            "draw": 0.27791249990376987,
+            "visibleLength": 2817.4390282411755
+          },
+          {
+            "id": "city",
+            "actId": "day",
+            "weight": 0,
+            "draw": 0,
+            "visibleLength": 0
+          },
+          {
+            "id": "arrival",
+            "actId": "afternoon",
+            "weight": 0,
+            "draw": 0,
+            "visibleLength": 0
+          },
+          {
+            "id": "road",
+            "actId": "evening",
+            "weight": 0,
+            "draw": 0,
+            "visibleLength": 0
+          }
+        ],
+        "colors": [
+          [
+            "--sketch-paper",
+            "rgb(243 242 236)"
+          ],
+          [
+            "--sketch-surface",
+            "rgb(250 249 244)"
+          ],
+          [
+            "--sketch-ground",
+            "rgb(230 233 226)"
+          ],
+          [
+            "--sketch-shade",
+            "rgb(211 217 208)"
+          ],
+          [
+            "--sketch-accent",
+            "rgb(139 146 124)"
+          ]
+        ]
+      },
+      "registration": {
+        "anchor": [
+          0.4837702083395714,
+          0.5531710780842908
+        ],
+        "horizon": 0.26436341729565244,
+        "scale": 1,
+        "shiftX": 3.552713678800501e-13,
+        "shiftY": 1.7486012637846216e-14,
+        "vehiclePosition": [
+          0,
+          0,
+          0
+        ],
+        "vehicleSpeed": 0
+      },
+      "canvas": 1,
+      "stage": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844,
+        "top": 0,
+        "right": 390,
+        "bottom": 844,
+        "left": 0
+      },
+      "overflow": 0,
+      "modelId": "f7e38217-32c5-4b43-8fa9-dc20165689f5"
+    },
+    {
+      "t": 0.33,
+      "shot": {
+        "progress": 0.3299729785907296,
+        "position": [
+          -2.81,
+          0.73,
+          2.43
+        ],
+        "quaternion": [
+          -0.0659037701915271,
+          -0.5422106697490333,
+          -0.04271486370313838,
+          0.8365642372846626
+        ],
+        "target": [
+          -0.91,
+          0.4,
+          1.58
+        ],
+        "fov": 31,
+        "near": 0.05,
+        "aspect": 0.8401494496617187,
+        "owner": "story",
+        "targetNdc": [
+          4.522050692048859e-16,
+          1.424699400100216e-16,
+          0.9527936797547114
+        ]
+      },
+      "journey": {
+        "act": {
+          "id": "day",
+          "label": "白天 · 穿行",
+          "sceneId": "city",
+          "range": [
+            0.27,
+            0.53
+          ],
+          "lineGrowthRange": [
+            0.27,
+            0.53
+          ],
+          "cameraSequence": [
+            "wheel",
+            "profile"
+          ],
+          "features": [
+            "wheel",
+            "profile"
+          ]
+        },
+        "localProgress": 0.23066530227203685
+      },
+      "scenes": {
+        "exteriorWeight": 1,
+        "act": {
+          "id": "day",
+          "label": "白天 · 穿行",
+          "sceneId": "city",
+          "range": [
+            0.27,
+            0.53
+          ],
+          "lineGrowthRange": [
+            0.27,
+            0.53
+          ],
+          "cameraSequence": [
+            "wheel",
+            "profile"
+          ],
+          "features": [
+            "wheel",
+            "profile"
+          ]
+        },
+        "localProgress": 0.23066530227203685,
+        "progress": 0.3299729785907296,
+        "viewport": {
+          "width": 390,
+          "height": 464
+        },
+        "visible": true,
+        "scenes": [
+          {
+            "id": "residence",
+            "actId": "morning",
+            "weight": 0,
+            "draw": 1,
+            "visibleLength": 8906.172096252441
+          },
+          {
+            "id": "city",
+            "actId": "day",
+            "weight": 1,
+            "draw": 0.29815080207273537,
+            "visibleLength": 3561.611568339261
+          },
+          {
+            "id": "arrival",
+            "actId": "afternoon",
+            "weight": 0,
+            "draw": 0,
+            "visibleLength": 0
+          },
+          {
+            "id": "road",
+            "actId": "evening",
+            "weight": 0,
+            "draw": 0,
+            "visibleLength": 0
+          }
+        ],
+        "colors": [
+          [
+            "--sketch-paper",
+            "rgb(239 239 234)"
+          ],
+          [
+            "--sketch-surface",
+            "rgb(248 248 243)"
+          ],
+          [
+            "--sketch-ground",
+            "rgb(224 227 223)"
+          ],
+          [
+            "--sketch-shade",
+            "rgb(203 210 204)"
+          ],
+          [
+            "--sketch-accent",
+            "rgb(125 139 131)"
+          ]
+        ]
+      },
+      "registration": {
+        "anchor": [
+          -0.13392930989986152,
+          0.5707550079919329
+        ],
+        "horizon": 0.21415779664966805,
+        "scale": 1.8,
+        "shiftX": -200,
+        "shiftY": -30.577069959718944,
+        "vehiclePosition": [
+          0,
+          0,
+          0
+        ],
+        "vehicleSpeed": 0
+      },
+      "canvas": 1,
+      "stage": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 464.203125,
+        "top": 0,
+        "right": 390,
+        "bottom": 464.203125,
+        "left": 0
+      },
+      "overflow": 0,
+      "modelId": "f7e38217-32c5-4b43-8fa9-dc20165689f5"
+    },
+    {
+      "t": 0.59,
+      "shot": {
+        "progress": 0.5900020785699439,
+        "position": [
+          -0.23,
+          1.18,
+          -0.65
+        ],
+        "quaternion": [
+          0.006640737970981511,
+          0.9930796389804365,
+          0.07024108238794088,
+          -0.09388781383468829
+        ],
+        "target": [
+          0.06,
+          0.96,
+          0.87
+        ],
+        "fov": 70.47873962248592,
+        "near": 0.018,
+        "aspect": 0.8401494496617187,
+        "owner": "story",
+        "targetNdc": [
+          1.495988357268603e-16,
+          -2.0109660720952884e-16,
+          0.9770560126846506
+        ]
+      },
+      "journey": {
+        "act": {
+          "id": "afternoon",
+          "label": "午后 · 停驻",
+          "sceneId": "arrival",
+          "range": [
+            0.53,
+            0.675
+          ],
+          "lineGrowthRange": [
+            0.53,
+            0.675
+          ],
+          "cameraSequence": [
+            "cabin-approach",
+            "cabin-window",
+            "cabin-dashboard",
+            "cabin-seats",
+            "cabin-return-window",
+            "cabin-exterior"
+          ],
+          "features": [
+            "cabin"
+          ]
+        },
+        "localProgress": 0.41380743841340606
+      },
+      "scenes": {
+        "exteriorWeight": 0,
+        "act": {
+          "id": "afternoon",
+          "label": "午后 · 停驻",
+          "sceneId": "arrival",
+          "range": [
+            0.53,
+            0.675
+          ],
+          "lineGrowthRange": [
+            0.53,
+            0.675
+          ],
+          "cameraSequence": [
+            "cabin-approach",
+            "cabin-window",
+            "cabin-dashboard",
+            "cabin-seats",
+            "cabin-return-window",
+            "cabin-exterior"
+          ],
+          "features": [
+            "cabin"
+          ]
+        },
+        "localProgress": 0.41380743841340606,
+        "progress": 0.5900020785699439,
+        "viewport": {
+          "width": 390,
+          "height": 464
+        },
+        "visible": true,
+        "scenes": [
+          {
+            "id": "residence",
+            "actId": "morning",
+            "weight": 0,
+            "draw": 1,
+            "visibleLength": 8906.172096252441
+          },
+          {
+            "id": "city",
+            "actId": "day",
+            "weight": 0,
+            "draw": 1,
+            "visibleLength": 9927.329345703125
+          },
+          {
+            "id": "arrival",
+            "actId": "afternoon",
+            "weight": 1,
+            "draw": 0.5000122268820228,
+            "visibleLength": 6477.524916318463
+          },
+          {
+            "id": "road",
+            "actId": "evening",
+            "weight": 0,
+            "draw": 0,
+            "visibleLength": 0
+          }
+        ],
+        "colors": [
+          [
+            "--sketch-paper",
+            "rgb(241 238 231)"
+          ],
+          [
+            "--sketch-surface",
+            "rgb(249 246 240)"
+          ],
+          [
+            "--sketch-ground",
+            "rgb(229 222 211)"
+          ],
+          [
+            "--sketch-shade",
+            "rgb(213 200 183)"
+          ],
+          [
+            "--sketch-accent",
+            "rgb(154 133 109)"
+          ]
+        ]
+      },
+      "registration": {
+        "anchor": [
+          0.3953161834403721,
+          1.3874781671489689
+        ],
+        "horizon": 0.3993757567542485,
+        "scale": 1.8,
+        "shiftX": -55.23581548705397,
+        "shiftY": 180,
+        "vehiclePosition": [
+          0,
+          0,
+          0
+        ],
+        "vehicleSpeed": 0
+      },
+      "canvas": 1,
+      "stage": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 464.203125,
+        "top": 0,
+        "right": 390,
+        "bottom": 464.203125,
+        "left": 0
+      },
+      "overflow": 0,
+      "modelId": "f7e38217-32c5-4b43-8fa9-dc20165689f5"
+    },
+    {
+      "t": 0.715,
+      "shot": {
+        "progress": 0.7150280606942424,
+        "position": [
+          -3.28,
+          1.42,
+          -4.85
+        ],
+        "quaternion": [
+          0.03156157936778563,
+          0.9226182591805043,
+          0.07732915136524604,
+          -0.3765628989739664
+        ],
+        "target": [
+          -0.42,
+          0.73,
+          -1.93
+        ],
+        "fov": 32,
+        "near": 0.05,
+        "aspect": 0.8401494496617187,
+        "owner": "story",
+        "targetNdc": [
+          -2.223561362816224e-16,
+          0,
+          0.9761223176550871
+        ]
+      },
+      "journey": {
+        "act": {
+          "id": "evening",
+          "label": "黄昏 · 归途",
+          "sceneId": "road",
+          "range": [
+            0.675,
+            1
+          ],
+          "lineGrowthRange": [
+            0.675,
+            1
+          ],
+          "cameraSequence": [
+            "rear",
+            "explore"
+          ],
+          "features": [
+            "rear",
+            "explore"
+          ]
+        },
+        "localProgress": 0.1231632636745919
+      },
+      "scenes": {
+        "exteriorWeight": 1,
+        "act": {
+          "id": "evening",
+          "label": "黄昏 · 归途",
+          "sceneId": "road",
+          "range": [
+            0.675,
+            1
+          ],
+          "lineGrowthRange": [
+            0.675,
+            1
+          ],
+          "cameraSequence": [
+            "rear",
+            "explore"
+          ],
+          "features": [
+            "rear",
+            "explore"
+          ]
+        },
+        "localProgress": 0.1231632636745919,
+        "progress": 0.7150280606942424,
+        "viewport": {
+          "width": 390,
+          "height": 464
+        },
+        "visible": true,
+        "scenes": [
+          {
+            "id": "residence",
+            "actId": "morning",
+            "weight": 0,
+            "draw": 1,
+            "visibleLength": 8906.172096252441
+          },
+          {
+            "id": "city",
+            "actId": "day",
+            "weight": 0,
+            "draw": 1,
+            "visibleLength": 9927.329345703125
+          },
+          {
+            "id": "arrival",
+            "actId": "afternoon",
+            "weight": 0,
+            "draw": 1,
+            "visibleLength": 10943.705364227295
+          },
+          {
+            "id": "road",
+            "actId": "evening",
+            "weight": 1,
+            "draw": 0.18579445912640682,
+            "visibleLength": 1302.6238471298286
+          }
+        ],
+        "colors": [
+          [
+            "--sketch-paper",
+            "rgb(230 222 213)"
+          ],
+          [
+            "--sketch-surface",
+            "rgb(241 234 226)"
+          ],
+          [
+            "--sketch-ground",
+            "rgb(207 199 192)"
+          ],
+          [
+            "--sketch-shade",
+            "rgb(185 172 163)"
+          ],
+          [
+            "--sketch-accent",
+            "rgb(148 121 103)"
+          ]
+        ]
+      },
+      "registration": {
+        "anchor": [
+          0.8687420450567247,
+          0.6237762119563376
+        ],
+        "horizon": 0.20563483234101126,
+        "scale": 1.8,
+        "shiftX": 200,
+        "shiftY": -2.244399397769089,
+        "vehiclePosition": [
+          0,
+          0,
+          0
+        ],
+        "vehicleSpeed": 0
+      },
+      "canvas": 1,
+      "stage": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 464.203125,
+        "top": 0,
+        "right": 390,
+        "bottom": 464.203125,
+        "left": 0
+      },
+      "overflow": 0,
+      "modelId": "f7e38217-32c5-4b43-8fa9-dc20165689f5"
+    },
+    {
+      "t": 0.97,
+      "shot": {
+        "progress": 0.9699646643109541,
+        "position": [
+          -18.247712820512827,
+          4.800451282051281,
+          -16.040328205128205
+        ],
+        "quaternion": [
+          0.03458201858911356,
+          0.9078907879334223,
+          0.07644214126184068,
+          -0.4107249690671807
+        ],
+        "target": [
+          0,
+          0.68,
+          0
+        ],
+        "fov": 31,
+        "near": 0.05,
+        "aspect": 0.46208530805687204,
+        "owner": "orbit",
+        "targetNdc": [
+          1.863340100209556e-15,
+          6.498279880906077e-17,
+          0.9961914822959643
+        ]
+      },
+      "journey": {
+        "act": {
+          "id": "evening",
+          "label": "黄昏 · 归途",
+          "sceneId": "road",
+          "range": [
+            0.675,
+            1
+          ],
+          "lineGrowthRange": [
+            0.675,
+            1
+          ],
+          "cameraSequence": [
+            "rear",
+            "explore"
+          ],
+          "features": [
+            "rear",
+            "explore"
+          ]
+        },
+        "localProgress": 0.9075835824952433
+      },
+      "scenes": {
+        "exteriorWeight": 0,
+        "act": {
+          "id": "evening",
+          "label": "黄昏 · 归途",
+          "sceneId": "road",
+          "range": [
+            0.675,
+            1
+          ],
+          "lineGrowthRange": [
+            0.675,
+            1
+          ],
+          "cameraSequence": [
+            "rear",
+            "explore"
+          ],
+          "features": [
+            "rear",
+            "explore"
+          ]
+        },
+        "localProgress": 0.9075835824952433,
+        "progress": 0.9699646643109541,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "visible": true,
+        "scenes": [
+          {
+            "id": "residence",
+            "actId": "morning",
+            "weight": 0,
+            "draw": 1,
+            "visibleLength": 8906.172096252441
+          },
+          {
+            "id": "city",
+            "actId": "day",
+            "weight": 0,
+            "draw": 1,
+            "visibleLength": 9927.329345703125
+          },
+          {
+            "id": "arrival",
+            "actId": "afternoon",
+            "weight": 0,
+            "draw": 1,
+            "visibleLength": 10943.705364227295
+          },
+          {
+            "id": "road",
+            "actId": "evening",
+            "weight": 1,
+            "draw": 0.9141847551741545,
+            "visibleLength": 5501.169207970642
+          }
+        ],
+        "colors": [
+          [
+            "--sketch-paper",
+            "rgb(230 222 213)"
+          ],
+          [
+            "--sketch-surface",
+            "rgb(241 234 226)"
+          ],
+          [
+            "--sketch-ground",
+            "rgb(207 199 192)"
+          ],
+          [
+            "--sketch-shade",
+            "rgb(185 172 163)"
+          ],
+          [
+            "--sketch-accent",
+            "rgb(148 121 103)"
+          ]
+        ]
+      },
+      "registration": {
+        "anchor": [
+          0.5000000000000009,
+          0.5472532450171085
+        ],
+        "horizon": 0.19422589691975428,
+        "scale": 0.8886389879302582,
+        "shiftX": 125.95902047766319,
+        "shiftY": -25.555251262709543,
+        "vehiclePosition": [
+          0,
+          0,
+          0
+        ],
+        "vehicleSpeed": 0
+      },
+      "canvas": 1,
+      "stage": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844,
+        "top": 0,
+        "right": 390,
+        "bottom": 844,
+        "left": 0
+      },
+      "overflow": 0,
+      "modelId": "f7e38217-32c5-4b43-8fa9-dc20165689f5"
+    },
+    {
+      "t": 0.59,
+      "shot": {
+        "progress": 0.5900020785699439,
+        "position": [
+          -17.313088518221768,
+          4.6126493236576716,
+          -15.241992983336221
+        ],
+        "quaternion": [
+          0.034506119084784105,
+          0.9083274126974678,
+          0.07649157552001654,
+          -0.4097556320082696
+        ],
+        "target": [
+          0.003112351645077861,
+          0.6945243076770301,
+          0.045129098853628986
+        ],
+        "fov": 70.47873962248592,
+        "near": 0.018,
+        "aspect": 0.8401494496617187,
+        "owner": "blend",
+        "targetNdc": [
+          -1.0728609892732695e-16,
+          -3.3539109570287046e-17,
+          0.9985533504567288
+        ]
+      },
+      "journey": {
+        "act": {
+          "id": "afternoon",
+          "label": "午后 · 停驻",
+          "sceneId": "arrival",
+          "range": [
+            0.53,
+            0.675
+          ],
+          "lineGrowthRange": [
+            0.53,
+            0.675
+          ],
+          "cameraSequence": [
+            "cabin-approach",
+            "cabin-window",
+            "cabin-dashboard",
+            "cabin-seats",
+            "cabin-return-window",
+            "cabin-exterior"
+          ],
+          "features": [
+            "cabin"
+          ]
+        },
+        "localProgress": 0.41380743841340606
+      },
+      "scenes": {
+        "exteriorWeight": 0,
+        "act": {
+          "id": "afternoon",
+          "label": "午后 · 停驻",
+          "sceneId": "arrival",
+          "range": [
+            0.53,
+            0.675
+          ],
+          "lineGrowthRange": [
+            0.53,
+            0.675
+          ],
+          "cameraSequence": [
+            "cabin-approach",
+            "cabin-window",
+            "cabin-dashboard",
+            "cabin-seats",
+            "cabin-return-window",
+            "cabin-exterior"
+          ],
+          "features": [
+            "cabin"
+          ]
+        },
+        "localProgress": 0.41380743841340606,
+        "progress": 0.5900020785699439,
+        "viewport": {
+          "width": 390,
+          "height": 464
+        },
+        "visible": true,
+        "scenes": [
+          {
+            "id": "residence",
+            "actId": "morning",
+            "weight": 0,
+            "draw": 1,
+            "visibleLength": 8906.172096252441
+          },
+          {
+            "id": "city",
+            "actId": "day",
+            "weight": 0,
+            "draw": 1,
+            "visibleLength": 9927.329345703125
+          },
+          {
+            "id": "arrival",
+            "actId": "afternoon",
+            "weight": 1,
+            "draw": 0.5000122268820228,
+            "visibleLength": 6477.524916318463
+          },
+          {
+            "id": "road",
+            "actId": "evening",
+            "weight": 0,
+            "draw": 0,
+            "visibleLength": 0
+          }
+        ],
+        "colors": [
+          [
+            "--sketch-paper",
+            "rgb(241 238 231)"
+          ],
+          [
+            "--sketch-surface",
+            "rgb(249 246 240)"
+          ],
+          [
+            "--sketch-ground",
+            "rgb(229 222 211)"
+          ],
+          [
+            "--sketch-shade",
+            "rgb(213 200 183)"
+          ],
+          [
+            "--sketch-accent",
+            "rgb(154 133 109)"
+          ]
+        ]
+      },
+      "registration": {
+        "anchor": [
+          0.4992840165077253,
+          0.5201283142950827
+        ],
+        "horizon": 0.37994524941077756,
+        "scale": 0.65,
+        "shiftX": 124.62327388166422,
+        "shiftY": -7.970638152626846,
+        "vehiclePosition": [
+          0,
+          0,
+          0
+        ],
+        "vehicleSpeed": 0
+      },
+      "canvas": 1,
+      "stage": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 464.203125,
+        "top": 0,
+        "right": 390,
+        "bottom": 464.203125,
+        "left": 0
+      },
+      "overflow": 0,
+      "modelId": "f7e38217-32c5-4b43-8fa9-dc20165689f5"
+    }
+  ],
+  "errors": [],
+  "failed": [],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:5177/assets/model/candidates/s90-preserved-v4.glb",
+      "status": 200
+    }
+  ]
+}
