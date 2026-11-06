@@ -1,0 +1,149 @@
+{
+  "browser": "155.0.8059.85",
+  "results": [
+    {
+      "tag": "original",
+      "path": "/source_assets/volvo_s90_recharge_free.glb",
+      "loadMs": 5454,
+      "shots": {
+        "side": {
+          "calls": 393,
+          "triangles": 6591826
+        },
+        "front": {
+          "calls": 393,
+          "triangles": 6591826
+        },
+        "wheel": {
+          "calls": 383,
+          "triangles": 6569210
+        },
+        "light": {
+          "calls": 393,
+          "triangles": 6591826
+        },
+        "cabin": {
+          "calls": 280,
+          "triangles": 5153414
+        }
+      },
+      "fps": 60.55564797882581,
+      "p95Ms": 16.799999999999272,
+      "bounds": {
+        "min": [
+          -1.0056001992098609,
+          0.022341150303473112,
+          -2.4851873517133933
+        ],
+        "max": [
+          1.0056001310660219,
+          1.4560829338873744,
+          2.514860533801403
+        ]
+      },
+      "requests": [
+        {
+          "bytes": 386347164,
+          "duration": 512
+        }
+      ],
+      "errors": []
+    },
+    {
+      "tag": "current",
+      "path": "/assets/model/candidates/s90-quality-v3.glb",
+      "loadMs": 1168,
+      "shots": {
+        "side": {
+          "calls": 393,
+          "triangles": 6591826
+        },
+        "front": {
+          "calls": 393,
+          "triangles": 6591826
+        },
+        "wheel": {
+          "calls": 383,
+          "triangles": 6569210
+        },
+        "light": {
+          "calls": 393,
+          "triangles": 6591826
+        },
+        "cabin": {
+          "calls": 280,
+          "triangles": 5153414
+        }
+      },
+      "fps": 60.529466542623645,
+      "p95Ms": 16.800000000000182,
+      "bounds": {
+        "min": [
+          -1.0056001992098609,
+          0.02233313064917375,
+          -2.4851857187886934
+        ],
+        "max": [
+          1.0056001310660219,
+          1.4560852223363256,
+          2.5148755539749907
+        ]
+      },
+      "requests": [
+        {
+          "bytes": 73364248,
+          "duration": 84.19999998807907
+        }
+      ],
+      "errors": []
+    },
+    {
+      "tag": "conservative",
+      "path": "/test-results/v4/s90-conservative.glb",
+      "loadMs": 1076,
+      "shots": {
+        "side": {
+          "calls": 393,
+          "triangles": 6591826
+        },
+        "front": {
+          "calls": 393,
+          "triangles": 6591826
+        },
+        "wheel": {
+          "calls": 383,
+          "triangles": 6569210
+        },
+        "light": {
+          "calls": 393,
+          "triangles": 6591826
+        },
+        "cabin": {
+          "calls": 280,
+          "triangles": 5153414
+        }
+      },
+      "fps": 60.569755058092355,
+      "p95Ms": 16.700000000000728,
+      "bounds": {
+        "min": [
+          -1.0056001992098609,
+          0.02233313064917375,
+          -2.4851857187886934
+        ],
+        "max": [
+          1.0056001310660219,
+          1.4560852223363256,
+          2.5148755539749907
+        ]
+      },
+      "requests": [
+        {
+          "bytes": 66209528,
+          "duration": 95.2000000178814
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

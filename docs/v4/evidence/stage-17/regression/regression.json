@@ -1,0 +1,622 @@
+{
+  "browser": "155.0.8059.85",
+  "date": "2026-11-06T05:39:19.555Z",
+  "viewports": [
+    {
+      "viewport": {
+        "width": 1600,
+        "height": 900
+      },
+      "devicePixelRatio": 1,
+      "openingMs": 9548,
+      "modelTiming": [
+        {
+          "duration": 158.59999999403954,
+          "bytes": 66209528,
+          "transfer": 66209828
+        }
+      ],
+      "frames": {
+        "fps": 60.22693241927296,
+        "p95Ms": 16.700000000000728,
+        "maxMs": 16.80000000000109,
+        "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3, Unspecified Version)"
+      },
+      "stable": [
+        {
+          "t": 0,
+          "position": [
+            -16.998555654739974,
+            0.74,
+            0.015
+          ],
+          "owner": "story",
+          "content": null,
+          "stageWidth": 1600,
+          "stageHeight": 900,
+          "canvas": 1,
+          "overflow": 0
+        },
+        {
+          "t": 0.075,
+          "position": [
+            -4.8,
+            1.65,
+            5.7
+          ],
+          "owner": "story",
+          "content": null,
+          "stageWidth": 1600,
+          "stageHeight": 900,
+          "canvas": 1,
+          "overflow": 0
+        },
+        {
+          "t": 0.18,
+          "position": [
+            -2.8732704902606434,
+            1.1683176225651608,
+            4.38463658469717
+          ],
+          "owner": "story",
+          "content": "light",
+          "stageWidth": 1262,
+          "stageHeight": 900,
+          "canvas": 1,
+          "overflow": 0
+        },
+        {
+          "t": 0.2,
+          "position": [
+            -2.72,
+            1.13,
+            4.28
+          ],
+          "owner": "story",
+          "content": "light",
+          "stageWidth": 1080,
+          "stageHeight": 900,
+          "canvas": 1,
+          "overflow": 0
+        },
+        {
+          "t": 0.267,
+          "position": [
+            -2.7559930289071186,
+            0.9700309826350293,
+            3.540143294687011
+          ],
+          "owner": "story",
+          "content": "light",
+          "stageWidth": 1080,
+          "stageHeight": 900,
+          "canvas": 1,
+          "overflow": 0
+        },
+        {
+          "t": 0.33,
+          "position": [
+            -2.81,
+            0.73,
+            2.43
+          ],
+          "owner": "story",
+          "content": "wheel",
+          "stageWidth": 1080,
+          "stageHeight": 900,
+          "canvas": 1,
+          "overflow": 0
+        },
+        {
+          "t": 0.46,
+          "position": [
+            -9.633333333333335,
+            0.914,
+            0.05
+          ],
+          "owner": "story",
+          "content": "profile",
+          "stageWidth": 1080,
+          "stageHeight": 900,
+          "canvas": 1,
+          "overflow": 0
+        },
+        {
+          "t": 0.59,
+          "position": [
+            -0.23,
+            1.18,
+            -0.65
+          ],
+          "owner": "story",
+          "content": "cabin",
+          "stageWidth": 1080,
+          "stageHeight": 900,
+          "canvas": 1,
+          "overflow": 0
+        },
+        {
+          "t": 0.615,
+          "position": [
+            -0.0663032183350418,
+            1.1390758045837603,
+            -0.5763364482507689
+          ],
+          "owner": "story",
+          "content": "cabin",
+          "stageWidth": 1080,
+          "stageHeight": 900,
+          "canvas": 1,
+          "overflow": 0
+        },
+        {
+          "t": 0.715,
+          "position": [
+            -3.28,
+            1.42,
+            -4.85
+          ],
+          "owner": "story",
+          "content": "rear",
+          "stageWidth": 1080,
+          "stageHeight": 900,
+          "canvas": 1,
+          "overflow": 0
+        },
+        {
+          "t": 0.46,
+          "position": [
+            -9.633333333333335,
+            0.914,
+            0.05
+          ],
+          "owner": "story",
+          "content": "profile",
+          "stageWidth": 1080,
+          "stageHeight": 900,
+          "canvas": 1,
+          "overflow": 0
+        },
+        {
+          "t": 0.2,
+          "position": [
+            -2.72,
+            1.13,
+            4.28
+          ],
+          "owner": "story",
+          "content": "light",
+          "stageWidth": 1080,
+          "stageHeight": 900,
+          "canvas": 1,
+          "overflow": 0
+        }
+      ],
+      "requests": 1,
+      "reused": true,
+      "heapBefore": 212608309,
+      "heapAfter": 220573133,
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "devicePixelRatio": 1,
+      "openingMs": 2336,
+      "modelTiming": [
+        {
+          "duration": 102.40000000596046,
+          "bytes": 66209528,
+          "transfer": 66209828
+        }
+      ],
+      "frames": {
+        "fps": 60.05109319531534,
+        "p95Ms": 16.700000000000728,
+        "maxMs": 16.800000000000182,
+        "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3, Unspecified Version)"
+      },
+      "stable": [
+        {
+          "t": 0,
+          "position": [
+            -18.776172949711082,
+            0.74,
+            0.015
+          ],
+          "owner": "story",
+          "content": null,
+          "stageWidth": 1440,
+          "stageHeight": 900,
+          "canvas": 1,
+          "overflow": 0
+        },
+        {
+          "t": 0.075,
+          "position": [
+            -4.8,
+            1.65,
+            5.7
+          ],
+          "owner": "story",
+          "content": null,
+          "stageWidth": 1440,
+          "stageHeight": 900,
+          "canvas": 1,
+          "overflow": 0
+        },
+        {
+          "t": 0.18,
+          "position": [
+            -2.9123165923629726,
+            1.1761268429856266,
+            4.429864986299035
+          ],
+          "owner": "story",
+          "content": "light",
+          "stageWidth": 1102,
+          "stageHeight": 900,
+          "canvas": 1,
+          "overflow": 0
+        },
+        {
+          "t": 0.2,
+          "position": [
+            -2.72,
+            1.13,
+            4.28
+          ],
+          "owner": "story",
+          "content": "light",
+          "stageWidth": 920,
+          "stageHeight": 900,
+          "canvas": 1,
+          "overflow": 0
+        },
+        {
+          "t": 0.267,
+          "position": [
+            -2.7559930289071186,
+            0.9700309826350293,
+            3.540143294687011
+          ],
+          "owner": "story",
+          "content": "light",
+          "stageWidth": 920,
+          "stageHeight": 900,
+          "canvas": 1,
+          "overflow": 0
+        },
+        {
+          "t": 0.33,
+          "position": [
+            -2.81,
+            0.73,
+            2.43
+          ],
+          "owner": "story",
+          "content": "wheel",
+          "stageWidth": 920,
+          "stageHeight": 900,
+          "canvas": 1,
+          "overflow": 0
+        },
+        {
+          "t": 0.46,
+          "position": [
+            -11.308695652173913,
+            0.9494782608695653,
+            0.05
+          ],
+          "owner": "story",
+          "content": "profile",
+          "stageWidth": 920,
+          "stageHeight": 900,
+          "canvas": 1,
+          "overflow": 0
+        },
+        {
+          "t": 0.59,
+          "position": [
+            -0.23,
+            1.18,
+            -0.65
+          ],
+          "owner": "story",
+          "content": "cabin",
+          "stageWidth": 920,
+          "stageHeight": 900,
+          "canvas": 1,
+          "overflow": 0
+        },
+        {
+          "t": 0.615,
+          "position": [
+            -0.0663032183350418,
+            1.1390758045837603,
+            -0.5763364482507689
+          ],
+          "owner": "story",
+          "content": "cabin",
+          "stageWidth": 920,
+          "stageHeight": 900,
+          "canvas": 1,
+          "overflow": 0
+        },
+        {
+          "t": 0.715,
+          "position": [
+            -3.28,
+            1.42,
+            -4.85
+          ],
+          "owner": "story",
+          "content": "rear",
+          "stageWidth": 920,
+          "stageHeight": 900,
+          "canvas": 1,
+          "overflow": 0
+        },
+        {
+          "t": 0.46,
+          "position": [
+            -11.308695652173913,
+            0.9494782608695653,
+            0.05
+          ],
+          "owner": "story",
+          "content": "profile",
+          "stageWidth": 920,
+          "stageHeight": 900,
+          "canvas": 1,
+          "overflow": 0
+        },
+        {
+          "t": 0.2,
+          "position": [
+            -2.72,
+            1.13,
+            4.28
+          ],
+          "owner": "story",
+          "content": "light",
+          "stageWidth": 920,
+          "stageHeight": 900,
+          "canvas": 1,
+          "overflow": 0
+        }
+      ],
+      "requests": 1,
+      "reused": true,
+      "heapBefore": 387924915,
+      "heapAfter": 393963035,
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "devicePixelRatio": 2.5,
+      "openingMs": 2373,
+      "modelTiming": [
+        {
+          "duration": 97.80000001192093,
+          "bytes": 66209528,
+          "transfer": 66209828
+        }
+      ],
+      "frames": {
+        "fps": 60.309209649114216,
+        "p95Ms": 16.700000000000728,
+        "maxMs": 16.80000000000109,
+        "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3, Unspecified Version)"
+      },
+      "stable": [
+        {
+          "t": 0,
+          "position": [
+            -62.551138336640626,
+            0.74,
+            0.015
+          ],
+          "owner": "story",
+          "content": null,
+          "stageWidth": 390,
+          "stageHeight": 844,
+          "canvas": 1,
+          "overflow": 0
+        },
+        {
+          "t": 0.075,
+          "position": [
+            -14.127261538461541,
+            3.515452307692308,
+            16.504077948717953
+          ],
+          "owner": "story",
+          "content": null,
+          "stageWidth": 390,
+          "stageHeight": 844,
+          "canvas": 1,
+          "overflow": 0
+        },
+        {
+          "t": 0.18,
+          "position": [
+            -3.466853646021767,
+            1.2842825318122968,
+            5.039008513528219
+          ],
+          "owner": "story",
+          "content": "light",
+          "stageWidth": 390,
+          "stageHeight": 598,
+          "canvas": 1,
+          "overflow": 0
+        },
+        {
+          "t": 0.2,
+          "position": [
+            -2.72,
+            1.13,
+            4.28
+          ],
+          "owner": "story",
+          "content": "light",
+          "stageWidth": 390,
+          "stageHeight": 464,
+          "canvas": 1,
+          "overflow": 0
+        },
+        {
+          "t": 0.267,
+          "position": [
+            -2.7560420026187007,
+            0.9698133216946645,
+            3.5391366128378237
+          ],
+          "owner": "story",
+          "content": "light",
+          "stageWidth": 390,
+          "stageHeight": 464,
+          "canvas": 1,
+          "overflow": 0
+        },
+        {
+          "t": 0.33,
+          "position": [
+            -2.81,
+            0.73,
+            2.43
+          ],
+          "owner": "story",
+          "content": "wheel",
+          "stageWidth": 390,
+          "stageHeight": 464,
+          "canvas": 1,
+          "overflow": 0
+        },
+        {
+          "t": 0.46,
+          "position": [
+            -13.759456730769232,
+            1.001376730769231,
+            0.05
+          ],
+          "owner": "story",
+          "content": "profile",
+          "stageWidth": 390,
+          "stageHeight": 464,
+          "canvas": 1,
+          "overflow": 0
+        },
+        {
+          "t": 0.59,
+          "position": [
+            -0.23,
+            1.18,
+            -0.65
+          ],
+          "owner": "story",
+          "content": "cabin",
+          "stageWidth": 390,
+          "stageHeight": 464,
+          "canvas": 1,
+          "overflow": 0
+        },
+        {
+          "t": 0.615,
+          "position": [
+            -0.06546238045899633,
+            1.138865595114749,
+            -0.5759580712065484
+          ],
+          "owner": "story",
+          "content": "cabin",
+          "stageWidth": 390,
+          "stageHeight": 464,
+          "canvas": 1,
+          "overflow": 0
+        },
+        {
+          "t": 0.715,
+          "position": [
+            -3.28,
+            1.42,
+            -4.85
+          ],
+          "owner": "story",
+          "content": "rear",
+          "stageWidth": 390,
+          "stageHeight": 464,
+          "canvas": 1,
+          "overflow": 0
+        },
+        {
+          "t": 0.46,
+          "position": [
+            -13.759456730769232,
+            1.001376730769231,
+            0.05
+          ],
+          "owner": "story",
+          "content": "profile",
+          "stageWidth": 390,
+          "stageHeight": 464,
+          "canvas": 1,
+          "overflow": 0
+        },
+        {
+          "t": 0.2,
+          "position": [
+            -2.72,
+            1.13,
+            4.28
+          ],
+          "owner": "story",
+          "content": "light",
+          "stageWidth": 390,
+          "stageHeight": 464,
+          "canvas": 1,
+          "overflow": 0
+        }
+      ],
+      "requests": 1,
+      "reused": true,
+      "heapBefore": 394479030,
+      "heapAfter": 387479258,
+      "errors": []
+    }
+  ],
+  "network": [
+    {
+      "mode": "known",
+      "state": "loading",
+      "percent": "2",
+      "bars": 1,
+      "recovered": true
+    },
+    {
+      "mode": "unknown",
+      "state": "indeterminate",
+      "percent": null,
+      "bars": 1,
+      "recovered": true
+    },
+    {
+      "mode": "404",
+      "recovered": true
+    },
+    {
+      "mode": "context-lost",
+      "recovered": true
+    },
+    {
+      "mode": "no-webgl2",
+      "fallback": true
+    }
+  ]
+}

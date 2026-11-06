@@ -2,11 +2,12 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import http from 'node:http';
 import { chromium } from 'playwright';
+import { MODEL_URL } from '../src/scene/useCarAsset.js';
 
 const dir = process.env.S90_QA_DIR ?? 'docs/rework/evidence/stage-11';
 const host = 'http://127.0.0.1:5177';
 const launch = { executablePath:'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',args:['--use-angle=metal','--ignore-gpu-blocklist'] };
-const model = 'public/assets/model/candidates/s90-quality-v3.glb';
+const model = 'public' + MODEL_URL;
 const total = fs.statSync(model).size;
 fs.mkdirSync(dir,{recursive:true});
 const browser = await chromium.launch(launch);
