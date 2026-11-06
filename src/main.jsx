@@ -25,7 +25,6 @@ function renderFallback(root) {
         <span>VOLVO — S90</span><span>数字交互展厅 · 2026 华灿奖</span>
       </header>
       <div class="fallback__body">
-        <p class="fallback__kicker">STATIC FALLBACK</p>
         <h1>这台设备暂时无法运行三维展厅</h1>
         <p class="fallback__text">
           当前浏览器没有可用的 WebGL 渲染环境。静态线稿仍然可以阅读；
@@ -41,11 +40,15 @@ function renderFallback(root) {
 
 const root = createRoot(document.getElementById('root'));
 if (hasWebGL()) {
-  root.render(
+  const mount=()=>root.render(
     <React.StrictMode>
       <App />
     </React.StrictMode>,
   );
+  mount();
+  if(import.meta.env.DEV&&new URLSearchParams(location.search).has('lifecycle')){
+    window.__S90TestRoot={mount,unmount:()=>root.render(null)};
+  }
 } else {
   renderFallback(document.getElementById('root'));
 }

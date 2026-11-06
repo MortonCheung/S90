@@ -32,8 +32,10 @@ export function Studio({ ready, stateRef }) {
   const { scene, gl } = useThree();
   const key=useRef();const fill=useRef();
   const profile = import.meta.env.DEV ? new URLSearchParams(location.search).get('studio') || 'balanced' : 'balanced';
-  const env = useMemo(()=>makeEnvironment(gl,profile),[gl,profile]);
-  useEffect(()=>{scene.environment=env.texture;scene.environmentIntensity=1;return()=>{if(scene.environment===env.texture)scene.environment=null;env.dispose()}},[scene,env]);
+  useEffect(()=>{
+    const env=makeEnvironment(gl,profile);scene.environment=env.texture;scene.environmentIntensity=1;
+    return()=>{if(scene.environment===env.texture)scene.environment=null;env.dispose();};
+  },[scene,gl,profile]);
   useEffect(()=>{gl.toneMapping=THREE.ACESFilmicToneMapping;gl.outputColorSpace=THREE.SRGBColorSpace;gl.toneMappingExposure=.92},[gl]);
   useFrame(()=>{
     if(!key.current||!fill.current)return;

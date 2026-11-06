@@ -40,6 +40,7 @@ function HotspotProjector({ items, outRef }) {
 
 export default function Experience({
   asset,
+  paused,
   paint,
   cabin,
   stateRef,
@@ -53,6 +54,7 @@ export default function Experience({
   return (
     <Canvas
       className="scene"
+      frameloop={paused?'never':'always'}
       dpr={[1, 1.8]}
       gl={{ antialias: true, alpha: true, powerPreference: 'high-performance' }}
       camera={{ fov: 31, near: 0.05, far: 400, position: [-16, 1.5, 6] }}
@@ -74,7 +76,7 @@ export default function Experience({
       {asset.gltf ? (
         <CarModel gltf={asset.gltf} stateRef={stateRef} paint={paint} cabin={cabin} onFirstFrame={onFirstFrame} onFrameError={onContextLost} />
       ) : null}
-      <CameraSystem stateRef={stateRef} explore={explore} api={api} />
+      <CameraSystem stateRef={stateRef} explore={explore} paused={paused} api={api} />
       <SceneRegistration stateRef={stateRef} />
       <HotspotProjector items={hotspots} outRef={projected} />
     </Canvas>

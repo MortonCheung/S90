@@ -160,6 +160,7 @@ export default function Opening({
           </button>
         </div>
       ) : null}
+      {artError&&!error ? <p className="opening__notice" role="status">线稿暂不可用，正在准备三维展厅</p> : null}
     </div>
   );
 }

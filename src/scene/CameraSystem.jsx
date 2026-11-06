@@ -20,7 +20,7 @@ const easeInOutCubic = (t) =>
  * handed to OrbitControls at the end of the story and taken back on exit, with
  * a short blend so neither transition is a cut.
  */
-export function CameraSystem({ stateRef, explore, api }) {
+export function CameraSystem({ stateRef, explore, paused, api }) {
   const { camera, size, scene, gl } = useThree();
   const previewRef = useRef(null);
   const controlsRef = useRef(null);
@@ -35,6 +35,12 @@ export function CameraSystem({ stateRef, explore, api }) {
   });
   const wasExplore = useRef(false);
   const tweening = useRef(false);
+  useEffect(()=>{
+    if(!paused)return;
+    gsap.killTweensOf(camera.position);
+    if(controlsRef.current){gsap.killTweensOf(controlsRef.current.target);controlsRef.current.enabled=false;}
+    tweening.current=false;
+  },[paused,camera]);
 
   useEffect(() => {
     const controls = controlsRef.current;
@@ -175,6 +181,7 @@ export function CameraSystem({ stateRef, explore, api }) {
   }, [camera, explore, stateRef, scene, gl]);
 
   useFrame((_, delta) => {
+    if(paused)return;
     const controls = controlsRef.current;
     if (explore) {
       if (controls && !tweening.current) controls.update();
@@ -216,7 +223,7 @@ export function CameraSystem({ stateRef, explore, api }) {
     <OrbitControls
       ref={controlsRef}
       makeDefault
-      enabled={explore}
+      enabled={explore&&!paused}
       enablePan={false}
       enableZoom={false}
       enableDamping

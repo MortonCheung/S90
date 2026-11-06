@@ -120,7 +120,7 @@ export function CarModel({ gltf, stateRef, paint, cabin, onFirstFrame, onFrameEr
       else if (name === 'dashboard') tweenValues(mat, theme.dash);
       else tweenValues(mat, theme.panel);
     });
-    return undefined;
+    return () => cabinTargets.forEach(mat=>gsap.killTweensOf(mat.color));
   }, [cabin, cabinTargets]);
 
   useEffect(() => {
@@ -157,6 +157,7 @@ export function CarModel({ gltf, stateRef, paint, cabin, onFirstFrame, onFrameEr
       ease: 'power2.inOut',
       overwrite: true,
     });
+    return ()=>gsap.killTweensOf(mat.color);
   }, [paint]);
 
   if (!gltf) return null;

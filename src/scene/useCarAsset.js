@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { tuneMaterial, rememberMaterial } from './materialProfiles.js';
+import { disposeModel } from './disposeModel.js';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.js';
 
@@ -19,6 +20,8 @@ export function useCarAsset() {
 
   useEffect(() => {
     let cancelled = false;
+    let owned=null;
+    const ownedMaterials=new Set();
     const loader = new GLTFLoader();
     loader.setMeshoptDecoder(MeshoptDecoder);
 
@@ -27,7 +30,8 @@ export function useCarAsset() {
     loader.load(
       urlRef.current,
       (gltf) => {
-        if (cancelled) return;
+        if (cancelled) { disposeModel(gltf.scene); return; }
+        owned=gltf.scene;
         const replacements = new Map();
         gltf.scene.traverse((obj) => {
           if (!obj.isMesh) return;
@@ -35,6 +39,7 @@ export function useCarAsset() {
           obj.receiveShadow = false;
           const upgrade = (original) => {
             if (!original) return original;
+            ownedMaterials.add(original);
             rememberMaterial(original);
             let surface = 'base';
             if (original.name === 'Glass') {
@@ -56,6 +61,7 @@ export function useCarAsset() {
               material.color.set('#748182');
             }
             tuneMaterial(material, surface);
+            ownedMaterials.add(material);
             materials.set(surface, material);
             return material;
           };
@@ -84,6 +90,7 @@ export function useCarAsset() {
 
     return () => {
       cancelled = true;
+      if(owned)disposeModel(owned,ownedMaterials);
     };
   }, [attempt]);
 

@@ -12,6 +12,10 @@ export function useLineart(url) {
         return res.text();
       })
       .then((markup) => {
+        const document=new DOMParser().parseFromString(markup,'image/svg+xml');
+        if(document.querySelector('parsererror')||!document.querySelector('svg.s90-lineart path')){
+          throw new Error('Invalid opening lineart');
+        }
         if (alive) setState({ markup, error: null });
       })
       .catch((error) => {
