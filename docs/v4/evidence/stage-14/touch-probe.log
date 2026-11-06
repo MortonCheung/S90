@@ -1,0 +1,71 @@
+{
+  rows: [
+    {
+      node: 'CANVAS',
+      cls: '',
+      touch: 'pan-y',
+      pointer: 'auto',
+      overflow: 'clip'
+    },
+    {
+      node: 'DIV',
+      cls: '',
+      touch: 'pan-y',
+      pointer: 'auto',
+      overflow: 'visible'
+    },
+    {
+      node: 'DIV',
+      cls: 'scene',
+      touch: 'pan-y',
+      pointer: 'auto',
+      overflow: 'hidden'
+    },
+    {
+      node: 'DIV',
+      cls: 'stage',
+      touch: 'auto',
+      pointer: 'auto',
+      overflow: 'hidden'
+    },
+    {
+      node: 'DIV',
+      cls: 'visual-layout',
+      touch: 'auto',
+      pointer: 'auto',
+      overflow: 'hidden'
+    },
+    {
+      node: 'DIV',
+      cls: 'app',
+      touch: 'auto',
+      pointer: 'auto',
+      overflow: 'visible'
+    },
+    {
+      node: 'DIV',
+      cls: '',
+      touch: 'auto',
+      pointer: 'auto',
+      overflow: 'visible'
+    },
+    {
+      node: 'BODY',
+      cls: '',
+      touch: 'auto',
+      pointer: 'auto',
+      overflow: 'hidden auto'
+    },
+    {
+      node: 'HTML',
+      cls: '',
+      touch: 'auto',
+      pointer: 'auto',
+      overflow: 'visible'
+    }
+  ],
+  scrollHeight: 10466,
+  scrollY: 0,
+  locked: ''
+}
+{ scrollY: 345, progress: 0.03585533153190605 }

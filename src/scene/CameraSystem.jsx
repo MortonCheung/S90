@@ -64,6 +64,12 @@ export function CameraSystem({ stateRef, explore, api }) {
   }, [explore, camera]);
 
   useEffect(() => {
+    const wheel=event=>{if(explore) event.preventDefault();};
+    window.addEventListener('wheel',wheel,{passive:false});
+    return ()=>{window.removeEventListener('wheel',wheel);};
+  },[explore,gl]);
+
+  useEffect(() => {
     if (!api) return undefined;
     const controls = controlsRef.current;
     if (!controls) return undefined;

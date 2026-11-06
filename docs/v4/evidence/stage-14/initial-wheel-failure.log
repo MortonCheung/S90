@@ -1,0 +1,20 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+7169 !== 7519
+
+    at file:///Users/morton_cheung/Desktop/%E6%AF%94%E8%B5%9B/%E5%8D%8E%E7%81%BF%E5%A5%96/project/s90-digital-experience/tools/v4/explore-check.mjs:52:10
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processImmediate (node:internal/timers:472:9) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 7169,
+  expected: 7519,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.15.0

@@ -29,6 +29,7 @@ export function sampleScene(progress, viewport, ready) {
     )));
     return [`--sketch-${name}`,`rgb(${channels.join(' ')})`];
   });
-  const exteriorWeight=1-smoothstep(.56,.585,t)*(1-smoothstep(.635,.67,t));
+  const endingWeight=1-smoothstep(.87,.945,t);
+  const exteriorWeight=endingWeight*(1-smoothstep(.56,.585,t)*(1-smoothstep(.635,.67,t)));
   return { exteriorWeight, ...actAt(t), progress:t, viewport, visible:Boolean(ready), scenes, colors };
 }

@@ -75,3 +75,17 @@
     grid-template-rows:minmax(0,1fr) calc(var(--reader-height) * var(--detail-progress,0));
   }
 }
+
+@media(max-width:560px) {
+  .explore__bar .zoom button:not(.zoom__reset) { display:grid; }
+  .explore__bar { justify-content:center; row-gap:6px; }
+  .explore__bar .explore__group--right { width:100%; justify-content:space-between; }
+}
+
+/* OrbitControls writes inline touch-action on its event wrapper. */
+.app .scene,
+.app .scene * { touch-action:pan-y !important; }
+.app[data-explore='true'] .scene,
+.app[data-explore='true'] .scene * { touch-action:none !important; }
+
+.app[data-explore='true'] { touch-action:none; }

@@ -1,0 +1,35 @@
+[
+  {
+    "viewport": {
+      "width": 1600,
+      "height": 900
+    },
+    "swipeScrolled": null,
+    "requests": 1,
+    "errors": [],
+    "reentered": true,
+    "modelId": "9167fa82-342d-42c4-9f0d-2708ceea63da"
+  },
+  {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "swipeScrolled": 345,
+    "requests": 1,
+    "errors": [],
+    "reentered": true,
+    "modelId": "75f63f8b-a4ed-4aa2-bdf3-80e23773582e"
+  },
+  {
+    "viewport": {
+      "width": 320,
+      "height": 680
+    },
+    "swipeScrolled": 345,
+    "requests": 1,
+    "errors": [],
+    "reentered": true,
+    "modelId": "33ab77b7-3e79-4e56-9db3-004431b11d4e"
+  }
+]

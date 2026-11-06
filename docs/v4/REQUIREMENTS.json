@@ -62,8 +62,12 @@
   {
     "id": "R09",
     "requirement": "用户已确认座舱现已能进入内部；不可以把旧版“未进入车内”误判当成当前事实。",
-    "status": "PENDING",
-    "evidence": [],
+    "status": "PASS",
+    "evidence": [
+      "docs/reports/v4/STAGE-12.md",
+      "docs/reports/v4/STAGE-13.md",
+      "docs/reports/v4/STAGE-14.md"
+    ],
     "baseline": "EXISTING_WITH_REGRESSION_REQUIRED"
   },
   {
@@ -114,15 +118,23 @@
   {
     "id": "R16",
     "requirement": "详情是左侧展示区域真实缩小、右侧内容真实展开；不可用覆盖式浮层冒充。内容切换不断片，反向可逆。",
-    "status": "PENDING",
-    "evidence": [],
+    "status": "PASS",
+    "evidence": [
+      "docs/reports/v4/STAGE-12.md",
+      "docs/reports/v4/STAGE-13.md",
+      "docs/reports/v4/STAGE-14.md"
+    ],
     "baseline": "EXISTING_WITH_REGRESSION_REQUIRED"
   },
   {
     "id": "R17",
     "requirement": "保留换漆、热点、拖动旋转、缩放、复位及返回主线；门体不支持独立开合则不提供伪操作。",
-    "status": "PENDING",
-    "evidence": [],
+    "status": "PASS",
+    "evidence": [
+      "docs/reports/v4/STAGE-12.md",
+      "docs/reports/v4/STAGE-13.md",
+      "docs/reports/v4/STAGE-14.md"
+    ],
     "baseline": "EXISTING_WITH_REGRESSION_REQUIRED",
     "baselineIssue": "窄屏隐藏缩放按钮，阶段14恢复"
   },

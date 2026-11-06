@@ -1,0 +1,18 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert.ok(swipeScrolled>100)
+
+    at file:///Users/morton_cheung/Desktop/%E6%AF%94%E8%B5%9B/%E5%8D%8E%E7%81%BF%E5%A5%96/project/s90-digital-experience/tools/v4/explore-check.mjs:24:59 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.15.0
