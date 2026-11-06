@@ -1,0 +1,24 @@
+[
+  {
+    "viewport": {
+      "width": 1600,
+      "height": 900
+    },
+    "requests": 1,
+    "modelId": "e6912b4b-0c8b-4019-9b45-49c2ae50031e",
+    "errors": [],
+    "actAndFeatureLinks": 10,
+    "allTargetsVerified": true
+  },
+  {
+    "viewport": {
+      "width": 320,
+      "height": 680
+    },
+    "requests": 1,
+    "modelId": "78615e2c-ee8b-43c8-8436-24dfa4c0e4de",
+    "errors": [],
+    "actAndFeatureLinks": 10,
+    "allTargetsVerified": true
+  }
+]

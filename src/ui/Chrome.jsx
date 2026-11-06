@@ -1,7 +1,8 @@
 import { useRef } from 'react';
 import { CHAPTERS } from '../story/story.js';
+import { ACTS } from '../journey/acts.js';
 
-export default function Chrome({ opened, chapter, detailOpen, explore, scrolled, onChapter }) {
+export default function Chrome({ opened, chapter, act, detailOpen, explore, scrolled, onChapter }) {
   const chaptersRef = useRef(null);
   const aboutRef = useRef(null);
   if (!opened) return null;
@@ -23,13 +24,19 @@ export default function Chrome({ opened, chapter, detailOpen, explore, scrolled,
         <div className="head-actions">
           <details ref={chaptersRef} className="head-menu" onKeyDown={closeOnEscape}
             onToggle={() => { if (chaptersRef.current.open) aboutRef.current.open = false; }}>
-            <summary>章节</summary>
-            <nav className="head-popover" aria-label="章节导航">
-              {CHAPTERS.map((item) => (
-                <button key={item.id} type="button" aria-current={chapter.id === item.id ? 'step' : undefined}
-                  onClick={() => { chaptersRef.current.open = false; onChapter(item.at); }}>
-                  {item.label}
-                </button>
+            <summary>行程</summary>
+            <nav className="head-popover head-popover--journey" aria-label="四幕行程导航">
+              {ACTS.map((item) => (
+                <div className="journey-link" key={item.id}>
+                  <button className="journey-link__act" type="button" aria-current={act.id===item.id?'step':undefined}
+                    onClick={()=>{chaptersRef.current.open=false;onChapter(item.range[0]);}}>{item.label}</button>
+                  <div className="journey-link__features">
+                    {CHAPTERS.filter(feature=>item.features.includes(feature.id)).map(feature=>(
+                      <button key={feature.id} type="button" aria-current={chapter.id===feature.id?'step':undefined}
+                        onClick={()=>{chaptersRef.current.open=false;onChapter(feature.at);}}>{feature.label}</button>
+                    ))}
+                  </div>
+                </div>
               ))}
               <button type="button" onClick={() => { chaptersRef.current.open = false; onChapter(1); }}>自由探索</button>
             </nav>
@@ -47,7 +54,7 @@ export default function Chrome({ opened, chapter, detailOpen, explore, scrolled,
           </details>
         </div>
       </header>
-      {!detailOpen && !explore && scrolled && <p className="chapter-heading">{chapter.label}</p>}
+      {!detailOpen && !explore && scrolled && <p className="chapter-heading">{act.label}</p>}
       {!scrolled && !explore && <p className="scroll-cue">向下滚动 <span aria-hidden="true">↓</span></p>}
     </>
   );

@@ -82,7 +82,7 @@ export default function ExploreLayer({
                 onClick={() => onPaint(item.hex)}
                 aria-pressed={paint.toLowerCase() === item.hex.toLowerCase()}
                 aria-label={item.name}
-                title={`${item.name} · ${item.en}`}
+                title={item.name}
               >
                 <span className="paint__chip" style={{ background: item.hex }} />
               </button>

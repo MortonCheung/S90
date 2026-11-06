@@ -17,7 +17,7 @@ import {
 import { clamp } from './lib/math.js';
 import { PAINTS } from './story/paints.js';
 import { CABIN_THEMES } from './story/cabin.js';
-import { actAt } from './journey/acts.js';
+import { ACTS, actAt } from './journey/acts.js';
 import SketchScenes from './sketch/SketchScenes.jsx';
 
 const HOTSPOTS = DETAILS.map((d) => ({
@@ -36,6 +36,7 @@ export default function App() {
   const [drawn, setDrawn] = useState(false);
   const [opened, setOpened] = useState(false);
   const [ui, setUi] = useState({
+    actId: 'morning',
     chapterId: 'form',
     detailId: null,
     explore: false,
@@ -103,6 +104,10 @@ export default function App() {
       st.raw = raw;
       st.smooth = raw;
       st.journey = actAt(raw);
+      if(st.actId!==st.journey.act.id){
+        st.actId=st.journey.act.id;
+        setUi(u=>u.actId===st.actId?u:{...u,actId:st.actId});
+      }
       if (visualRef.current) visualRef.current.dataset.act = st.journey.act.id;
 
       const detail = detailState(st.smooth);
@@ -204,6 +209,7 @@ export default function App() {
       <Chrome
         opened={opened}
         chapter={chapter}
+        act={ACTS.find(act=>act.id===ui.actId)??ACTS[0]}
         detailOpen={Boolean(ui.detailId)}
         explore={ui.explore}
         scrolled={ui.scrolled}
@@ -212,7 +218,6 @@ export default function App() {
 
       {contextLost ? (
         <div className="context-lost" role="alert">
-          <p className="context-lost__kicker">RENDERER LOST</p>
           <h2>三维渲染已中断</h2>
           <p>显卡上下文丢失，叙事已暂停。重新载入可恢复；线稿与文字内容不受影响。</p>
           <button type="button" className="btn btn--dark" onClick={() => window.location.reload()}>
