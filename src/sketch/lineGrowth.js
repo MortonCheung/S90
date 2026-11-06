@@ -31,7 +31,7 @@ export function schedulePaths(metrics) {
   const span = maximum - minimum + margin * 2;
   const delays = { structure: 0, road: .006, detail: .022 };
   const scheduled = metrics.map(path => {
-    const delay = delays[path.channel] ?? 0;
+    const delay = path.delay ?? delays[path.channel] ?? 0;
     const start = clamp((path.x - minimum) / span + delay, 0, .95);
     const end = clamp((path.x + path.width - minimum + margin * 2) / span + delay);
     return { ...path, start, end: Math.max(start + .01, end) };

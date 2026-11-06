@@ -2,6 +2,7 @@ import { useEffect, useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { getLoadingVisual } from './loading-state.js';
 import { STROKE_PLAN } from './stroke-plan.js';
+import { measurePaths, schedulePaths, renderPaths } from '../sketch/lineGrowth.js';
 import { useLineart } from './useLineart.js';
 import { viewHeightFor } from '../story/story.js';
 
@@ -59,51 +60,34 @@ export default function Opening({
 
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    roots.forEach((root) => {
-      root.querySelectorAll('path').forEach((path) => {
-        path.style.vectorEffect = 'non-scaling-stroke';
-        path.style.visibility = 'hidden';
+    const plans=roots.map(root=>{
+      const metrics=measurePaths(root,'path').map((item,index)=>{
+        item.element.style.vectorEffect='non-scaling-stroke';
+        const stroke=STROKE_PLAN[index] ?? {lane:2,name:'detail'};
+        const innerChannel={glass:'secondary',body:'secondary'}[stroke.name] ?? 'detail';
+        const channel=stroke.lane<2 ? 'structure' : innerChannel;
+        return {...item,channel,delay:{structure:0,secondary:.08,detail:.13}[channel]};
       });
+      return schedulePaths(metrics);
     });
-
-    if (reduce) {
-      roots.forEach((root) =>
-        root.querySelectorAll('path').forEach((path) => {
-          path.style.visibility = 'visible';
-          path.style.strokeDasharray = 'none';
-          path.style.strokeDashoffset = '0';
-        }),
-      );
-      drawnRef.current = true;
+    const update=value=>{
+      plans.forEach(plan=>renderPaths(plan,value));
+      if(stageRef.current) stageRef.current.dataset.drawProgress=value.toFixed(4);
+    };
+    update(reduce?1:0);
+    const complete=()=>{
+      if(drawnRef.current) return;
+      drawnRef.current=true;
       onDrawn();
-      return undefined;
-    }
-
-    const timeline = gsap.timeline({
-      onUpdate: () => {
-        if (import.meta.env.DEV && stageRef.current) {
-          stageRef.current.dataset.drawProgress = timeline.progress().toFixed(3);
-        }
-      },
-      onComplete: () => {
-        if (drawnRef.current) return;
-        drawnRef.current = true;
-        onDrawn();
-      },
+    };
+    if(reduce){complete();return undefined;}
+    const ink={progress:0};
+    const timeline=gsap.to(ink,{
+      progress:1,duration:6.6,ease:'none',
+      onUpdate:()=>update(ink.progress),
+      onComplete:complete,
     });
-
-    STROKE_PLAN.forEach((item, index) => {
-      roots.forEach((root) => {
-        const path = root.querySelectorAll('path')[index];
-        if (!path) return;
-        const length = path.getTotalLength();
-        gsap.set(path, { strokeDasharray: length, strokeDashoffset: length + 1, visibility: 'hidden' });
-        timeline.set(path, { visibility: 'visible' }, item.start);
-        timeline.to(path, { strokeDashoffset: 0, duration: item.duration, ease: 'none' }, item.start);
-      });
-    });
-
-    return () => timeline.kill();
+    return ()=>timeline.kill();
   }, [markup, onDrawn]);
 
   useEffect(() => {

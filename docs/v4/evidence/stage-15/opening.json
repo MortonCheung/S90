@@ -1,0 +1,84 @@
+[
+  {
+    "viewport": {
+      "width": 1600,
+      "height": 900
+    },
+    "samples": [
+      {
+        "progress": 0.0023,
+        "paths": 72,
+        "visible": 2,
+        "visibleLength": 5.182138873291166
+      },
+      {
+        "progress": 0.2523,
+        "paths": 72,
+        "visible": 8,
+        "visibleLength": 884.692638873291
+      },
+      {
+        "progress": 0.5023,
+        "paths": 72,
+        "visible": 39,
+        "visibleLength": 7065.188533873291
+      },
+      {
+        "progress": 0.7523,
+        "paths": 72,
+        "visible": 59,
+        "visibleLength": 13653.525358873288
+      },
+      {
+        "progress": 1,
+        "paths": 72,
+        "visible": 72,
+        "visibleLength": 16624.27093887329
+      }
+    ],
+    "requests": 1,
+    "errors": [],
+    "note": "GLB request intentionally held for 8s in this test only"
+  },
+  {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "samples": [
+      {
+        "progress": 0.0027,
+        "paths": 72,
+        "visible": 2,
+        "visibleLength": 6.218138873290997
+      },
+      {
+        "progress": 0.2502,
+        "paths": 72,
+        "visible": 8,
+        "visibleLength": 863.1711388732912
+      },
+      {
+        "progress": 0.5002,
+        "paths": 72,
+        "visible": 39,
+        "visibleLength": 6994.004338873287
+      },
+      {
+        "progress": 0.7502,
+        "paths": 72,
+        "visible": 58,
+        "visibleLength": 13641.763518873287
+      },
+      {
+        "progress": 1,
+        "paths": 72,
+        "visible": 72,
+        "visibleLength": 16624.27093887329
+      }
+    ],
+    "requests": 1,
+    "errors": [],
+    "note": "GLB request intentionally held for 8s in this test only"
+  }
+]
